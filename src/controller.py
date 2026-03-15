@@ -1,22 +1,24 @@
 import numpy as np
 
 class PIDController:
-    def __init__(self, kp, ki, kd):
-        self.kp = kp
+    def __init__(self, kp_theta, kp_y, ki, kd, v_max):
+        self.kp_theta = kp_theta
+        self.kp_y = kp_y
         self.ki = ki
         self.kd = kd
+        self.v_max = v_max
         
-        self.prev_cte = 0
-        self.integral_cte = 0
+        self.prev_heading_error = 0
+        self.integral_heading_error = 0
         self.dt = 0.1 
 
     def compute(self, pose, path):
         rx, ry, r_theta = pose
         m, c = path
 
-        # 1. Calculate Lateral Error (Cross-Track Error)
+        # 1. Calculate Lateral Error 
         # Formula for distance from point (rx, ry) to line mx - y + c = 0
-        cte = (m * rx - ry + c) / np.sqrt(m**2 + 1)
+        lateral_error = (m * rx - ry + c) / np.sqrt(m**2 + 1)
 
         # 2. Calculate Heading Error
         path_theta = np.arctan(m)
@@ -26,19 +28,12 @@ class PIDController:
         heading_error = (heading_error + np.pi) % (2 * np.pi) - np.pi
 
         # 3. PID Math
-        self.integral_cte += cte * self.dt
-        derivative_cte = (cte - self.prev_cte) / self.dt
+        self.integral_heading_error += heading_error * self.dt
+        derivative_heading_error = (heading_error - self.prev_heading_error) / self.dt
         
-        # Steering command (w)
-        # We combine CTE correction and Heading alignment
-        w = (self.kp * cte) + (self.ki * self.integral_cte) + (self.kd * derivative_cte)
-        
-        # Add a proportional gain for heading to help the robot face the right way
-        # Usually, a separate Kp_theta is used
-        w += 1.0 * heading_error 
+        w = (self.kp_theta * heading_error) + (self.kp_y * lateral_error) + (self.ki * self.integral_heading_error) + (self.kd * derivative_heading_error)
+        v = self.v_max * max(0,np.cos(heading_error))
 
-        self.prev_cte = cte
-        
-        # 4. Output [v, w]
-        v = 1.0 # Constant forward speed
+        self.prev_heading_error = heading_error
+
         return np.array([v, w])

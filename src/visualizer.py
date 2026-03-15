@@ -1,36 +1,63 @@
 import pygame
-import sys
+import numpy as np
+
 
 class Visualizer:
-    def __init__(self):
+    def __init__(self, width=800, height=600, scale=50):
         pygame.init()
-        self.screen = pygame.display.set_mode((800, 400))
-        self.scale = 50 # 1 meter = 50 pixels
-        self.origin = (50, 200) # Offset to see (0,0)
 
-    def draw(self, pose, path_y):
-        self.screen.fill((30, 30, 30)) # Dark background
-        
-        # 1. Draw Path (Straight line)
-        py = self.origin[1] - (path_y * self.scale)
-        pygame.draw.line(self.screen, (255, 255, 255), (0, py), (800, py), 2)
-        
-        # 2. Draw Robot
-        rx = self.origin[0] + (pose[0] * self.scale)
-        ry = self.origin[1] - (pose[1] * self.scale)
-        
-        # Draw robot body
-        pygame.draw.circle(self.screen, (0, 255, 0), (int(rx), int(ry)), 10)
-        
-        # Draw heading direction line
-        end_x = rx + 15 * np.cos(pose[2])
-        end_y = ry - 15 * np.sin(pose[2])
-        pygame.draw.line(self.screen, (255, 0, 0), (rx, ry), (end_x, end_y), 3)
+        self.width = width
+        self.height = height
+        self.scale = scale
+
+        self.screen = pygame.display.set_mode((width, height))
+        pygame.display.set_caption("Line Following Robot")
+
+        self.clock = pygame.time.Clock()
+
+    def world_to_screen(self, x, y):
+        sx = int(self.width / 2 + x * self.scale)
+        sy = int(self.height / 2 - y * self.scale)
+        return sx, sy
+
+    def draw_line(self, m, c):
+        x1 = -self.width / (2 * self.scale)
+        x2 = self.width / (2 * self.scale)
+
+        y1 = m * x1 + c
+        y2 = m * x2 + c
+
+        p1 = self.world_to_screen(x1, y1)
+        p2 = self.world_to_screen(x2, y2)
+
+        pygame.draw.line(self.screen, (0, 200, 0), p1, p2, 3)
+
+    def draw_robot(self, pose):
+        x, y, theta = pose
+        px, py = self.world_to_screen(x, y)
+
+        radius = 8
+        pygame.draw.circle(self.screen, (0, 100, 255), (px, py), radius)
+
+        # heading arrow
+        arrow_length = 20
+        hx = px + arrow_length * np.cos(theta)
+        hy = py - arrow_length * np.sin(theta)
+
+        pygame.draw.line(self.screen, (255, 0, 0), (px, py), (hx, hy), 3)
+
+    def update(self, pose, path):
+        m, c = path
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
+
+        self.screen.fill((30, 30, 30))
+
+        self.draw_line(m, c)
+        self.draw_robot(pose)
 
         pygame.display.flip()
-
-# Visualizer Loop
-# viz = Visualizer()
-# while True:
-#    pose = vsi.receive('pose')
-#    viz.draw(pose, 0.0)
+        self.clock.tick(60)
