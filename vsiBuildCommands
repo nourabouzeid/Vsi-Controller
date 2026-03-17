@@ -12,31 +12,45 @@ config port -componentName simulator -portName simulator -macAddress 12:34:56:78
 config port -componentName controller -portName controller -macAddress 12:34:56:78:9A:BD -ipAddress 192.168.1.2
 config port -componentName visualizer -portName visualizer -macAddress 12:34:56:78:9A:BE -ipAddress 192.168.1.3
 
-define componentSignals -componentName simulator -signals [pose:double[3]:output, path:double[2]:output, control:double[2]:input]
-define componentSignals -componentName controller -signals [pose:double[3]:input, path:double[2]:input, control:double[2]:output]
-define componentSignals -componentName visualizer -signals [pose:double[3]:input, path:double[2]:input]
+define componentSignals -componentName simulator -signals [x:double:output,y:double:output,theta:double:output,m:double:output,c:double:output,v:double:input,w:double:input]
+
+define componentSignals -componentName controller -signals [x:double:input,y:double:input,theta:double:input,m:double:input,c:double:input,v:double:output,w:double:output]
+
+define componentSignals -componentName visualizer -signals [x:double:input,y:double:input,theta:double:input,m:double:input,c:double:input]
 
 
 add portSocket -componentName simulator -portName simulator -ipPortNum 8070 -socketType server -protocol tcpIp
+add portSocket -componentName simulator -portName simulator -ipPortNum 8080 -socketType server -protocol tcpIp
+
 
 add portSocket -componentName controller -portName controller -ipPortNum 8070 -socketType client -protocol tcpIp
 
-add portSocket -componentName visualizer -portName visualizer -ipPortNum 8070 -socketType client -protocol tcpIp
+add portSocket -componentName visualizer -portName visualizer -ipPortNum 8080 -socketType client -protocol tcpIp
 
 
-connect signals -sourceSignal simulator.pose -destSignal controller.pose -sourcePortName simulator -destPortName controller
-connect signals -sourceSignal simulator.pose -destSignal visualizer.pose -sourcePortName simulator -destPortName visualizer
+connect signals -sourceSignal simulator.x -destSignal controller.x -sourcePortName simulator -destPortName controller
+connect signals -sourceSignal simulator.y -destSignal controller.y -sourcePortName simulator -destPortName controller
+connect signals -sourceSignal simulator.theta -destSignal controller.theta -sourcePortName simulator -destPortName controller
 
-connect signals -sourceSignal simulator.path -destSignal controller.path -sourcePortName simulator -destPortName controller
-connect signals -sourceSignal simulator.path -destSignal visualizer.path -sourcePortName simulator -destPortName visualizer
+connect signals -sourceSignal simulator.x -destSignal visualizer.x -sourcePortName simulator -destPortName visualizer
+connect signals -sourceSignal simulator.y -destSignal visualizer.y -sourcePortName simulator -destPortName visualizer
+connect signals -sourceSignal simulator.theta -destSignal visualizer.theta -sourcePortName simulator -destPortName visualizer
 
-connect signals -sourceSignal controller.control -destSignal simulator.control -sourcePortName controller -destPortName simulator
+
+connect signals -sourceSignal simulator.m -destSignal controller.m -sourcePortName simulator -destPortName controller
+connect signals -sourceSignal simulator.c -destSignal controller.c -sourcePortName simulator -destPortName controller
+
+connect signals -sourceSignal simulator.m -destSignal visualizer.m -sourcePortName simulator -destPortName visualizer
+connect signals -sourceSignal simulator.c -destSignal visualizer.c -sourcePortName simulator -destPortName visualizer
 
 
-set digitalTwinName carlaAiAgentDigitalTwin
+connect signals -sourceSignal controller.v -destSignal simulator.v -sourcePortName controller -destPortName simulator
+connect signals -sourceSignal controller.w -destSignal simulator.w -sourcePortName controller -destPortName simulator
+
+
+set digitalTwinName LineFollower
 set workspaceDir .
 set simulationStep 0.1 s
 set totalSimTime 60 s
+
 generate
-
-
