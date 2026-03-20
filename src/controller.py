@@ -22,8 +22,8 @@ class PIDController:
         w = (self.kp_theta * heading_error) + (self.kp_y * lateral_error) + (self.ki * self.integral_heading_error) + (self.kd * derivative_heading_error)
 
         # Make turns smoother
-        # v = self.vmax * max(0.5, np.cos(heading_error))
+        v = self.vmax * max(0.5, np.cos(heading_error))
 
         self.prev_heading_error = heading_error
 
-        return self.vmax, w
+        return v, w
