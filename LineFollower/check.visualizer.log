@@ -1,0 +1,10 @@
+Script started on 2026-03-21 05:15:09+00:00 [TERM="xterm" TTY="/dev/pts/45" COLUMNS="80" LINES="24"]
+make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
+python3 .//src/visualizer/visualizer.py --domain="AF_UNIX" --server-url="localhost"
+  File "/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower/.//src/visualizer/visualizer.py", line 102
+    self.plotter.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta], (self.mySignals.heading_error, self.mySignals.lateral_error), self.simulationStep)
+TabError: inconsistent use of tabs and spaces in indentation
+make[1]: *** [Makefile.client2:31: sim] Error 1
+make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
+
+Script done on 2026-03-21 05:15:10+00:00 [COMMAND_EXIT_CODE="2"]

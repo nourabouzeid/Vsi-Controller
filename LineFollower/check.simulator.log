@@ -1,0 +1,14 @@
+Script started on 2026-03-21 05:15:07+00:00 [TERM="xterm" TTY="/dev/pts/41" COLUMNS="80" LINES="24"]
+make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
+python3 .//src/simulator/simulator.py --domain="AF_UNIX" --server-url="localhost"
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
++=+    Connecting clientId=':remoteSession0' to 'server@localhost' ...
+error(104): DCBlockingRecv(): Error calling recv(): Connection reset by peer
+DC-FATAL: DcMessageManager::messageReceive(): Error on :remoteSession0 receive call - receiving packet directly from socket [errno=104 perror()='Connection reset by peer' line #448 of 'protected/DcMessageManager.h']
+
+RAWC-API FATAL: Program aborting. [line #255] of 'protected/RawcTlmApi.cxx'
+error(32): DCBlockingSend(): Error calling send(): Broken pipe
+terminate called after throwing an instance of 'std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >'
+Killed
+make[1]: *** [Makefile.client0:31: sim] Error 137
+make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
