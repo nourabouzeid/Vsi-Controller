@@ -1,4 +1,4 @@
-Script started on 2026-03-21 05:45:42+00:00 [TERM="xterm" TTY="/dev/pts/45" COLUMNS="80" LINES="24"]
+Script started on 2026-03-21 10:12:31+00:00 [TERM="xterm" TTY="/dev/pts/48" COLUMNS="80" LINES="24"]
 make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
 python3 .//src/visualizer/visualizer.py --domain="AF_UNIX" --server-url="localhost"
 pygame 2.6.1 (SDL 2.28.4, Python 3.10.12)
@@ -14,39 +14,3351 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:timeServerConduit2
-           localClientConduitHandle=0x57092649f2f8
-           remoteServerProxyConduitHandle=0x3b80f030
+           localClientConduitHandle=0x59caed742a68
+           remoteServerProxyConduitHandle=0x2b988030
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:resetServerConduit2
-           localClientConduitHandle=0x570926ac1428
-           remoteServerProxyConduitHandle=0x3b80b660
+           localClientConduitHandle=0x59caed6fb6c8
+           remoteServerProxyConduitHandle=0x2b984660
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:txConfigPort2
-           localClientConduitHandle=0x570926c34e50
-           remoteServerProxyConduitHandle=0x3b81dc50
+           localClientConduitHandle=0x59caed6f37e0
+           remoteServerProxyConduitHandle=0x2b996c50
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:rxConfigPort2
-           localClientConduitHandle=0x5709266d38c0
-           remoteServerProxyConduitHandle=0x3b81a030
+           localClientConduitHandle=0x59caed76edf0
+           remoteServerProxyConduitHandle=0x2b993030
 +=+ INFO: ... successfully connected to TLM FabricServer !
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:txEtherFrameConduit2
-           localClientConduitHandle=0x570926a67e20
-           remoteServerProxyConduitHandle=0x3b8132f0
+           localClientConduitHandle=0x59caed6f7fa0
+           remoteServerProxyConduitHandle=0x2b98c2f0
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:rxEtherFrameConduit2
-           localClientConduitHandle=0x5709266a8380
-           remoteServerProxyConduitHandle=0x3b816960
-Killed
-make[1]: *** [Makefile.client2:31: sim] Error 137
-make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
+           localClientConduitHandle=0x59caed680740
+           remoteServerProxyConduitHandle=0x2b98f960
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 100610 ns
+  Inputs:
+	x = -14.0
+	y = 0.0
+	theta = 0.0
+	heading_error = 1.5707963267948966
+	lateral_error = -0.0
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 100100610 ns
+  Inputs:
+	x = -14.0
+	y = 0.0
+	theta = 0.0
+	heading_error = 1.5707963267948966
+	lateral_error = -0.0
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 200100610 ns
+  Inputs:
+	x = -13.82
+	y = 0.0
+	theta = 0.0
+	heading_error = 1.5707963267948966
+	lateral_error = 0.17999999999999972
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 300100610 ns
+  Inputs:
+	x = -13.64
+	y = 0.0
+	theta = 0.0
+	heading_error = 1.5707963267948966
+	lateral_error = 0.35999999999999943
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 400100610 ns
+  Inputs:
+	x = -13.55
+	y = 0.0
+	theta = 0.6283185307179586
+	heading_error = 0.9424777960769379
+	lateral_error = 0.4499999999999993
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 500100610 ns
+  Inputs:
+	x = -13.477188470506256
+	y = 0.052900672706322587
+	theta = 1.3286370614359173
+	heading_error = 0.23399221930614766
+	lateral_error = 0.5225955071778978
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 600100610 ns
+  Inputs:
+	x = -13.455606520266992
+	y = 0.14027469300909856
+	theta = 2.1009555921538756
+	heading_error = -0.5518849733448308
+	lateral_error = 0.5428696362848227
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 700100610 ns
+  Inputs:
+	x = -13.509107165960277
+	y = 0.23155232225924666
+	theta = 2.6579467105846506
+	heading_error = -1.122708981224994
+	lateral_error = 0.4867755622964225
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 800100610 ns
+  Inputs:
+	x = -13.664119478131092
+	y = 0.3129731284571639
+	theta = 2.960581801178269
+	heading_error = -1.4367149051524137
+	lateral_error = 0.32853534837045917
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 900100610 ns
+  Inputs:
+	x = -13.814892071386774
+	y = 0.34056663080569655
+	theta = 2.956975666354266
+	heading_error = -1.4361116851002347
+	lateral_error = 0.1766035162341133
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1000100610 ns
+  Inputs:
+	x = -13.903362668302869
+	y = 0.3570879346679769
+	theta = 2.7026022987828373
+	heading_error = -1.1834865777426113
+	lateral_error = 0.0874080170168332
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1100100610 ns
+  Inputs:
+	x = -13.984828980779104
+	y = 0.3953402539639929
+	theta = 2.2593304760700557
+	heading_error = -0.7450736725073703
+	lateral_error = 0.003991866275741884
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1200100610 ns
+  Inputs:
+	x = -14.04201551782956
+	y = 0.46483629687419686
+	theta = 1.755527208523607
+	heading_error = -0.2506442454709372
+	lateral_error = -0.05734052857335481
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1300100610 ns
+  Inputs:
+	x = -14.05854689789846
+	y = 0.5533050115309477
+	theta = 1.3170957842332958
+	heading_error = 0.1754725606318126
+	lateral_error = -0.08019990859136872
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1400100610 ns
+  Inputs:
+	x = -14.025339502805183
+	y = 0.6813767358092377
+	theta = 1.0206630617406445
+	heading_error = 0.4534472332449888
+	lateral_error = -0.05830499381948151
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1500100610 ns
+  Inputs:
+	x = -13.934175840543944
+	y = 0.8300239862800748
+	theta = 0.8974691521229277
+	heading_error = 0.554193554293434
+	lateral_error = 0.01632371845719227
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1600100610 ns
+  Inputs:
+	x = -13.823653195163095
+	y = 0.9685784012731846
+	theta = 0.9355782129391053
+	heading_error = 0.4942157988526714
+	lateral_error = 0.10794754465170708
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1700100610 ns
+  Inputs:
+	x = -13.727642956549634
+	y = 1.0988258076396458
+	theta = 1.0936351087093081
+	heading_error = 0.3152607901567026
+	lateral_error = 0.18321205358808168
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1800100610 ns
+  Inputs:
+	x = -13.657349402404126
+	y = 1.2347880340314927
+	theta = 1.3218420178095587
+	heading_error = 0.06556095496145242
+	lateral_error = 0.2291062218730726
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 1900100610 ns
+  Inputs:
+	x = -13.618306003178965
+	y = 1.3883641377162714
+	theta = 1.5627073552113102
+	heading_error = -0.19868901823858565
+	lateral_error = 0.23763877550072188
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2000100610 ns
+  Inputs:
+	x = -13.616921762283054
+	y = 1.55948733805245
+	theta = 1.762096492709224
+	heading_error = -0.42275804699424313
+	lateral_error = 0.20179035585684524
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2100100610 ns
+  Inputs:
+	x = -13.651072626939051
+	y = 1.7358241037020654
+	theta = 1.879963363443034
+	heading_error = -0.5644566472011503
+	lateral_error = 0.12614719332665647
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2200100610 ns
+  Inputs:
+	x = -13.70476288542583
+	y = 1.903916440818935
+	theta = 1.8955432663478884
+	heading_error = -0.6014283739790773
+	lateral_error = 0.030154724572120095
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2300100610 ns
+  Inputs:
+	x = -13.75713899765976
+	y = 2.059489364661289
+	theta = 1.8071561898929291
+	heading_error = -0.532202762007218
+	lateral_error = -0.06402320755299584
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2400100610 ns
+  Inputs:
+	x = -13.792750449672171
+	y = 2.2073393938539025
+	theta = 1.6318324083431315
+	heading_error = -0.37522743512189116
+	lateral_error = -0.14239496745880054
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2500100610 ns
+  Inputs:
+	x = -13.801803501443231
+	y = 2.355478112119034
+	theta = 1.4033229485803487
+	heading_error = -0.1659032122454711
+	lateral_error = -0.19811141959592415
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2600100610 ns
+  Inputs:
+	x = -13.775948890092181
+	y = 2.5084125117122453
+	theta = 1.164832560756263
+	heading_error = 0.05141362211076417
+	lateral_error = -0.2253454374206907
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2700100610 ns
+  Inputs:
+	x = -13.709811737352233
+	y = 2.662276778358695
+	theta = 0.9577835997239864
+	heading_error = 0.2352907401127694
+	lateral_error = -0.21867655427902832
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2800100610 ns
+  Inputs:
+	x = -13.607673498157858
+	y = 2.8074806289931087
+	theta = 0.8121777469874283
+	heading_error = 0.35684799933979616
+	lateral_error = -0.17936602635840337
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 2900100610 ns
+  Inputs:
+	x = -13.4840116125429
+	y = 2.9379496621065084
+	theta = 0.7426050208634577
+	heading_error = 0.40275677998124293
+	lateral_error = -0.118564097390915
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3000100610 ns
+  Inputs:
+	x = -13.355057691694148
+	y = 3.056313609089312
+	theta = 0.7492506951969541
+	heading_error = 0.3732731827027346
+	lateral_error = -0.051794887960475045
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3100100610 ns
+  Inputs:
+	x = -13.23156460281195
+	y = 3.171186612456797
+	theta = 0.8202434843895112
+	heading_error = 0.27981782593312987
+	lateral_error = 0.00794580040714532
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3200100610 ns
+  Inputs:
+	x = -13.11862022461904
+	y = 3.292289753982706
+	theta = 0.9339205574256424
+	heading_error = 0.14323243474679104
+	lateral_error = 0.05185742249796288
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3300100610 ns
+  Inputs:
+	x = -13.018947795314583
+	y = 3.427037045870239
+	theta = 1.0625118753225462
+	heading_error = -0.00931204640705019
+	lateral_error = 0.07379501628133323
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3400100610 ns
+  Inputs:
+	x = -12.934752745646493
+	y = 3.5781656692122277
+	theta = 1.1776173258586562
+	heading_error = -0.14938288247824616
+	lateral_error = 0.07002455211509506
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3500100610 ns
+  Inputs:
+	x = -12.86649612183449
+	y = 3.7427283116486785
+	theta = 1.2556532687565578
+	heading_error = -0.25273834607141055
+	lateral_error = 0.04127943064849848
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3600100610 ns
+  Inputs:
+	x = -12.810707093090716
+	y = 3.913856260308989
+	theta = 1.281446456706271
+	heading_error = -0.3034094428450249
+	lateral_error = -0.005896641262603808
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3700100610 ns
+  Inputs:
+	x = -12.759919822702772
+	y = 4.0844522781744725
+	theta = 1.2497031245610106
+	heading_error = -0.29572482977767134
+	lateral_error = -0.06112078756970174
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3800100610 ns
+  Inputs:
+	x = -12.704915827473927
+	y = 4.249826548310825
+	theta = 1.1651195583918459
+	heading_error = -0.23457880579887735
+	lateral_error = -0.11386605786825488
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 3900100610 ns
+  Inputs:
+	x = -12.637125156912907
+	y = 4.407662468876566
+	theta = 1.0413971247487943
+	heading_error = -0.13420667540582976
+	lateral_error = -0.15574374011838366
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4000100610 ns
+  Inputs:
+	x = -12.5501684593409
+	y = 4.556278389143894
+	theta = 0.8986588778098451
+	heading_error = -0.015233730456476025
+	lateral_error = -0.1808107262649825
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4100100610 ns
+  Inputs:
+	x = -12.441159246292075
+	y = 4.693269531242781
+	theta = 0.7592809323429922
+	heading_error = 0.09978062982616664
+	lateral_error = -0.1856101227663043
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4200100610 ns
+  Inputs:
+	x = -12.31177364857032
+	y = 4.816067299777613
+	theta = 0.6433007661333068
+	heading_error = 0.19100328751615092
+	lateral_error = -0.17003790294258359
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4300100610 ns
+  Inputs:
+	x = -12.167768725431307
+	y = 4.924025920264021
+	theta = 0.5648829834447233
+	heading_error = 0.24466305798418686
+	lateral_error = -0.13805749927652577
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4400100610 ns
+  Inputs:
+	x = -12.016487727741236
+	y = 5.019903700962345
+	theta = 0.5305511862686683
+	heading_error = 0.25450661843377786
+	lateral_error = -0.0968008489398855
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4500100610 ns
+  Inputs:
+	x = -11.864056062968105
+	y = 5.109328904680548
+	theta = 0.5389373400980952
+	heading_error = 0.22187304159699028
+	lateral_error = -0.05438042920148334
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4600100610 ns
+  Inputs:
+	x = -11.714170986788304
+	y = 5.198958089592121
+	theta = 0.5815795635811597
+	heading_error = 0.15495398931077753
+	lateral_error = -0.018017762161332662
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4700100610 ns
+  Inputs:
+	x = -11.568608687122975
+	y = 5.294654875553964
+	theta = 0.6446618713787167
+	heading_error = 0.06725766642001774
+	lateral_error = 0.006749283252967864
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4800100610 ns
+  Inputs:
+	x = -11.42826094530336
+	y = 5.400170451340165
+	theta = 0.7116589163369195
+	heading_error = -0.02482784939488525
+	lateral_error = 0.01635224948834768
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 4900100610 ns
+  Inputs:
+	x = -11.293583820010037
+	y = 5.516318333174474
+	theta = 0.7664334071966974
+	heading_error = -0.10503860270720189
+	lateral_error = 0.009675975151882454
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5000100610 ns
+  Inputs:
+	x = -11.164206989431525
+	y = 5.6408787287257764
+	theta = 0.7960361870658916
+	heading_error = -0.1601172925687857
+	lateral_error = -0.011428719100074147
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5100100610 ns
+  Inputs:
+	x = -11.038327751851709
+	y = 5.769465079375872
+	theta = 0.7926459471032766
+	heading_error = -0.18195462597938317
+	lateral_error = -0.04235886145496792
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5200100610 ns
+  Inputs:
+	x = -10.912670753105617
+	y = 5.896956877978219
+	theta = 0.7545008960811489
+	heading_error = -0.16868911172319834
+	lateral_error = -0.07694092408172537
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5300100610 ns
+  Inputs:
+	x = -10.783197925131626
+	y = 6.018666387571681
+	theta = 0.6858824914136049
+	heading_error = -0.12471476839578699
+	lateral_error = -0.10893322697613961
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5400100610 ns
+  Inputs:
+	x = -10.646202546880325
+	y = 6.1307885067171215
+	theta = 0.5961570964398645
+	heading_error = -0.05961694416923091
+	lateral_error = -0.13311718163744501
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5500100610 ns
+  Inputs:
+	x = -10.499366897665501
+	y = 6.230417966813824
+	theta = 0.49790508211789497
+	heading_error = 0.013844869926217918
+	lateral_error = -0.14588530034407832
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5600100610 ns
+  Inputs:
+	x = -10.342449883798691
+	y = 6.315715773475907
+	theta = 0.40444588396912434
+	heading_error = 0.08230933875292806
+	lateral_error = -0.14564461452136968
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5700100610 ns
+  Inputs:
+	x = -10.177266159620777
+	y = 6.386421630353209
+	theta = 0.32735223364645394
+	heading_error = 0.1342960618837431
+	lateral_error = -0.1331200389250915
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5800100610 ns
+  Inputs:
+	x = -10.006841031524623
+	y = 6.444292742874848
+	theta = 0.27453606147930976
+	heading_error = 0.16202794666179732
+	lateral_error = -0.11125881576036356
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 5900100610 ns
+  Inputs:
+	x = -9.834168407282261
+	y = 6.492925609214408
+	theta = 0.2492019511719331
+	heading_error = 0.16236966323305657
+	lateral_error = -0.08453199072663953
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6000100610 ns
+  Inputs:
+	x = -9.661299372712353
+	y = 6.536919397811083
+	theta = 0.24967236035539375
+	heading_error = 0.13695536187254487
+	lateral_error = -0.0578912973123904
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6100100610 ns
+  Inputs:
+	x = -9.489165064415536
+	y = 6.5808124326766215
+	theta = 0.2699800127159673
+	heading_error = 0.09163330273222803
+	lateral_error = -0.035839323917082666
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6200100610 ns
+  Inputs:
+	x = -9.317967125470359
+	y = 6.628189171271678
+	theta = 0.30111508171853407
+	heading_error = 0.035304466462478756
+	lateral_error = -0.02181339006701677
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6300100610 ns
+  Inputs:
+	x = -9.1476756164757
+	y = 6.681074639098467
+	theta = 0.3327407075425959
+	heading_error = -0.021717012545025227
+	lateral_error = -0.017782333957715224
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6400100610 ns
+  Inputs:
+	x = -8.978262243640069
+	y = 6.739622208140217
+	theta = 0.35505829906865405
+	heading_error = -0.06955040736638995
+	lateral_error = -0.023961062895256013
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6500100610 ns
+  Inputs:
+	x = -8.809594692181022
+	y = 6.802159319735608
+	theta = 0.36045472962683883
+	heading_error = -0.10044459955670693
+	lateral_error = -0.03875019879493369
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6600100610 ns
+  Inputs:
+	x = -8.641201832702674
+	y = 6.865630309259161
+	theta = 0.34465499102574265
+	heading_error = -0.11001219679532337
+	lateral_error = -0.059066722951742534
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6700100610 ns
+  Inputs:
+	x = -8.472196844709693
+	y = 6.926300230831892
+	theta = 0.30725040292108424
+	heading_error = -0.09781555028650502
+	lateral_error = -0.08103088802718705
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6800100610 ns
+  Inputs:
+	x = -8.301491237831376
+	y = 6.980464852386031
+	theta = 0.251572483580428
+	heading_error = -0.06724134098912149
+	lateral_error = -0.10075833961053604
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 6900100610 ns
+  Inputs:
+	x = -8.128211135493984
+	y = 7.02500088913436
+	theta = 0.18394091568160165
+	heading_error = -0.024701241007617725
+	lateral_error = -0.11501917485758906
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7000100610 ns
+  Inputs:
+	x = -7.952093551045407
+	y = 7.057766488379139
+	theta = 0.11240234035612481
+	heading_error = 0.02168829470147418
+	lateral_error = -0.12169572043273025
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7100100610 ns
+  Inputs:
+	x = -7.773633645690055
+	y = 7.07791070688307
+	theta = 0.0452024681162618
+	heading_error = 0.06366788874106658
+	lateral_error = -0.120065237928209
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7200100610 ns
+  Inputs:
+	x = -7.593872362797899
+	y = 7.086041899351309
+	theta = -0.010685698229820913
+	heading_error = 0.09429905627269264
+	lateral_error = -0.11088420540353461
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7300100610 ns
+  Inputs:
+	x = -7.413924969588489
+	y = 7.084118962620043
+	theta = -0.050688668522323344
+	heading_error = 0.10905229553249995
+	lateral_error = -0.09620147381694011
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7400100610 ns
+  Inputs:
+	x = -7.234520393146021
+	y = 7.075017387160481
+	theta = -0.07324760819718032
+	heading_error = 0.10638315293987607
+	lateral_error = -0.07890322319951526
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7500100610 ns
+  Inputs:
+	x = -7.055800617229025
+	y = 7.061903129051712
+	theta = -0.07988166784951711
+	heading_error = 0.08778314354692185
+	lateral_error = -0.06212358380915717
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7600100610 ns
+  Inputs:
+	x = -6.877440455479517
+	y = 7.047625039043601
+	theta = -0.07474133916329317
+	heading_error = 0.057352901027710956
+	lateral_error = -0.04869062542167413
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7700100610 ns
+  Inputs:
+	x = -6.698957748106038
+	y = 7.034260106506496
+	theta = -0.06374936726714885
+	heading_error = 0.020978889912116258
+	lateral_error = -0.04069894850036615
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7800100610 ns
+  Inputs:
+	x = -6.520015058740294
+	y = 7.0228371448520654
+	theta = -0.053485543372042976
+	heading_error = -0.01475463475559291
+	lateral_error = -0.03922063206929138
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 7900100610 ns
+  Inputs:
+	x = -6.340567998276315
+	y = 7.013230158656517
+	theta = -0.05002063312962825
+	heading_error = -0.04373058761271409
+	lateral_error = -0.04416409683836253
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8000100610 ns
+  Inputs:
+	x = -6.1608326963140065
+	y = 7.004232179298579
+	theta = -0.057908656564928204
+	heading_error = -0.06133158956658313
+	lateral_error = -0.05432280131107525
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8100100610 ns
+  Inputs:
+	x = -5.98115397884353
+	y = 6.993815579834341
+	theta = -0.07949876329488192
+	heading_error = -0.06516176670191776
+	lateral_error = -0.06763776516311903
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8200100610 ns
+  Inputs:
+	x = -5.80189402598806
+	y = 6.979534536939132
+	theta = -0.11465663707531257
+	heading_error = -0.0553463211139249
+	lateral_error = -0.08162130287191083
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8300100610 ns
+  Inputs:
+	x = -5.6234120959186376
+	y = 6.958980250147352
+	theta = -0.16091839342637593
+	heading_error = -0.0343749411764831
+	lateral_error = -0.09382833028852122
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8400100610 ns
+  Inputs:
+	x = -5.446114671341302
+	y = 6.930200993174143
+	theta = -0.21403820617239064
+	heading_error = -0.006533101049646994
+	lateral_error = -0.10227044123304463
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8500100610 ns
+  Inputs:
+	x = -5.270491396098153
+	y = 6.892026154385429
+	theta = -0.26882525576672495
+	heading_error = 0.022958866592234617
+	lateral_error = -0.10571773459256661
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8600100610 ns
+  Inputs:
+	x = -5.0970588706305975
+	y = 6.844246564998207
+	theta = -0.32010656435272666
+	heading_error = 0.048920792834494464
+	lateral_error = -0.10386486247700599
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8700100610 ns
+  Inputs:
+	x = -4.926206176412378
+	y = 6.787607585307649
+	theta = -0.3636279812658033
+	heading_error = 0.06710876914231012
+	lateral_error = -0.09734017466234324
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8800100610 ns
+  Inputs:
+	x = -4.758020240231817
+	y = 6.723604339124433
+	theta = -0.3967315284659361
+	heading_error = 0.07487679516598261
+	lateral_error = -0.08754742857521247
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 8900100610 ns
+  Inputs:
+	x = -4.592199665389449
+	y = 6.6541345061550565
+	theta = -0.41870915632294076
+	heading_error = 0.0715165600095497
+	lateral_error = -0.07636972446706469
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9000100610 ns
+  Inputs:
+	x = -4.428119219054838
+	y = 6.581114578515375
+	theta = -0.430801718530954
+	heading_error = 0.058253926320602056
+	lateral_error = -0.06580779861316977
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9100100610 ns
+  Inputs:
+	x = -4.265023865382058
+	y = 6.506157303223196
+	theta = -0.43586997189464594
+	heading_error = 0.03792975112754515
+	lateral_error = -0.05763255711249293
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9200100610 ns
+  Inputs:
+	x = -4.102270410006872
+	y = 6.4303557105170555
+	theta = -0.43781123767765195
+	heading_error = 0.014431148610550393
+	lateral_error = -0.05310650284688734
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9300100610 ns
+  Inputs:
+	x = -3.9395242226188794
+	y = 6.354172689041274
+	theta = -0.44083278659467906
+	heading_error = -0.008025883593066219
+	lateral_error = -0.052802460447519906
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9400100610 ns
+  Inputs:
+	x = -3.7768499158914812
+	y = 6.277423229754496
+	theta = -0.44871390898865815
+	heading_error = -0.025636610836887286
+	lateral_error = -0.056538731570182854
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9500100610 ns
+  Inputs:
+	x = -3.614685766051497
+	y = 6.19934607935666
+	theta = -0.4641840506831929
+	heading_error = -0.03564151672775928
+	lateral_error = -0.06344422178083953
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9600100610 ns
+  Inputs:
+	x = -3.4537372614294926
+	y = 6.118763873721725
+	theta = -0.48851538829942737
+	heading_error = -0.036747901644327285
+	lateral_error = -0.07214612075681615
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9700100610 ns
+  Inputs:
+	x = -3.294843986023616
+	y = 6.034314852086615
+	theta = -0.5213855252622555
+	heading_error = -0.029274978186855094
+	lateral_error = -0.08104065953716155
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9800100610 ns
+  Inputs:
+	x = -3.138859730022236
+	y = 5.944717022811424
+	theta = -0.561019820665695
+	heading_error = -0.01500933461127918
+	lateral_error = -0.08858693011152052
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 9900100610 ns
+  Inputs:
+	x = -2.9865542931241773
+	y = 5.849012684589302
+	theta = -0.6045774296261524
+	heading_error = 0.003190441372917241
+	lateral_error = -0.09356721449275618
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10000100610 ns
+  Inputs:
+	x = -2.8385241225989115
+	y = 5.746741921626546
+	theta = -0.648703684715759
+	heading_error = 0.02195598087830275
+	lateral_error = -0.09527477917318716
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10100100610 ns
+  Inputs:
+	x = -2.6951041034252663
+	y = 5.638006464795475
+	theta = -0.6901421906048789
+	heading_error = 0.03802577463244616
+	lateral_error = -0.09360596434715607
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10200100610 ns
+  Inputs:
+	x = -2.556296820315217
+	y = 5.523410616878361
+	theta = -0.7262928998528145
+	heading_error = 0.04880095557886499
+	lateral_error = -0.0890452665916337
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10300100610 ns
+  Inputs:
+	x = -2.4217537988761166
+	y = 5.403900956254073
+	theta = -0.7556204191707683
+	heading_error = 0.05274754195757947
+	lateral_error = -0.08254783415607836
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10400100610 ns
+  Inputs:
+	x = -2.290836184094486
+	y = 5.280556918590369
+	theta = -0.7778524950566522
+	heading_error = 0.04959018265289328
+	lateral_error = -0.07534488314925891
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10500100610 ns
+  Inputs:
+	x = -2.1627528580889397
+	y = 5.154392101163014
+	theta = -0.7939502194617597
+	heading_error = 0.04028243670986553
+	lateral_error = -0.06871401631572471
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10600100610 ns
+  Inputs:
+	x = -2.03674228093052
+	y = 5.0262075802755195
+	theta = -0.8058703363411592
+	heading_error = 0.026773714225780343
+	lateral_error = -0.06375890202389822
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10700100610 ns
+  Inputs:
+	x = -1.912248465329463
+	y = 4.8965091703533465
+	theta = -0.8161722165397055
+	heading_error = 0.011622011064957305
+	lateral_error = -0.06123344281272303
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10800100610 ns
+  Inputs:
+	x = -1.7890458151895836
+	y = 4.765480315634116
+	theta = -0.8275448483820492
+	heading_error = -0.002476286540833428
+	lateral_error = -0.06143371808370279
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 10900100610 ns
+  Inputs:
+	x = -1.6672860864713517
+	y = 4.63299881254018
+	theta = -0.8423389235012964
+	heading_error = -0.013156452216733783
+	lateral_error = -0.06417126636527293
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11000100610 ns
+  Inputs:
+	x = -1.5474646982137936
+	y = 4.498691482851548
+	theta = -0.8621834962004027
+	heading_error = -0.018774608147424487
+	lateral_error = -0.06883061581658279
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11100100610 ns
+  Inputs:
+	x = -1.4303244471580439
+	y = 4.3620241388868575
+	theta = -0.8877474980502171
+	heading_error = -0.018652285507601007
+	lateral_error = -0.07449930045632147
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11200100610 ns
+  Inputs:
+	x = -1.3167253383132504
+	y = 4.222418857450847
+	theta = -0.9186785854830198
+	heading_error = -0.013140526749344517
+	lateral_error = -0.0801434934559877
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11300100610 ns
+  Inputs:
+	x = -1.2075078195087912
+	y = 4.079380001245705
+	theta = -0.9537206750686228
+	heading_error = -0.0035010237703811953
+	lateral_error = -0.08479405880052493
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11400100610 ns
+  Inputs:
+	x = -1.1033684668038541
+	y = 3.932602195314035
+	theta = -0.9909813094541918
+	heading_error = 0.008365379276796814
+	lateral_error = -0.08770932423670263
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11500100610 ns
+  Inputs:
+	x = -1.0047605255631993
+	y = 3.782033673946769
+	theta = -1.0282949175363247
+	heading_error = 0.020286057020315384
+	lateral_error = -0.08848891278758675
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11600100610 ns
+  Inputs:
+	x = -0.9118307200482462
+	y = 3.6278790304346433
+	theta = -1.0636129505646872
+	heading_error = 0.030208565197607617
+	lateral_error = -0.08712293112061609
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11700100610 ns
+  Inputs:
+	x = -0.8244046974176682
+	y = 3.47054364572477
+	theta = -1.0953505285486496
+	heading_error = 0.03654641787777568
+	lateral_error = -0.08397138179972785
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11800100610 ns
+  Inputs:
+	x = -0.7420293776053511
+	y = 3.3105405984613654
+	theta = -1.1226316708555582
+	heading_error = 0.038422156192174706
+	lateral_error = -0.07968045640588262
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 11900100610 ns
+  Inputs:
+	x = -0.664068771902375
+	y = 3.148390710730834
+	theta = -1.1453974172247616
+	heading_error = 0.035774040757015735
+	lateral_error = -0.07505396407680287
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12000100610 ns
+  Inputs:
+	x = -0.5898352233998896
+	y = 2.9845428398797527
+	theta = -1.1643674027935424
+	heading_error = 0.02931813454740162
+	lateral_error = -0.07090577127444497
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12100100610 ns
+  Inputs:
+	x = -0.5187280387992257
+	y = 2.8193279466681815
+	theta = -1.1808707228790256
+	heading_error = 0.02038126221513603
+	lateral_error = -0.06792022492554484
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12200100610 ns
+  Inputs:
+	x = -0.4503502876477263
+	y = 2.652945748411893
+	theta = -1.1965826922069405
+	heading_error = 0.010639924591982819
+	lateral_error = -0.06654317884868988
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12300100610 ns
+  Inputs:
+	x = -0.3845812383238567
+	y = 2.4854745848885367
+	theta = -1.2132177468977579
+	heading_error = 0.0018138281980424331
+	lateral_error = -0.06691936450838298
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12400100610 ns
+  Inputs:
+	x = -0.32159306249598074
+	y = 2.3168951296045956
+	theta = -1.2322333319819214
+	heading_error = -0.004631715070657627
+	lateral_error = -0.06888408905446042
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12500100610 ns
+  Inputs:
+	x = -0.26181268557473
+	y = 2.1471228152111235
+	theta = -1.2545946336846043
+	heading_error = -0.007723906036875228
+	lateral_error = -0.07200853137789753
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12600100610 ns
+  Inputs:
+	x = -0.2058401913605593
+	y = 1.9760468867569865
+	theta = -1.2806368482087405
+	heading_error = -0.0071228554639422015
+	lateral_error = -0.07568857454831068
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12700100610 ns
+  Inputs:
+	x = -0.1543418364047227
+	y = 1.8035730499828386
+	theta = -1.3100431698587878
+	heading_error = -0.0031447453752511123
+	lateral_error = -0.07925924369372517
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12800100610 ns
+  Inputs:
+	x = -0.10793772264384227
+	y = 1.6296629429682283
+	theta = -1.341936144824697
+	heading_error = 0.0033302328453568286
+	lateral_error = -0.08211294336934571
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 12900100610 ns
+  Inputs:
+	x = -0.06710259538148604
+	y = 1.4543607792822089
+	theta = -1.375060716829598
+	heading_error = 0.011042767080808868
+	lateral_error = -0.08380065355318145
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13000100610 ns
+  Inputs:
+	x = -0.03209490132066686
+	y = 1.2777987761776912
+	theta = -1.4080223124571887
+	heading_error = 0.018594288239760504
+	lateral_error = -0.084099884713841
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13100100610 ns
+  Inputs:
+	x = -0.0029249519800331296
+	y = 1.1001790849095574
+	theta = -1.4395353966667843
+	heading_error = 0.024696354080905092
+	lateral_error = -0.0830398309268352
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13200100610 ns
+  Inputs:
+	x = 0.02063279090927002
+	y = 0.9217383889713282
+	theta = -1.4686385512557334
+	heading_error = -0.23346408533569019
+	lateral_error = 0.03996933921124324
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13300100610 ns
+  Inputs:
+	x = 0.03898604973420135
+	y = 0.7427077855519526
+	theta = -1.4948407898453655
+	heading_error = -0.18224875554539643
+	lateral_error = 0.0005235568859092155
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13400100610 ns
+  Inputs:
+	x = 0.05264073887337431
+	y = 0.5632814987354428
+	theta = -1.5181781805837375
+	heading_error = -0.1335196855584826
+	lateral_error = -0.02984313304359354
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13500100610 ns
+  Inputs:
+	x = 0.061850806200929226
+	y = 0.3884071152023333
+	theta = -1.5955760790335163
+	heading_error = -0.03114324981283456
+	lateral_error = -0.05098752896827108
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13600100610 ns
+  Inputs:
+	x = 0.0574647693717268
+	y = 0.2114425103153755
+	theta = -1.668266158497311
+	heading_error = 0.06702314854080615
+	lateral_error = -0.05424565913224644
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13700100610 ns
+  Inputs:
+	x = 0.040103875080565746
+	y = 0.033891355860381556
+	theta = -1.7336112859381416
+	heading_error = 0.15794547727511965
+	lateral_error = -0.0400213582460891
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13800100610 ns
+  Inputs:
+	x = 0.010940639823579984
+	y = -0.1436419960558441
+	theta = -1.7664635974505838
+	heading_error = 0.21621678510619868
+	lateral_error = -0.00946470124779708
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 13900100610 ns
+  Inputs:
+	x = -0.023976588132552747
+	y = -0.3198108380096225
+	theta = -1.76135260168716
+	heading_error = 0.1447440617512794
+	lateral_error = 0.016649685499720235
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14000100610 ns
+  Inputs:
+	x = -0.0576451406388096
+	y = -0.4943526727453845
+	theta = -1.7141829540755478
+	heading_error = 0.0722984073311117
+	lateral_error = 0.04006641135517519
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14100100610 ns
+  Inputs:
+	x = -0.082767493163067
+	y = -0.6683573689879863
+	theta = -1.6314821205321872
+	heading_error = -0.03563727367328973
+	lateral_error = 0.05055346618724599
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14200100610 ns
+  Inputs:
+	x = -0.09357007459297749
+	y = -0.8461472005699708
+	theta = -1.5669246216317874
+	heading_error = -0.1257800339032933
+	lateral_error = 0.04192990840203947
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14300100610 ns
+  Inputs:
+	x = -0.09287498999401235
+	y = -1.0256756244941876
+	theta = -1.5219786941572726
+	heading_error = -0.19623567055921232
+	lateral_error = 0.017136232853188993
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14400100610 ns
+  Inputs:
+	x = -0.0840968830282864
+	y = -1.2053470294533022
+	theta = -1.51601221715169
+	heading_error = -0.2273371807761908
+	lateral_error = -0.02015508267096333
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14500100610 ns
+  Inputs:
+	x = -0.07431853816583574
+	y = -1.3836571341595787
+	theta = -1.5495522673521915
+	heading_error = -0.21843424947981305
+	lateral_error = -0.06254704591085236
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14600100610 ns
+  Inputs:
+	x = -0.07056828040105832
+	y = -1.5601626453383957
+	theta = -1.621192042434601
+	heading_error = -0.17106164449531747
+	lateral_error = -0.10289598941820621
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14700100610 ns
+  Inputs:
+	x = -0.07940236607572439
+	y = -1.7353085991300239
+	theta = -1.7201889478134627
+	heading_error = -0.09628755037772585
+	lateral_error = -0.13484180237325827
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14800100610 ns
+  Inputs:
+	x = -0.1055565209441911
+	y = -1.9090741689955717
+	theta = -1.8325814659697288
+	heading_error = -0.008347000240664926
+	lateral_error = -0.1538741300515838
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 14900100610 ns
+  Inputs:
+	x = -0.15146154570773343
+	y = -2.0804038185457823
+	theta = -1.9421645195351382
+	heading_error = 0.07645316777647326
+	lateral_error = -0.15755258507681358
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15000100610 ns
+  Inputs:
+	x = -0.21647930305546442
+	y = -2.247356591941042
+	theta = -2.034616260635532
+	heading_error = 0.14390365786648873
+	lateral_error = -0.1461013634859487
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15100100610 ns
+  Inputs:
+	x = -0.29700268760343307
+	y = -2.4083340040434345
+	theta = -2.0995047127524313
+	heading_error = 0.1837796256309321
+	lateral_error = -0.12251680552790845
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15200100610 ns
+  Inputs:
+	x = -0.3875327946295995
+	y = -2.563302670561734
+	theta = -2.1319444796725673
+	heading_error = 0.1913361148321422
+	lateral_error = -0.09191392523964215
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15300100610 ns
+  Inputs:
+	x = -0.4823312504172137
+	y = -2.714123503624057
+	theta = -2.1328235619203513
+	heading_error = 0.167441619469195
+	lateral_error = -0.06020341932246076
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15400100610 ns
+  Inputs:
+	x = -0.5766384002995995
+	y = -2.863870349328513
+	theta = -2.1083184338791416
+	heading_error = 0.11812278518353159
+	lateral_error = -0.032874776239706804
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15500100610 ns
+  Inputs:
+	x = -0.6671181834627055
+	y = -3.015665161650626
+	theta = -2.068549558042142
+	heading_error = 0.053333100525451815
+	lateral_error = -0.01424468274539148
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15600100610 ns
+  Inputs:
+	x = -0.7518577071243242
+	y = -3.171611568848239
+	theta = -2.025654277983448
+	heading_error = -0.014858097169529572
+	lateral_error = -0.007025193024047027
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15700100610 ns
+  Inputs:
+	x = -0.8303868935108675
+	y = -3.3321830128640935
+	theta = -1.9915550744059183
+	heading_error = -0.074448795686477
+	lateral_error = -0.011959035460953338
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15800100610 ns
+  Inputs:
+	x = -0.903803920343665
+	y = -3.4962496710317104
+	theta = -1.975919707293894
+	heading_error = -0.11559290428959645
+	lateral_error = -0.02761470228744134
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 15900100610 ns
+  Inputs:
+	x = -0.9747398778072387
+	y = -3.661661090656216
+	theta = -1.9846730233713248
+	heading_error = -0.13219873523599546
+	lateral_error = -0.05063979245231298
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16000100610 ns
+  Inputs:
+	x = -1.0469284677980029
+	y = -3.826006939469925
+	theta = -2.019236155830297
+	heading_error = -0.12278263148351432
+	lateral_error = -0.07653797901105452
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16100100610 ns
+  Inputs:
+	x = -1.124448495955752
+	y = -3.9871269266655758
+	theta = -2.076519198461112
+	heading_error = -0.09049323119664798
+	lateral_error = -0.10065395622250417
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16200100610 ns
+  Inputs:
+	x = -1.2108868279277316
+	y = -4.143221343390625
+	theta = -2.1496546095364355
+	heading_error = -0.042321699991451744
+	lateral_error = -0.1189967284293818
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16300100610 ns
+  Inputs:
+	x = -1.3086178400578923
+	y = -4.292762810116417
+	theta = -2.229382853734263
+	heading_error = 0.012366727224216945
+	lateral_error = -0.12878975944906657
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16400100610 ns
+  Inputs:
+	x = -1.4183270258621046
+	y = -4.434534787611015
+	theta = -2.3058417287019237
+	heading_error = 0.0636785926496759
+	lateral_error = -0.1288268300438915
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16500100610 ns
+  Inputs:
+	x = -1.5389306873880997
+	y = -4.567939281441953
+	theta = -2.370369100070257
+	heading_error = 0.10299496890423043
+	lateral_error = -0.11964516785013934
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16600100610 ns
+  Inputs:
+	x = -1.6679913250229856
+	y = -4.69339204921273
+	theta = -2.416938312960197
+	heading_error = 0.12435773452226817
+	lateral_error = -0.10339675350063882
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16700100610 ns
+  Inputs:
+	x = -1.8024893186458448
+	y = -4.812468018200773
+	theta = -2.4429976079178832
+	heading_error = 0.12525004523507288
+	lateral_error = -0.08335836372802774
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16800100610 ns
+  Inputs:
+	x = -1.9395932688033362
+	y = -4.927620188932997
+	theta = -2.449657687496247
+	heading_error = 0.10675698605791561
+	lateral_error = -0.06322568034751175
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 16900100610 ns
+  Inputs:
+	x = -2.0771252384251406
+	y = -5.041578400312833
+	theta = -2.441273295087595
+	heading_error = 0.07316665857825821
+	lateral_error = -0.04643233733579777
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17000100610 ns
+  Inputs:
+	x = -2.213681627039988
+	y = -5.156672829643013
+	theta = -2.424516622484777
+	heading_error = 0.031091552958582014
+	lateral_error = -0.03563204263220765
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17100100610 ns
+  Inputs:
+	x = -2.3485807292680456
+	y = -5.274292421458233
+	theta = -2.4071041002006157
+	heading_error = -0.011761709821630717
+	lateral_error = -0.03234397474898376
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17200100610 ns
+  Inputs:
+	x = -2.481814560392516
+	y = -5.394607036833095
+	theta = -2.3964103717036314
+	heading_error = -0.04796801010149032
+	lateral_error = -0.036745323551948594
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17300100610 ns
+  Inputs:
+	x = -2.6140441979321363
+	y = -5.516607087915287
+	theta = -2.3982265675730816
+	heading_error = -0.07165325006402767
+	lateral_error = -0.04766358874555987
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17400100610 ns
+  Inputs:
+	x = -2.7465500724087373
+	y = -5.6384172323638095
+	theta = -2.4158688414013274
+	heading_error = -0.07943209045866872
+	lateral_error = -0.06283124339972268
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17500100610 ns
+  Inputs:
+	x = -2.881038662792418
+	y = -5.75774168956143
+	theta = -2.449754174862703
+	heading_error = -0.07086614169493011
+	lateral_error = -0.07936662852861343
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17600100610 ns
+  Inputs:
+	x = -3.019296382754006
+	y = -5.872278756329708
+	theta = -2.497480910386538
+	heading_error = -0.048385802006610135
+	lateral_error = -0.09433993267848084
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17700100610 ns
+  Inputs:
+	x = -3.1627765733214495
+	y = -5.980025858780071
+	theta = -2.5543862439298946
+	heading_error = -0.01670698673582116
+	lateral_error = -0.10527922730197847
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17800100610 ns
+  Inputs:
+	x = -3.312248962727408
+	y = -6.079502307651213
+	theta = -2.614479352019312
+	heading_error = 0.018135986767039203
+	lateral_error = -0.11054540957594217
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 17900100610 ns
+  Inputs:
+	x = -3.4676341955309344
+	y = -6.169943637713689
+	theta = -2.6715696458933484
+	heading_error = 0.049939345737390006
+	lateral_error = -0.1095578392151797
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18000100610 ns
+  Inputs:
+	x = -3.6280922153877655
+	y = -6.251455484132921
+	theta = -2.720364131508468
+	heading_error = 0.07342431035785868
+	lateral_error = -0.10284856786516094
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18100100610 ns
+  Inputs:
+	x = -3.7923309170408337
+	y = -6.325042121734705
+	theta = -2.7573279006320295
+	heading_error = 0.08507692041977055
+	lateral_error = -0.09191784974208161
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18200100610 ns
+  Inputs:
+	x = -3.9589962502947706
+	y = -6.392435965983992
+	theta = -2.7811752980231454
+	heading_error = 0.08361752117630727
+	lateral_error = -0.07890820571413837
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18300100610 ns
+  Inputs:
+	x = -4.126977376275979
+	y = -6.455744594082597
+	theta = -2.7929450010260664
+	heading_error = 0.07006846275559431
+	lateral_error = -0.0661798208407296
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18400100610 ns
+  Inputs:
+	x = -4.295535913539296
+	y = -6.517015067483278
+	theta = -2.795681372754991
+	heading_error = 0.04744616148703207
+	lateral_error = -0.05589196237866201
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18500100610 ns
+  Inputs:
+	x = -4.464282298495572
+	y = -6.577831576883438
+	theta = -2.7937976465701233
+	heading_error = 0.020144402875378553
+	lateral_error = -0.04966187242819142
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18600100610 ns
+  Inputs:
+	x = -4.6330898341109314
+	y = -6.639029659975458
+	theta = -2.7922421898041776
+	heading_error = -0.006883933489788774
+	lateral_error = -0.048331615313149
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18700100610 ns
+  Inputs:
+	x = -4.802026648588942
+	y = -6.700572088827094
+	theta = -2.7956205101608296
+	heading_error = -0.029004221582329848
+	lateral_error = -0.051861681221622824
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18800100610 ns
+  Inputs:
+	x = -4.971326613886425
+	y = -6.761599752282991
+	theta = -2.807427497981955
+	heading_error = -0.04268211212964257
+	lateral_error = -0.059372983317917516
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 18900100610 ns
+  Inputs:
+	x = -5.141365786138632
+	y = -6.82063486501543
+	theta = -2.82951371750313
+	heading_error = -0.04603690723562437
+	lateral_error = -0.06934092421635274
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19000100610 ns
+  Inputs:
+	x = -5.312599252938074
+	y = -6.875878427140768
+	theta = -2.8618600786247113
+	heading_error = -0.03907973216946026
+	lateral_error = -0.0799029248998151
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19100100610 ns
+  Inputs:
+	x = -5.485444966908848
+	y = -6.925530918368613
+	theta = -2.902682116803735
+	heading_error = -0.02360862656568763
+	lateral_error = -0.08920696901574132
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19200100610 ns
+  Inputs:
+	x = -5.6601470177856665
+	y = -6.968081752207787
+	theta = -2.948833249384526
+	heading_error = -0.0027936384411981763
+	lateral_error = -0.09572894912142171
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19300100610 ns
+  Inputs:
+	x = -5.83667841496906
+	y = -7.00253764993732
+	theta = -2.996426312212236
+	heading_error = 0.019458739505859857
+	lateral_error = -0.09851045283364979
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19400100610 ns
+  Inputs:
+	x = -6.014735516124619
+	y = -7.028568658064037
+	theta = -3.0415525504448078
+	heading_error = 0.03923233603188114
+	lateral_error = -0.0972898689786037
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19500100610 ns
+  Inputs:
+	x = -6.193834846191439
+	y = -7.046545785398632
+	theta = -3.0809615854698555
+	heading_error = 0.053279397281909
+	lateral_error = -0.0925108220526818
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19600100610 ns
+  Inputs:
+	x = -6.373470082017809
+	y = -7.057450627420691
+	theta = -3.1125822708009716
+	heading_error = 0.059533168036394635
+	lateral_error = -0.08520635525934939
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19700100610 ns
+  Inputs:
+	x = -6.553255893312202
+	y = -7.062667746288226
+	theta = -3.1358052839796606
+	heading_error = 0.05738277026156613
+	lateral_error = -0.07678288428578828
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19800100610 ns
+  Inputs:
+	x = -6.732997461124822
+	y = -7.063707988789327
+	theta = -3.1514978538879697
+	heading_error = 0.04768641741346258
+	lateral_error = -0.06875242929414949
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 19900100610 ns
+  Inputs:
+	x = -6.91266976304108
+	y = -7.061928240444952
+	theta = -3.1617671287771514
+	heading_error = 0.032540189294372635
+	lateral_error = -0.06246819769698053
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20000100610 ns
+  Inputs:
+	x = -7.092336924623318
+	y = -7.058303057910433
+	theta = -3.16952717438684
+	heading_error = 0.014853238099374
+	lateral_error = -0.05890700923001724
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20100100610 ns
+  Inputs:
+	x = -7.272062157934291
+	y = -7.053281213330327
+	theta = -3.177953579139115
+	heading_error = -0.0021923863692121515
+	lateral_error = -0.058526311638881445
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20200100610 ns
+  Inputs:
+	x = -7.451847954162846
+	y = -7.046741152883262
+	theta = -3.189924782500158
+	heading_error = -0.015701755546214002
+	lateral_error = -0.06121288798317437
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20300100610 ns
+  Inputs:
+	x = -7.631617923434644
+	y = -7.038045715667823
+	theta = -3.2075462909524153
+	heading_error = -0.023549960562133876
+	lateral_error = -0.06633063881347745
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20400100610 ns
+  Inputs:
+	x = -7.811226144270286
+	y = -7.026182694297798
+	theta = -3.2318337701556525
+	heading_error = -0.024707507376122706
+	lateral_error = -0.0728587650820165
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20500100610 ns
+  Inputs:
+	x = -7.990471631863165
+	y = -7.009963330194364
+	theta = -3.262599627567408
+	heading_error = -0.01935868793654727
+	lateral_error = -0.0795917922006879
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20600100610 ns
+  Inputs:
+	x = -8.169105850467579
+	y = -6.988241216935921
+	theta = -3.2985518673176526
+	heading_error = -0.008801871311607812
+	lateral_error = -0.0853598211861879
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20700100610 ns
+  Inputs:
+	x = -8.346838877931004
+	y = -6.960113009753786
+	theta = -3.3375783763009084
+	heading_error = 0.004840008051949951
+	lateral_error = -0.08922760755008863
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20800100610 ns
+  Inputs:
+	x = -8.523359911080261
+	y = -6.9250675508815664
+	theta = -3.3771585683558025
+	heading_error = 0.01903695217304957
+	lateral_error = -0.0906407328928518
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 20900100610 ns
+  Inputs:
+	x = -8.698381966063899
+	y = -6.883058382704655
+	theta = -3.414823245354921
+	heading_error = 0.03131482132648644
+	lateral_error = -0.08949885410611369
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21000100610 ns
+  Inputs:
+	x = -8.871702686239026
+	y = -6.834487105472772
+	theta = -3.4485782851541766
+	heading_error = 0.03967821062199883
+	lateral_error = -0.08614739760245005
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21100100610 ns
+  Inputs:
+	x = -9.043256379713924
+	y = -6.780103378736335
+	theta = -3.4772197974420975
+	heading_error = 0.04292251208070086
+	lateral_error = -0.08129214618303404
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21200100610 ns
+  Inputs:
+	x = -9.213129764121197
+	y = -6.720847394821264
+	theta = -3.5004934105539482
+	heading_error = 0.040790662741899464
+	lateral_error = -0.07585564135638023
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21300100610 ns
+  Inputs:
+	x = -9.381528146005257
+	y = -6.657673013420998
+	theta = -3.5190810853461287
+	heading_error = 0.0339600063360721
+	lateral_error = -0.07080520618758612
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21400100610 ns
+  Inputs:
+	x = -9.548700826656066
+	y = -6.591388478192661
+	theta = -3.534428938987062
+	heading_error = 0.023872698601688835
+	lateral_error = -0.06698506962115225
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21500100610 ns
+  Inputs:
+	x = -9.71485136691452
+	y = -6.522539961779587
+	theta = -3.5484549304328543
+	heading_error = 0.012446610388243684
+	lateral_error = -0.06498021918315633
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21600100610 ns
+  Inputs:
+	x = -9.88006211954518
+	y = -6.451349686882936
+	theta = -3.56319301037346
+	heading_error = 0.0017210076820783904
+	lateral_error = -0.06503153530708783
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21700100610 ns
+  Inputs:
+	x = -10.044253659221809
+	y = -6.377710859759044
+	theta = -3.5804379587812454
+	heading_error = -0.006499950022598178
+	lateral_error = -0.06701324127624808
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21800100610 ns
+  Inputs:
+	x = -10.207184758124994
+	y = -6.301235779356196
+	theta = -3.6014514022992103
+	heading_error = -0.010944727791688535
+	lateral_error = -0.07047427120613747
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 21900100610 ns
+  Inputs:
+	x = -10.368485254678644
+	y = -6.22134802155104
+	theta = -3.626775613349214
+	heading_error = -0.01106435241962167
+	lateral_error = -0.0747342081695539
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22000100610 ns
+  Inputs:
+	x = -10.52770802573802
+	y = -6.137403156809342
+	theta = -3.6561808898687524
+	heading_error = -0.0070869919046998575
+	lateral_error = -0.07901415622752683
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22100100610 ns
+  Inputs:
+	x = -10.684387823332195
+	y = -6.048816701412017
+	theta = -3.688748489467883
+	heading_error = 6.555374626016075e-05
+	lateral_error = -0.08257701122970484
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22200100610 ns
+  Inputs:
+	x = -10.838099796581211
+	y = -5.955175561750189
+	theta = -3.723067913703553
+	heading_error = 0.008977481574445889
+	lateral_error = -0.0848518699958305
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22300100610 ns
+  Inputs:
+	x = -10.988513606382403
+	y = -5.856311723347987
+	theta = -3.757508372956444
+	heading_error = 0.018012956039228367
+	lateral_error = -0.08552240765073194
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22400100610 ns
+  Inputs:
+	x = -11.135437665104597
+	y = -5.752324604773784
+	theta = -3.790512955949822
+	heading_error = 0.02561158658409468
+	lateral_error = -0.08456653865651997
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22500100610 ns
+  Inputs:
+	x = -11.278844501454163
+	y = -5.643550214062198
+	theta = -3.8208627113183757
+	heading_error = 0.030552291013101307
+	lateral_error = -0.08224323828728775
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22600100610 ns
+  Inputs:
+	x = -11.41886745094853
+	y = -5.530488009791741
+	theta = -3.8478664919629773
+	heading_error = 0.03214211861538363
+	lateral_error = -0.079031513950377
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22700100610 ns
+  Inputs:
+	x = -11.555763919691087
+	y = -5.413705696904567
+	theta = -3.8714484727919474
+	heading_error = 0.030303067714496645
+	lateral_error = -0.07553491014326497
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22800100610 ns
+  Inputs:
+	x = -11.689850012505225
+	y = -5.293744513239532
+	theta = -3.892124851701622
+	heading_error = 0.02554910724661763
+	lateral_error = -0.07237047327477786
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 22900100610 ns
+  Inputs:
+	x = -11.821420699073832
+	y = -5.171042870993569
+	theta = -3.9108806098356195
+	heading_error = 0.018864111732010524
+	lateral_error = -0.07006237109058411
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23000100610 ns
+  Inputs:
+	x = -11.950674440998549
+	y = -5.045888058202944
+	theta = -3.9289733468071266
+	heading_error = 0.011506877629503087
+	lateral_error = -0.06895775321025521
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23100100610 ns
+  Inputs:
+	x = -12.077659620296364
+	y = -4.91839837423933
+	theta = -3.9477018932183907
+	heading_error = 0.0047800189593956155
+	lateral_error = -0.0691774477168341
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23200100610 ns
+  Inputs:
+	x = -12.202253470630206
+	y = -4.7885336595016295
+	theta = -3.96818119696182
+	heading_error = -0.0001961060599384723
+	lateral_error = -0.0706078791617406
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23300100610 ns
+  Inputs:
+	x = -12.32417546325713
+	y = -4.6561299666661204
+	theta = -3.991161547194121
+	heading_error = -0.0026659466540159826
+	lateral_error = -0.07293366503854148
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23400100610 ns
+  Inputs:
+	x = -12.443029359362642
+	y = -4.520952264761753
+	theta = -4.016920518697097
+	heading_error = -0.002348505729495187
+	lateral_error = -0.07570335635533265
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23500100610 ns
+  Inputs:
+	x = -12.55836348828184
+	y = -4.382756615552293
+	theta = -4.045242112785768
+	heading_error = 0.0005409961537701236
+	lateral_error = -0.07841509230929855
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23600100610 ns
+  Inputs:
+	x = -12.669737573297573
+	y = -4.241350876942238
+	theta = -4.075481957462792
+	heading_error = 0.005356643108221704
+	lateral_error = -0.0806060059433431
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23700100610 ns
+  Inputs:
+	x = -12.776785388584985
+	y = -4.096642250589156
+	theta = -4.106702702296722
+	heading_error = 0.01115828384392703
+	lateral_error = -0.08192962087884315
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23800100610 ns
+  Inputs:
+	x = -12.8792641269284
+	y = -3.9486621887402253
+	theta = -4.137852340758934
+	heading_error = 0.016890971577339542
+	lateral_error = -0.08220867773422036
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 23900100610 ns
+  Inputs:
+	x = -12.977082982617047
+	y = -3.797564399851066
+	theta = -4.167952085892982
+	heading_error = 0.021573468404738172
+	lateral_error = -0.08145580739627789
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24000100610 ns
+  Inputs:
+	x = -13.07030574551982
+	y = -3.643598551015272
+	theta = -4.196260620706949
+	heading_error = 0.024462534005247782
+	lateral_error = -0.07986032666263299
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24100100610 ns
+  Inputs:
+	x = -13.159126050507812
+	y = -3.4870683289446442
+	theta = -4.222387703169701
+	heading_error = 0.02516628594281123
+	lateral_error = -0.07774534981110737
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24200100610 ns
+  Inputs:
+	x = -13.243819200691311
+	y = -3.3282854796813135
+	theta = -4.246340638766316
+	heading_error = 0.023690572349375216
+	lateral_error = -0.07550439510703377
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24300100610 ns
+  Inputs:
+	x = -13.324679725896056
+	y = -3.1675304154801176
+	theta = -4.2684997558292705
+	heading_error = 0.020414714713894888
+	lateral_error = -0.07352971069976189
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24400100610 ns
+  Inputs:
+	x = -13.401957151013212
+	y = -3.0050260044018513
+	theta = -4.289531381376589
+	heading_error = 0.01600499071963757
+	lateral_error = -0.07214512369058745
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24500100610 ns
+  Inputs:
+	x = -13.47580266832417
+	y = -2.84092646541869
+	theta = -4.310256910479652
+	heading_error = 0.011284083453008797
+	lateral_error = -0.07155452365254433
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24600100610 ns
+  Inputs:
+	x = -13.54623660871787
+	y = -2.675319826440454
+	theta = -4.331502908874
+	heading_error = 0.007081099828934789
+	lateral_error = -0.07181376388429861
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24700100610 ns
+  Inputs:
+	x = -13.6131418122489
+	y = -2.508240818561144
+	theta = -4.3539589620623795
+	heading_error = 0.004088800007582272
+	lateral_error = -0.07282946442305605
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24800100610 ns
+  Inputs:
+	x = -13.67628259475604
+	y = -2.3396907777720406
+	theta = -4.378067138142193
+	heading_error = 0.002752149905535184
+	lateral_error = -0.07438352230312617
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 24900100610 ns
+  Inputs:
+	x = -13.735344268316751
+	y = -2.1696610917069945
+	theta = -4.403960203764339
+	heading_error = 0.0032057441595041425
+	lateral_error = -0.07617775819788886
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 25000100610 ns
+  Inputs:
+	x = -13.789984959276227
+	y = -1.9981564176539546
+	theta = -4.431456469530529
+	heading_error = 0.00526830277328294
+	lateral_error = -0.07788985620778544
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 25100100610 ns
+  Inputs:
+	x = -13.839890080399755
+	y = -1.8252135557659812
+	theta = -4.4601090184895655
+	heading_error = 0.008492067245309265
+	lateral_error = -0.07923024319048899
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 25200100610 ns
+  Inputs:
+	x = -13.884820081118574
+	y = -1.6509122015877375
+	theta = -4.489297824104919
+	heading_error = 0.012255416238653005
+	lateral_error = -0.0799900174170336
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 25300100610 ns
+  Inputs:
+	x = -13.924643669353802
+	y = -1.4753753605373943
+	theta = -4.51834644547872
+	heading_error = 0.015880091256534
+	lateral_error = -0.08007220316308228
+
+
+
+Received packet from simulator
+
++=visualizer+=
+  VSI time: 25400100610 ns
+  Inputs:
+	x = -13.959351300772411
+	y = -1.2987598350454423
+	theta = -4.546641715856792
+	heading_error = 0.018751227762370704
+	lateral_error = -0.07950193422460483
+
+
+

@@ -15,55 +15,35 @@ import VsiTcpUdpPythonGateway as vsiEthernetPythonGateway
 class MySignals:
 	def __init__(self):
 		# Inputs
-		self.v = 0
-		self.w = 0
-
-		# Outputs
-		self.x = 0
-		self.y = 0
-		self.theta = 0
 		self.heading_error = 0
 		self.lateral_error = 0
 
+		# Outputs
+		self.v = 0
+		self.w = 0
 
 
-srcMacAddress = [0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC]
-visualizerMacAddress = [0x12, 0x34, 0x56, 0x78, 0x9A, 0xBE]
-controllerMacAddress = [0x12, 0x34, 0x56, 0x78, 0x9A, 0xBD]
-srcIpAddress = [192, 168, 1, 1]
-visualizerIpAddress = [192, 168, 1, 3]
-controllerIpAddress = [192, 168, 1, 2]
+
+srcMacAddress = [0x12, 0x34, 0x56, 0x78, 0x9A, 0xBD]
+simulatorMacAddress = [0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC]
+srcIpAddress = [192, 168, 1, 2]
+simulatorIpAddress = [192, 168, 1, 1]
 
 SimulatorSocketPortNumber0 = 8070
-SimulatorSocketPortNumber1 = 8080
 
 Controller0 = 0
-Visualizer1 = 1
 
 
 # Start of user custom code region. Please apply edits only within these regions:  Global Variables & Definitions
-import sys
-import os
-import numpy as np
-from my_simulator import Robot
-current_dir = os.getcwd()
-sys.path.append(current_dir)
-path = [
-	((-7.0, 0), 7.0, (0, np.pi)),
-	((7.0, 0), 7.0, (np.pi, 0)),
-]
-# path = (1, 0)
 
-isCurved = True
-# isCurved = False
 # End of user custom code region. Please don't edit beyond this point.
-class Simulator:
+class Controller:
 
 	def __init__(self, args):
-		self.componentId = 0
+		self.componentId = 1
 		self.localHost = args.server_url
 		self.domain = args.domain
-		self.portNum = 50101
+		self.portNum = 50102
         
 		self.simulationStep = 0
 		self.stopRequested = False
@@ -72,7 +52,7 @@ class Simulator:
 		self.receivedNumberOfBytes = 0
 		self.receivedPayload = []
 
-		self.numberOfPorts = 2
+		self.numberOfPorts = 1
 		self.clientPortNum = [0] * self.numberOfPorts
 		self.receivedDestPortNumber = 0
 		self.receivedSrcPortNumber = 0
@@ -80,7 +60,7 @@ class Simulator:
 		self.mySignals = MySignals()
 
 		# Start of user custom code region. Please apply edits only within these regions:  Constructor
-		self.robot = Robot(x = -14, y = 0, path = path, isCurved = isCurved)
+
 		# End of user custom code region. Please don't edit beyond this point.
 
 
@@ -103,11 +83,6 @@ class Simulator:
 			while(vsiCommonPythonApi.getSimulationTimeInNs() < self.totalSimulationTime):
 
 				# Start of user custom code region. Please apply edits only within these regions:  Inside the while loop
-				print(self.simulationStep)
-				self.mySignals.heading_error, self.mySignals.lateral_error = self.robot.update(self.mySignals.v, self.mySignals.w, self.simulationStep * 1e-9)
-				self.mySignals.x = self.robot.pose[0]
-				self.mySignals.y = self.robot.pose[1]
-				self.mySignals.theta = self.robot.pose[2]
 
 				# End of user custom code region. Please don't edit beyond this point.
 
@@ -124,11 +99,7 @@ class Simulator:
 					print("Application terminated")
 					break
 
-				receivedData = vsiEthernetPythonGateway.recvEthernetPacket(self.clientPortNum[Controller0])
-				if(receivedData[3] != 0):
-					self.decapsulateReceivedData(receivedData)
-
-				receivedData = vsiEthernetPythonGateway.recvEthernetPacket(self.clientPortNum[Visualizer1])
+				receivedData = vsiEthernetPythonGateway.recvEthernetPacket(SimulatorSocketPortNumber0)
 				if(receivedData[3] != 0):
 					self.decapsulateReceivedData(receivedData)
 
@@ -136,36 +107,27 @@ class Simulator:
 
 				# End of user custom code region. Please don't edit beyond this point.
 
-				#Send ethernet packet to visualizer
-				self.sendEthernetPacketTovisualizer()
-
-				#Send ethernet packet to controller
-				self.sendEthernetPacketTocontroller()
+				#Send ethernet packet to simulator
+				self.sendEthernetPacketTosimulator()
 
 				# Start of user custom code region. Please apply edits only within these regions:  After sending the packet
 
 				# End of user custom code region. Please don't edit beyond this point.
 
-				print("\n+=simulator+=")
+				print("\n+=controller+=")
 				print("  VSI time:", end = " ")
 				print(vsiCommonPythonApi.getSimulationTimeInNs(), end = " ")
 				print("ns")
 				print("  Inputs:")
-				print("\tv =", end = " ")
-				print(self.mySignals.v)
-				print("\tw =", end = " ")
-				print(self.mySignals.w)
-				print("  Outputs:")
-				print("\tx =", end = " ")
-				print(self.mySignals.x)
-				print("\ty =", end = " ")
-				print(self.mySignals.y)
-				print("\ttheta =", end = " ")
-				print(self.mySignals.theta)
 				print("\theading_error =", end = " ")
 				print(self.mySignals.heading_error)
 				print("\tlateral_error =", end = " ")
 				print(self.mySignals.lateral_error)
+				print("  Outputs:")
+				print("\tv =", end = " ")
+				print(self.mySignals.v)
+				print("\tw =", end = " ")
+				print(self.mySignals.w)
 				print("\n\n")
 
 				self.updateInternalVariables()
@@ -203,19 +165,11 @@ class Simulator:
 
 	def establishTcpUdpConnection(self):
 		if(self.clientPortNum[Controller0] == 0):
-			self.clientPortNum[Controller0] = vsiEthernetPythonGateway.tcpListen(SimulatorSocketPortNumber0)
+			self.clientPortNum[Controller0] = vsiEthernetPythonGateway.tcpConnect(bytes(simulatorIpAddress), SimulatorSocketPortNumber0)
 
-		if(self.clientPortNum[Visualizer1] == 0):
-			self.clientPortNum[Visualizer1] = vsiEthernetPythonGateway.tcpListen(SimulatorSocketPortNumber1)
-
-		if(self.clientPortNum[Visualizer1] == 0):
+		if(self.clientPortNum[Controller0] == 0):
 			print("Error: Failed to connect to port: Simulator on TCP port: ") 
 			print(SimulatorSocketPortNumber0)
-			exit()
-
-		if(self.clientPortNum[Visualizer1] == 0):
-			print("Error: Failed to connect to port: Simulator on TCP port: ") 
-			print(SimulatorSocketPortNumber1)
 			exit()
 
 
@@ -229,39 +183,23 @@ class Simulator:
 		for i in range(self.receivedNumberOfBytes):
 			self.receivedPayload[i] = receivedData[2][i]
 
-		if(self.receivedSrcPortNumber == self.clientPortNum[Controller0]):
-			print("Received packet from controller")
+		if(self.receivedSrcPortNumber == SimulatorSocketPortNumber0):
+			print("Received packet from simulator")
 			receivedPayload = bytes(self.receivedPayload)
-			self.mySignals.v, receivedPayload = self.unpackBytes('d', receivedPayload)
+			self.mySignals.heading_error, receivedPayload = self.unpackBytes('d', receivedPayload)
 
-			self.mySignals.w, receivedPayload = self.unpackBytes('d', receivedPayload)
+			self.mySignals.lateral_error, receivedPayload = self.unpackBytes('d', receivedPayload)
 
 
-	def sendEthernetPacketTocontroller(self):
+	def sendEthernetPacketTosimulator(self):
 		bytesToSend = bytes()
 
-		bytesToSend += self.packBytes('d', self.mySignals.heading_error)
+		bytesToSend += self.packBytes('d', self.mySignals.v)
 
-		bytesToSend += self.packBytes('d', self.mySignals.lateral_error)
+		bytesToSend += self.packBytes('d', self.mySignals.w)
 
-		#Send ethernet packet to controller
-		vsiEthernetPythonGateway.sendEthernetPacket(self.clientPortNum[Controller0], bytes(bytesToSend))
-
-	def sendEthernetPacketTovisualizer(self):
-		bytesToSend = bytes()
-
-		bytesToSend += self.packBytes('d', self.mySignals.x)
-
-		bytesToSend += self.packBytes('d', self.mySignals.y)
-
-		bytesToSend += self.packBytes('d', self.mySignals.theta)
-
-		bytesToSend += self.packBytes('d', self.mySignals.heading_error)
-
-		bytesToSend += self.packBytes('d', self.mySignals.lateral_error)
-
-		#Send ethernet packet to visualizer
-		vsiEthernetPythonGateway.sendEthernetPacket(self.clientPortNum[Visualizer1], bytes(bytesToSend))
+		#Send ethernet packet to simulator
+		vsiEthernetPythonGateway.sendEthernetPacket(SimulatorSocketPortNumber0, bytes(bytesToSend))
 
 		# Start of user custom code region. Please apply edits only within these regions:  Protocol's callback function
 
@@ -345,8 +283,8 @@ def main():
 
 	args = inputArgs.parse_args()
                       
-	simulator = Simulator(args)
-	simulator.mainThread()
+	controller = Controller(args)
+	controller.mainThread()
 
 
 

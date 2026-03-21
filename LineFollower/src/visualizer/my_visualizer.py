@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-class Visualizer:
+class PyVisualizer:
     def __init__(self, width=1920, height=1080, scale=50, path=[], isCurved=False):
         pygame.init()
         self.width = width

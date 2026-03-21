@@ -88,7 +88,7 @@ class Controller:
 			while(vsiCommonPythonApi.getSimulationTimeInNs() < self.totalSimulationTime):
 
 				# Start of user custom code region. Please apply edits only within these regions:  Inside the while loop
-				self.mySignals.v, self.mySignals.w = self.controller.update((self.mySignals.heading_error, self.mySignals.lateral_error), self.simulationStep)
+				self.mySignals.v, self.mySignals.w = self.controller.update((self.mySignals.heading_error, self.mySignals.lateral_error), self.simulationStep * 1e-9)
 				# End of user custom code region. Please don't edit beyond this point.
 
 				self.updateInternalVariables()

@@ -42,20 +42,7 @@ Visualizer1 = 1
 
 
 # Start of user custom code region. Please apply edits only within these regions:  Global Variables & Definitions
-import sys
-import os
-import numpy as np
-from my_simulator import Robot
-current_dir = os.getcwd()
-sys.path.append(current_dir)
-path = [
-	((-7.0, 0), 7.0, (0, np.pi)),
-	((7.0, 0), 7.0, (np.pi, 0)),
-]
-# path = (1, 0)
 
-isCurved = True
-# isCurved = False
 # End of user custom code region. Please don't edit beyond this point.
 class Simulator:
 
@@ -80,7 +67,7 @@ class Simulator:
 		self.mySignals = MySignals()
 
 		# Start of user custom code region. Please apply edits only within these regions:  Constructor
-		self.robot = Robot(x = -14, y = 0, path = path, isCurved = isCurved)
+
 		# End of user custom code region. Please don't edit beyond this point.
 
 
@@ -103,11 +90,6 @@ class Simulator:
 			while(vsiCommonPythonApi.getSimulationTimeInNs() < self.totalSimulationTime):
 
 				# Start of user custom code region. Please apply edits only within these regions:  Inside the while loop
-				print(self.simulationStep)
-				self.mySignals.heading_error, self.mySignals.lateral_error = self.robot.update(self.mySignals.v, self.mySignals.w, self.simulationStep * 1e-9)
-				self.mySignals.x = self.robot.pose[0]
-				self.mySignals.y = self.robot.pose[1]
-				self.mySignals.theta = self.robot.pose[2]
 
 				# End of user custom code region. Please don't edit beyond this point.
 

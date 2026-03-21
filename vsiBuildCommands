@@ -43,7 +43,7 @@ connect signals -sourceSignal controller.v -destSignal simulator.v -sourcePortNa
 connect signals -sourceSignal controller.w -destSignal simulator.w -sourcePortName controller -destPortName simulator
 
 
-set digitalTwinName LineFollower
+set digitalTwinName LineFollowerTest
 set workspaceDir .
 set simulationStep 0.1 s
 set totalSimTime 60 s
