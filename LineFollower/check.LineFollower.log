@@ -1,4 +1,4 @@
-Script started on 2026-03-21 05:15:07+00:00 [TERM="xterm" TTY="/dev/pts/38" COLUMNS="80" LINES="24"]
+Script started on 2026-03-21 05:45:40+00:00 [TERM="xterm" TTY="/dev/pts/39" COLUMNS="80" LINES="24"]
 make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
 ././FabricServer\
 	--domain=AF_UNIX --cmdFile=
@@ -16,7 +16,7 @@ In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
 
 Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit0_1
 In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
-XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0xe8bd2b0
+XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0x3b7db2b0
 Connecting an SC-side proxy port for 'fabricServer.timeServer.advanceTargetSocket' with lookup string ':timeServerConduit0' for later connection with SV
 
 Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit0_0
@@ -60,7 +60,7 @@ In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
 
 Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit1_1
 In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
-XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0xe8d57a0
+XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0x3b7f37a0
 Connecting an SC-side proxy port for 'fabricServer.imeServer.advanceTargetSocket' with lookup string ':timeServerConduit1' for later connection with SV
 
 Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit1_0
@@ -104,7 +104,7 @@ In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
 
 Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit2_1
 In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
-XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0xe8eb880
+XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0x3b809880
 Connecting an SC-side proxy port for 'fabricServer.meServer.advanceTargetSocket' with lookup string ':timeServerConduit2' for later connection with SV
 
 Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit2_0
@@ -149,5 +149,145 @@ In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
 +=+ XLVIP-INFO: XlTlmMessageLayer::listenForAllClients() Server 'localhost' listening for clients ...
 +=+ INFO: FabricServer::start_of_simulation() Waiting for client connections ...
 @0 ns (SC time) +=+ INFO: Awaiting reset ...
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections():
++=+    Successfully connected to client ':remoteSession0@0.0.0.0'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections():
++=+    Successfully connected to client ':remoteSession1@0.0.0.0'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections():
++=+    Successfully connected to client ':remoteSession2@0.0.0.0'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: FabricServer: Using SALT library path: /data/tools/pave/innexis_home/vsi_2025.2//common/license/salt_2.4.2/salt_sdk/lnx64/bin
++=+ XLVIP-INFO: FabricServer: Package info file is: /data/tools/pave/innexis_home/vsi_2025.2//common/license/salt_2.4.2/salt_sdk/lnx64/bin/mgc.pkginfo
++=+ XLVIP-INFO: FabricServer: Attempting to checkout license 'VeloceStratoOS' : Checked out license.
+
+Info: XLVIP-INFO: TLM fabric backplane license checkout successful.
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:timeServerConduit0
+           remoteClientConduitHandle=0x55e935c98848
+           localServerProxyConduit=0x3b7e1cc0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:resetServerConduit0
+           remoteClientConduitHandle=0x55e935cc3498
+           localServerProxyConduit=0x3b7dde80
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txConfigPort0
+           remoteClientConduitHandle=0x55e935ce4460
+           localServerProxyConduit=0x3b7f16c0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxConfigPort0
+           remoteClientConduitHandle=0x55e935bb79c0
+           localServerProxyConduit=0x3b7edaa0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txEtherFrameConduit0
+           remoteClientConduitHandle=0x55e935b74560
+           localServerProxyConduit=0x3b7e6060
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxEtherFrameConduit0
+           remoteClientConduitHandle=0x55e935b35f50
+           localServerProxyConduit=0x3b7ea000
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:timeServerConduit1
+           remoteClientConduitHandle=0x56da7d04c6a8
+           localServerProxyConduit=0x3b7f9370
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:resetServerConduit1
+           remoteClientConduitHandle=0x56da7cfb3878
+           localServerProxyConduit=0x3b7f5580
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txConfigPort1
+           remoteClientConduitHandle=0x56da7cfd5510
+           localServerProxyConduit=0x3b807bf0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxConfigPort1
+           remoteClientConduitHandle=0x56da7cff20e0
+           localServerProxyConduit=0x3b803fd0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txEtherFrameConduit1
+           remoteClientConduitHandle=0x56da7ce64ea0
+           localServerProxyConduit=0x3b7fce90
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxEtherFrameConduit1
+           remoteClientConduitHandle=0x56da7ceaa920
+           localServerProxyConduit=0x3b800950
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:timeServerConduit2
+           remoteClientConduitHandle=0x57092649f2f8
+           localServerProxyConduit=0x3b80f030
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:resetServerConduit2
+           remoteClientConduitHandle=0x570926ac1428
+           localServerProxyConduit=0x3b80b660
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txConfigPort2
+           remoteClientConduitHandle=0x570926c34e50
+           localServerProxyConduit=0x3b81dc50
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxConfigPort2
+           remoteClientConduitHandle=0x5709266d38c0
+           localServerProxyConduit=0x3b81a030
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txEtherFrameConduit2
+           remoteClientConduitHandle=0x570926a67e20
+           localServerProxyConduit=0x3b8132f0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxEtherFrameConduit2
+           remoteClientConduitHandle=0x5709266a8380
+           localServerProxyConduit=0x3b816960
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections(): Got all clients !
+@100 ns (SC time)+=+ INFO: ... got it!
+[0;34m
+//  Copyright Siemens 2022
+//  Innexis VSI Digital Twin Simulator
+//  This software and related documentation are proprietary
+//  and confidential to Siemens.
+//  release: v2025.2, Build: 04Jun2025
+
 make[1]: *** [Makefile.server:79: sim] Killed
 make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'

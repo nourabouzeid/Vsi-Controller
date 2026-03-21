@@ -1,14 +1,50 @@
-Script started on 2026-03-21 05:15:07+00:00 [TERM="xterm" TTY="/dev/pts/41" COLUMNS="80" LINES="24"]
+Script started on 2026-03-21 05:45:40+00:00 [TERM="xterm" TTY="/dev/pts/41" COLUMNS="80" LINES="24"]
 make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
 python3 .//src/simulator/simulator.py --domain="AF_UNIX" --server-url="localhost"
 +=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
 +=+    Connecting clientId=':remoteSession0' to 'server@localhost' ...
-error(104): DCBlockingRecv(): Error calling recv(): Connection reset by peer
-DC-FATAL: DcMessageManager::messageReceive(): Error on :remoteSession0 receive call - receiving packet directly from socket [errno=104 perror()='Connection reset by peer' line #448 of 'protected/DcMessageManager.h']
-
-RAWC-API FATAL: Program aborting. [line #255] of 'protected/RawcTlmApi.cxx'
-error(32): DCBlockingSend(): Error calling send(): Broken pipe
-terminate called after throwing an instance of 'std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >'
++=+    Successfully connected 'client :remoteSession0' to 'server@localhost'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:timeServerConduit0
+           localClientConduitHandle=0x55e935c98848
+           remoteServerProxyConduitHandle=0x3b7e1cc0
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:resetServerConduit0
+           localClientConduitHandle=0x55e935cc3498
+           remoteServerProxyConduitHandle=0x3b7dde80
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:txConfigPort0
+           localClientConduitHandle=0x55e935ce4460
+           remoteServerProxyConduitHandle=0x3b7f16c0
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:rxConfigPort0
+           localClientConduitHandle=0x55e935bb79c0
+           remoteServerProxyConduitHandle=0x3b7edaa0
++=+ INFO: ... successfully connected to TLM FabricServer !
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:txEtherFrameConduit0
+           localClientConduitHandle=0x55e935b74560
+           remoteServerProxyConduitHandle=0x3b7e6060
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:rxEtherFrameConduit0
+           localClientConduitHandle=0x55e935b35f50
+           remoteServerProxyConduitHandle=0x3b7ea000
 Killed
 make[1]: *** [Makefile.client0:31: sim] Error 137
 make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'

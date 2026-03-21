@@ -73,9 +73,8 @@ class Visualizer:
 		self.mySignals = MySignals()
 
 		# Start of user custom code region. Please apply edits only within these regions:  Constructor
-		self.visualizer = Visualizer(path = path, isCurved = isCurved)
+		# self.visualizer = Visualizer(path = path, isCurved = isCurved)
 		self.plotter = Plotter(path = path, isCurved = isCurved)
-
 		# End of user custom code region. Please don't edit beyond this point.
 
 
@@ -98,10 +97,12 @@ class Visualizer:
 			while(vsiCommonPythonApi.getSimulationTimeInNs() < self.totalSimulationTime):
 
 				# Start of user custom code region. Please apply edits only within these regions:  Inside the while loop
-			    self.visualizer.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta])
-    			self.plotter.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta], (self.mySignals.heading_error, self.mySignals.lateral_error), self.simulationStep)
+			    
 				# End of user custom code region. Please don't edit beyond this point.
+				# self.visualizer.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta])
 
+				self.plotter.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta], (self.mySignals.heading_error, self.mySignals.lateral_error), self.simulationStep)
+				self.plotter.plot()
 				self.updateInternalVariables()
 
 				if(vsiCommonPythonApi.isStopRequested()):
