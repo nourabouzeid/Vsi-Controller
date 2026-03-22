@@ -2,8 +2,8 @@ import numpy as np
 
 class Robot:
     def __init__(self, x=0.0, y=0.0, theta=0.0,
-                 linear_noise_std=0, angular_noise_std=0,
-                 pose_noise_std=0, path = None, isCurved = False):
+                 linear_noise_std=0.005, angular_noise_std=0.005/2,
+                 pose_noise_std=0.005, path = None, isCurved = False):
         
         self.pose = np.array([x, y, theta])
         self.linear_noise_std = linear_noise_std
