@@ -63,7 +63,7 @@ class Robot:
             closest_x = cx + radius * np.cos(target_angle)
             closest_y = cy + radius * np.sin(target_angle)
             dist_to_arc = np.sqrt((x_r - closest_x)**2 + (y_r - closest_y)**2)
-            if span > 0 and closest_y < cy:
+            if span > 0 and closest_y < cy and self.pose[0] > -7:
                 dist_to_arc = float("inf")
             if dist_to_arc < min_dist_to_path:
                 min_dist_to_path = dist_to_arc
