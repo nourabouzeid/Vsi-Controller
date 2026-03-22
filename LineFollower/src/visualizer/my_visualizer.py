@@ -300,6 +300,7 @@ class Plotter:
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
         plt.tight_layout()
+        fig.savefig("robot_kpis.png", dpi=300)
         plt.show()
 
         self.print_kpis()

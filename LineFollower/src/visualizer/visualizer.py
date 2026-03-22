@@ -15,7 +15,7 @@ import VsiTcpUdpPythonGateway as vsiEthernetPythonGateway
 class MySignals:
 	def __init__(self):
 		# Inputs
-		self.x = 0
+		self.x = -14
 		self.y = 0
 		self.theta = 0
 		self.heading_error = 0
@@ -38,7 +38,7 @@ import sys
 import os
 import numpy as np
 from my_visualizer import PyVisualizer
-# from my_visualizer import Plotter
+from my_visualizer import Plotter
 current_dir = os.getcwd()
 sys.path.append(current_dir)
 path = [
@@ -74,7 +74,7 @@ class Visualizer:
 
 		# Start of user custom code region. Please apply edits only within these regions:  Constructor
 		self.visualizer = PyVisualizer(path = path, isCurved = isCurved)
-		# self.plotter = Plotter(path = path, isCurved = isCurved)
+		self.plotter = Plotter(path = path, isCurved = isCurved)
 		# End of user custom code region. Please don't edit beyond this point.
 
 
@@ -103,8 +103,7 @@ class Visualizer:
 
 
 				self.visualizer.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta])
-				# self.plotter.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta], (self.mySignals.heading_error, self.mySignals.lateral_error), self.simulationStep * 1e-9)
-				# self.plotter.plot()
+				self.plotter.update([self.mySignals.x, self.mySignals.y, self.mySignals.theta], (self.mySignals.heading_error, self.mySignals.lateral_error), self.simulationStep * 1e-9)
 				self.updateInternalVariables()
 
 				if(vsiCommonPythonApi.isStopRequested()):
@@ -162,7 +161,7 @@ class Visualizer:
 					break
 
 				vsiCommonPythonApi.advanceSimulation(nextExpectedTime - vsiCommonPythonApi.getSimulationTimeInNs())
-
+			self.plotter.plot()
 			if(vsiCommonPythonApi.getSimulationTimeInNs() < self.totalSimulationTime):
 				vsiEthernetPythonGateway.terminate()
 		except Exception as e:

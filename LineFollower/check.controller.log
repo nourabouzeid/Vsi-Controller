@@ -1,4 +1,4 @@
-Script started on 2026-03-21 10:12:30+00:00 [TERM="xterm" TTY="/dev/pts/46" COLUMNS="80" LINES="24"]
+Script started on 2026-03-22 02:27:13+00:00 [TERM="xterm" TTY="/dev/pts/6" COLUMNS="80" LINES="24"]
 make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
 python3 .//src/controller/controller.py --domain="AF_UNIX" --server-url="localhost"
 +=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
@@ -12,47 +12,47 @@ python3 .//src/controller/controller.py --domain="AF_UNIX" --server-url="localho
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:timeServerConduit1
-           localClientConduitHandle=0x620375ca40b8
-           remoteServerProxyConduitHandle=0x2b972370
+           localClientConduitHandle=0x644fd62e90b8
+           remoteServerProxyConduitHandle=0x28519370
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:resetServerConduit1
-           localClientConduitHandle=0x620375be6e78
-           remoteServerProxyConduitHandle=0x2b96e580
+           localClientConduitHandle=0x644fd622be78
+           remoteServerProxyConduitHandle=0x28515580
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:txConfigPort1
-           localClientConduitHandle=0x620375cc4170
-           remoteServerProxyConduitHandle=0x2b980bf0
+           localClientConduitHandle=0x644fd6309170
+           remoteServerProxyConduitHandle=0x28527bf0
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:rxConfigPort1
-           localClientConduitHandle=0x620375b99920
-           remoteServerProxyConduitHandle=0x2b97cfd0
+           localClientConduitHandle=0x644fd61de920
+           remoteServerProxyConduitHandle=0x28523fd0
 +=+ INFO: ... successfully connected to TLM FabricServer !
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:txEtherFrameConduit1
-           localClientConduitHandle=0x620375b21780
-           remoteServerProxyConduitHandle=0x2b975e90
+           localClientConduitHandle=0x644fd6166780
+           remoteServerProxyConduitHandle=0x2851ce90
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:rxEtherFrameConduit1
-           localClientConduitHandle=0x620375cfd8b0
-           remoteServerProxyConduitHandle=0x2b979950
+           localClientConduitHandle=0x644fd63428b0
+           remoteServerProxyConduitHandle=0x28520950
 
 +=controller+=
-  VSI time: 100710 ns
+  VSI time: 100610 ns
   Inputs:
 	heading_error = 0
 	lateral_error = 0
   Outputs:
-	v = 1.8
+	v = 0.7
 	w = 0.0
 
 
@@ -65,7 +65,7 @@ Received packet from simulator
 	heading_error = 1.5707963267948966
 	lateral_error = -0.0
   Outputs:
-	v = 1.8
+	v = 0.7
 	w = 0.0
 
 
@@ -76,9 +76,9 @@ Received packet from simulator
   VSI time: 200100210 ns
   Inputs:
 	heading_error = 1.5707963267948966
-	lateral_error = 0.17999999999999972
+	lateral_error = 0.07000000000000028
   Outputs:
-	v = 0.9
+	v = 0.35
 	w = 6.283185307179586
 
 
@@ -89,10 +89,10 @@ Received packet from simulator
   VSI time: 300100210 ns
   Inputs:
 	heading_error = 1.5707963267948966
-	lateral_error = 0.35999999999999943
+	lateral_error = 0.14000000000000057
   Outputs:
-	v = 0.9
-	w = 7.003185307179585
+	v = 0.35
+	w = 6.563185307179587
 
 
 
@@ -102,10 +102,10 @@ Received packet from simulator
   VSI time: 400100210 ns
   Inputs:
 	heading_error = 0.9424777960769379
-	lateral_error = 0.4499999999999993
+	lateral_error = 0.1750000000000007
   Outputs:
-	v = 0.9
-	w = 7.723185307179584
+	v = 0.35
+	w = 6.8431853071795885
 
 
 
@@ -114,11 +114,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 500100210 ns
   Inputs:
-	heading_error = 0.23399221930614766
-	lateral_error = 0.5225955071778978
+	heading_error = 0.28313243348370776
+	lateral_error = 0.2032844600544479
   Outputs:
-	v = 1.0580134541264516
-	w = 5.569911184307749
+	v = 0.4114496766047312
+	w = 4.469911184307755
 
 
 
@@ -127,11 +127,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 600100210 ns
   Inputs:
-	heading_error = -0.5518849733448308
-	lateral_error = 0.5428696362848227
+	heading_error = -0.40613769742930383
+	lateral_error = 0.21297902251723144
   Outputs:
-	v = 1.750947303789033
-	w = 3.026350905936182
+	v = 0.6721295413268068
+	w = 1.9456675741526226
 
 
 
@@ -140,11 +140,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 700100210 ns
   Inputs:
-	heading_error = -1.122708981224994
-	lateral_error = 0.4867755622964225
+	heading_error = -0.858684607140555
+	lateral_error = 0.19661912111528856
   Outputs:
-	v = 1.532767961855344
-	w = -0.03606134824003249
+	v = 0.6430574698164244
+	w = -0.7726346996482896
 
 
 
@@ -153,11 +153,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 800100210 ns
   Inputs:
-	heading_error = -1.4367149051524137
-	lateral_error = 0.32853534837045917
+	heading_error = -1.0596588560480704
+	lateral_error = 0.1455993042067396
   Outputs:
-	v = 0.9
-	w = -2.543733675714286
+	v = 0.457403634890847
+	w = -2.6482619441010655
 
 
 
@@ -166,11 +166,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 900100210 ns
   Inputs:
-	heading_error = -1.4361116851002347
-	lateral_error = 0.1766035162341133
+	heading_error = -0.9869473374328681
+	lateral_error = 0.08944096701443804
   Outputs:
-	v = 0.9
-	w = -4.432718227127818
+	v = 0.35
+	w = -3.6562382073653232
 
 
 
@@ -179,11 +179,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1000100210 ns
   Inputs:
-	heading_error = -1.1834865777426113
-	lateral_error = 0.0874080170168332
+	heading_error = -0.7257496920930624
+	lateral_error = 0.05123188146061075
   Outputs:
-	v = 0.9
-	w = -5.0380326754644855
+	v = 0.3858675836948692
+	w = -3.5900254816737203
 
 
 
@@ -192,11 +192,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1100100210 ns
   Inputs:
-	heading_error = -0.7450736725073703
-	lateral_error = 0.003991866275741884
+	heading_error = -0.36388088550131226
+	lateral_error = 0.027953354119611973
   Outputs:
-	v = 0.9
-	w = -4.384314242903113
+	v = 0.5236014449904723
+	w = -2.6980712425298066
 
 
 
@@ -205,11 +205,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1200100210 ns
   Inputs:
-	heading_error = -0.2506442454709372
-	lateral_error = -0.05734052857335481
+	heading_error = -0.01004023480318672
+	lateral_error = 0.014127115094489717
   Outputs:
-	v = 1.3230683145059188
-	w = -2.964327224926514
+	v = 0.6541658502790145
+	w = -1.3437101255268011
 
 
 
@@ -218,11 +218,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1300100210 ns
   Inputs:
-	heading_error = 0.1754725606318126
-	lateral_error = -0.08019990859136872
+	heading_error = 0.25227282442907306
+	lateral_error = 0.013405229588714818
   Outputs:
-	v = 1.743755097180252
-	w = -1.2319390961771681
+	v = 0.699964718086172
+	w = 0.016347521165211987
 
 
 
@@ -231,11 +231,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1400100210 ns
   Inputs:
-	heading_error = 0.4534472332449888
-	lateral_error = -0.05830499381948151
+	heading_error = 0.3775560566565157
+	lateral_error = 0.029445728878078725
   Outputs:
-	v = 1.772359474149185
-	w = 0.38109060816177553
+	v = 0.6778433297040914
+	w = 1.0627122160711515
 
 
 
@@ -244,11 +244,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1500100210 ns
   Inputs:
-	heading_error = 0.554193554293434
-	lateral_error = 0.01632371845719227
+	heading_error = 0.3665524141414802
+	lateral_error = 0.05494510871238756
   Outputs:
-	v = 1.6180961894709467
-	w = 1.5805689577020292
+	v = 0.650697858927321
+	w = 1.6280071421383777
 
 
 
@@ -257,11 +257,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1600100210 ns
   Inputs:
-	heading_error = 0.4942157988526714
-	lateral_error = 0.10794754465170708
+	heading_error = 0.25113775379345804
+	lateral_error = 0.07894964014664385
   Outputs:
-	v = 1.5305852070314536
-	w = 2.282069091002505
+	v = 0.6534979518484422
+	w = 1.685990091415471
 
 
 
@@ -270,11 +270,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1700100210 ns
   Inputs:
-	heading_error = 0.3152607901567026
-	lateral_error = 0.18321205358808168
+	heading_error = 0.07920917416624729
+	lateral_error = 0.09483222411091674
   Outputs:
-	v = 1.5846137272551033
-	w = 2.408653374017514
+	v = 0.6780412169003326
+	w = 1.3203495757604076
 
 
 
@@ -283,11 +283,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1800100210 ns
   Inputs:
-	heading_error = 0.06556095496145242
-	lateral_error = 0.2291062218730726
+	heading_error = -0.09883084814752152
+	lateral_error = 0.09969559714942822
   Outputs:
-	v = 1.7112879890934158
-	w = 1.9938913749791372
+	v = 0.6978052152385307
+	w = 0.6961655931086561
 
 
 
@@ -296,11 +296,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 1900100210 ns
   Inputs:
-	heading_error = -0.19868901823858565
-	lateral_error = 0.23763877550072188
+	heading_error = -0.24063432428370746
+	lateral_error = 0.09267580242936724
   Outputs:
-	v = 1.7961329704818487
-	w = 1.1786687073381001
+	v = 0.6965841439423581
+	w = 0.00345899600762678
 
 
 
@@ -309,11 +309,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2000100210 ns
   Inputs:
-	heading_error = -0.42275804699424313
-	lateral_error = 0.20179035585684524
+	heading_error = -0.3200383214232554
+	lateral_error = 0.0757141480696264
   Outputs:
-	v = 1.7645871373720403
-	w = 0.15579902904854492
+	v = 0.6798308992276103
+	w = -0.5918340874173609
 
 
 
@@ -322,11 +322,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2100100210 ns
   Inputs:
-	heading_error = -0.5644566472011503
-	lateral_error = 0.12614719332665647
+	heading_error = -0.3299030070747131
+	lateral_error = 0.053484706274328886
   Outputs:
-	v = 1.6415295235115401
-	w = -0.8838707645495916
+	v = 0.664456353922999
+	w = -0.977296693414516
 
 
 
@@ -335,11 +335,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2200100210 ns
   Inputs:
-	heading_error = -0.6014283739790773
-	lateral_error = 0.030154724572120095
+	heading_error = -0.2799489642726112
+	lateral_error = 0.03116469337325878
   Outputs:
-	v = 1.5207829117493712
-	w = -1.7532378154979753
+	v = 0.6622516382717014
+	w = -1.1056732032015368
 
 
 
@@ -348,11 +348,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2300100210 ns
   Inputs:
-	heading_error = -0.532202762007218
-	lateral_error = -0.06402320755299584
+	heading_error = -0.19135845611931135
+	lateral_error = 0.012513515457392543
   Outputs:
-	v = 1.484150854718126
-	w = -2.285094597627829
+	v = 0.6727486787494921
+	w = -0.9951370835974096
 
 
 
@@ -361,11 +361,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2400100210 ns
   Inputs:
-	heading_error = -0.37522743512189116
-	lateral_error = -0.14239496745880054
+	heading_error = -0.09007880858829509
+	lateral_error = -0.00038395666375556914
   Outputs:
-	v = 1.5510445353712428
-	w = -2.3849038782408556
+	v = 0.6872227408045694
+	w = -0.7153797626476752
 
 
 
@@ -374,11 +374,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2500100210 ns
   Inputs:
-	heading_error = -0.1659032122454711
-	lateral_error = -0.19811141959592415
+	heading_error = -0.000127746819741148
+	lateral_error = -0.006756165745716025
   Outputs:
-	v = 1.6747637302974132
-	w = -2.070489610322767
+	v = 0.697161952702315
+	w = -0.36185106100820263
 
 
 
@@ -387,11 +387,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2600100210 ns
   Inputs:
-	heading_error = 0.05141362211076417
-	lateral_error = -0.2253454374206907
+	heading_error = 0.061602554923212205
+	lateral_error = -0.0071019503445892695
   Outputs:
-	v = 1.7752852769284246
-	w = -1.456058527365581
+	v = 0.6999999942882624
+	w = -0.027535650261828692
 
 
 
@@ -400,11 +400,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2700100210 ns
   Inputs:
-	heading_error = 0.2352907401127694
-	lateral_error = -0.21867655427902832
+	heading_error = 0.0878514118218241
+	lateral_error = -0.003155674989339552
   Outputs:
-	v = 1.7976214995207536
-	w = -0.6957272612397061
+	v = 0.6986722138076386
+	w = 0.21800241831449174
 
 
 
@@ -413,11 +413,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2800100210 ns
   Inputs:
-	heading_error = 0.35684799933979616
-	lateral_error = -0.17936602635840337
+	heading_error = 0.08063962026291915
+	lateral_error = 0.0026385712686405327
   Outputs:
-	v = 1.750403886182107
-	w = 0.06645674333496432
+	v = 0.6973004821852725
+	w = 0.3387829473299382
 
 
 
@@ -426,11 +426,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 2900100210 ns
   Inputs:
-	heading_error = 0.40275677998124293
-	lateral_error = -0.118564097390915
+	heading_error = 0.04887934813701733
+	lateral_error = 0.007919721284013193
   Outputs:
-	v = 1.6866045744137093
-	w = 0.7099278919255712
+	v = 0.6977252711420159
+	w = 0.33311276612623875
 
 
 
@@ -439,11 +439,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3000100210 ns
   Inputs:
-	heading_error = 0.3732731827027346
-	lateral_error = -0.051794887960475045
+	heading_error = 0.005035719877813483
+	lateral_error = 0.010979694049169986
   Outputs:
-	v = 1.655971118492934
-	w = 1.1367707303613117
+	v = 0.6991639497408387
+	w = 0.2271962776841221
 
 
 
@@ -452,11 +452,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3100100210 ns
   Inputs:
-	heading_error = 0.27981782593312987
-	lateral_error = 0.00794580040714532
+	heading_error = -0.0382587631215463
+	lateral_error = 0.010982772220078374
   Outputs:
-	v = 1.6760496959957973
-	w = 1.2859131789690381
+	v = 0.6999911245526149
+	w = 0.06406165570793387
 
 
 
@@ -465,11 +465,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3200100210 ns
   Inputs:
-	heading_error = 0.14323243474679104
-	lateral_error = 0.05185742249796288
+	heading_error = -0.07097066623403947
+	lateral_error = 0.007959450718201921
   Outputs:
-	v = 1.7299903809517791
-	w = 1.1510545053611008
+	v = 0.6994877559524909
+	w = -0.10910396360587171
 
 
 
@@ -478,11 +478,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3300100210 ns
   Inputs:
-	heading_error = -0.00931204640705019
-	lateral_error = 0.07379501628133323
+	heading_error = -0.08735547113214714
+	lateral_error = 0.002647364767580207
   Outputs:
-	v = 1.7815675676179201
-	w = 0.7803594289790157
+	v = 0.6982378474127005
+	w = -0.2520448620633502
 
 
 
@@ -491,11 +491,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3400100210 ns
   Inputs:
-	heading_error = -0.14938288247824616
-	lateral_error = 0.07002455211509506
+	heading_error = -0.08639441469913489
+	lateral_error = -0.003801923138367691
   Outputs:
-	v = 1.7999219577764916
-	w = 0.25793187949713214
+	v = 0.6973308555785707
+	w = -0.33883242545826775
 
 
 
@@ -504,11 +504,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3500100210 ns
   Inputs:
-	heading_error = -0.25273834607141055
-	lateral_error = 0.04127943064849848
+	heading_error = -0.07111329509290698
+	lateral_error = -0.010171960888234466
   Outputs:
-	v = 1.7799535989743804
-	w = -0.3174333214526044
+	v = 0.6973892262944299
+	w = -0.36078535135001033
 
 
 
@@ -517,11 +517,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3600100210 ns
   Inputs:
-	heading_error = -0.3034094428450249
-	lateral_error = -0.005896641262603808
+	heading_error = -0.04714499201892686
+	lateral_error = -0.015471560520231797
   Outputs:
-	v = 1.7428163619344932
-	w = -0.8458356616916483
+	v = 0.698230760531779
+	w = -0.3251410239245658
 
 
 
@@ -530,11 +530,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3700100210 ns
   Inputs:
-	heading_error = -0.29572482977767134
-	lateral_error = -0.06112078756970174
+	heading_error = -0.020991167967214786
+	lateral_error = -0.019103871295305552
   Outputs:
-	v = 1.7177820826853338
-	w = -1.2372243364305149
+	v = 0.6992222164823776
+	w = -0.2504662101566346
 
 
 
@@ -543,11 +543,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3800100210 ns
   Inputs:
-	heading_error = -0.23457880579887735
-	lateral_error = -0.11386605786825488
+	heading_error = 0.0015799527655433465
+	lateral_error = -0.020916482746783593
   Outputs:
-	v = 1.7218640773747
-	w = -1.4273824693894923
+	v = 0.699845785466323
+	w = -0.16038015705008135
 
 
 
@@ -556,11 +556,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 3900100210 ns
   Inputs:
-	heading_error = -0.13420667540582976
-	lateral_error = -0.15574374011838366
+	heading_error = 0.016667628521608968
+	lateral_error = -0.021154187217338638
   Outputs:
-	v = 1.7507021889253995
-	w = -1.393779454668529
+	v = 0.6999991263124222
+	w = -0.07734611992496099
 
 
 
@@ -569,11 +569,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4000100210 ns
   Inputs:
-	heading_error = -0.015233730456476025
-	lateral_error = -0.1808107262649825
+	heading_error = 0.02273802854248097
+	lateral_error = -0.020336508400244924
   Outputs:
-	v = 1.7838140277212182
-	w = -1.1598016620968536
+	v = 0.6999027688068261
+	w = -0.01794623478291868
 
 
 
@@ -582,11 +582,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4100100210 ns
   Inputs:
-	heading_error = 0.09978062982616664
-	lateral_error = -0.1856101227663043
+	heading_error = 0.020502268479950292
+	lateral_error = -0.019093860808517604
   Outputs:
-	v = 1.7997911441498264
-	w = -0.7841778268858342
+	v = 0.6998190515166364
+	w = 0.009606080568944186
 
 
 
@@ -595,11 +595,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4200100210 ns
   Inputs:
-	heading_error = 0.19100328751615092
-	lateral_error = -0.17003790294258359
+	heading_error = 0.012325867663872891
+	lateral_error = -0.018007868819861272
   Outputs:
-	v = 1.7910468752586945
-	w = -0.34331797176055057
+	v = 0.6998528850988466
+	w = 0.0056336306857307505
 
 
 
@@ -608,11 +608,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4300100210 ns
   Inputs:
-	heading_error = 0.24466305798418686
-	lateral_error = -0.13805749927652577
+	heading_error = 0.0013933598316084872
+	lateral_error = -0.017494205617671454
   Outputs:
-	v = 1.7672656700550182
-	w = 0.08386153829426934
+	v = 0.6999468262184326
+	w = -0.022728004623953524
 
 
 
@@ -621,11 +621,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4400100210 ns
   Inputs:
-	heading_error = 0.25450661843377786
-	lateral_error = -0.0968008489398855
+	heading_error = -0.009142775688844473
+	lateral_error = -0.017745667191623404
   Outputs:
-	v = 1.7463941951729482
-	w = 0.42642223483064434
+	v = 0.6999993204920428
+	w = -0.06440338314425187
 
 
 
@@ -634,11 +634,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4500100210 ns
   Inputs:
-	heading_error = 0.22187304159699028
-	lateral_error = -0.05438042920148334
+	heading_error = -0.016842273841213284
+	lateral_error = -0.018734596202616416
   Outputs:
-	v = 1.7420177360545477
-	w = 0.6308230779755695
+	v = 0.6999707435822432
+	w = -0.10755377152187151
 
 
 
@@ -647,11 +647,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4600100210 ns
   Inputs:
-	heading_error = 0.15495398931077753
-	lateral_error = -0.018017762161332662
+	heading_error = -0.020371814094377605
+	lateral_error = -0.020262397301212154
   Outputs:
-	v = 1.7558765721815006
-	w = 0.6699704495820278
+	v = 0.6999007205810015
+	w = -0.1423074801753188
 
 
 
@@ -660,11 +660,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4700100210 ns
   Inputs:
-	heading_error = 0.06725766642001774
-	lateral_error = 0.006749283252967864
+	heading_error = -0.019582734272431068
+	lateral_error = -0.022037002394899474
   Outputs:
-	v = 1.7784335391537707
-	w = 0.5477449085977795
+	v = 0.6998547512400978
+	w = -0.16253684558235904
 
 
 
@@ -673,11 +673,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4800100210 ns
   Inputs:
-	heading_error = -0.02482784939488525
-	lateral_error = 0.01635224948834768
+	heading_error = -0.015315004490910056
+	lateral_error = -0.023756103994998945
   Outputs:
-	v = 1.7959303001630564
-	w = 0.2960277986919424
+	v = 0.6998657850706282
+	w = -0.16647894666932217
 
 
 
@@ -686,11 +686,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 4900100210 ns
   Inputs:
-	heading_error = -0.10503860270720189
-	lateral_error = 0.009675975151882454
+	heading_error = -0.009022411418677656
+	lateral_error = -0.025176417826783926
   Outputs:
-	v = 1.799445248602613
-	w = -0.03390239962615027
+	v = 0.6999179093276502
+	w = -0.156284433943636
 
 
 
@@ -699,11 +699,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5000100210 ns
   Inputs:
-	heading_error = -0.1601172925687857
-	lateral_error = -0.011428719100074147
+	heading_error = -0.0023351386318655187
+	lateral_error = -0.026156400582374673
   Outputs:
-	v = 1.7900793291007198
-	w = -0.38145051022127774
+	v = 0.6999715088255425
+	w = -0.13679531698184633
 
 
 
@@ -712,11 +712,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5100100210 ns
   Inputs:
-	heading_error = -0.18195462597938317
-	lateral_error = -0.04235886145496792
+	heading_error = 0.0033322886438191812
+	lateral_error = -0.02666843757953785
   Outputs:
-	v = 1.7769754615374882
-	w = -0.6861840466754394
+	v = 0.6999980914955167
+	w = -0.11396615685696077
 
 
 
@@ -725,11 +725,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5200100210 ns
   Inputs:
-	heading_error = -0.16868911172319834
-	lateral_error = -0.07694092408172537
+	heading_error = 0.007050233130602379
+	lateral_error = -0.02678382960915826
   Outputs:
-	v = 1.7702853799283675
-	w = -0.8972539497374044
+	v = 0.6999961135519343
+	w = -0.09334459574287468
 
 
 
@@ -738,11 +738,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5300100210 ns
   Inputs:
-	heading_error = -0.12471476839578699
-	lateral_error = -0.10893322697613961
+	heading_error = 0.008484870203314898
+	lateral_error = -0.02663898124289421
   Outputs:
-	v = 1.774450258516675
-	w = -0.9825201432196948
+	v = 0.6999826030465424
+	w = -0.07893438591422353
 
 
 
@@ -751,11 +751,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5400100210 ns
   Inputs:
-	heading_error = -0.05961694416923091
-	lateral_error = -0.13311718163744501
+	heading_error = 0.007857142589350108
+	lateral_error = -0.026393715701130915
   Outputs:
-	v = 1.786019738475436
-	w = -0.9345919814877064
+	v = 0.6999748025933419
+	w = -0.07261644415831725
 
 
 
@@ -764,11 +764,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5500100210 ns
   Inputs:
-	heading_error = 0.013844869926217918
-	lateral_error = -0.14588530034407832
+	heading_error = 0.005788249734073325
+	lateral_error = -0.026192400103836277
   Outputs:
-	v = 1.7968021852735725
-	w = -0.7709365032267037
+	v = 0.6999783929697746
+	w = -0.07414629244712323
 
 
 
@@ -777,11 +777,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5600100210 ns
   Inputs:
-	heading_error = 0.08230933875292806
-	lateral_error = -0.14564461452136968
+	heading_error = 0.003087452995208073
+	lateral_error = -0.026135909401663326
   Outputs:
-	v = 1.7998274903746398
-	w = -0.5281617216714416
+	v = 0.6999882736904953
+	w = -0.08161660147905181
 
 
 
@@ -790,11 +790,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5700100210 ns
   Inputs:
-	heading_error = 0.1342960618837431
-	lateral_error = -0.1331200389250915
+	heading_error = 0.0005396585350569971
+	lateral_error = -0.026268469995160082
   Outputs:
-	v = 1.7939060970726777
-	w = -0.25334110307376645
+	v = 0.699996663674551
+	w = -0.09219382562582101
 
 
 
@@ -803,11 +803,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5800100210 ns
   Inputs:
-	heading_error = 0.16202794666179732
-	lateral_error = -0.11125881576036356
+	heading_error = -0.0012608508686131614
+	lateral_error = -0.0265793674585888
   Outputs:
-	v = 1.7837924920859183
-	w = 0.004704091834606405
+	v = 0.6999998980690353
+	w = -0.10291524584041234
 
 
 
@@ -816,11 +816,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 5900100210 ns
   Inputs:
-	heading_error = 0.16236966323305657
-	lateral_error = -0.08453199072663953
+	heading_error = -0.0020031313541641893
+	lateral_error = -0.027016285726387146
   Outputs:
-	v = 1.7764238965554162
-	w = 0.20307652360573503
+	v = 0.6999994435893542
+	w = -0.11136087330880784
 
 
 
@@ -829,11 +829,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6000100210 ns
   Inputs:
-	heading_error = 0.13695536187254487
-	lateral_error = -0.0578912973123904
+	heading_error = -0.0016726107892210962
+	lateral_error = -0.027505142080136658
   Outputs:
-	v = 1.776324566597583
-	w = 0.3113506900256682
+	v = 0.6999985956131418
+	w = -0.11607766832220534
 
 
 
@@ -842,11 +842,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6100100210 ns
   Inputs:
-	heading_error = 0.09163330273222803
-	lateral_error = -0.035839323917082666
+	heading_error = -0.0004968669899385603
+	lateral_error = -0.027970838828712985
   Outputs:
-	v = 1.7831452757118822
-	w = 0.31625625824061787
+	v = 0.69999902083083
+	w = -0.11671101147743101
 
 
 
@@ -855,11 +855,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6200100210 ns
   Inputs:
-	heading_error = 0.035304466462478756
-	lateral_error = -0.02181339006701677
+	heading_error = 0.0011510989984768738
+	lateral_error = -0.028354214615586848
   Outputs:
-	v = 1.7924482903627423
-	w = 0.22317591526058145
+	v = 0.6999999135931197
+	w = -0.11387082327460618
 
 
 
@@ -868,11 +868,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6300100210 ns
   Inputs:
-	heading_error = -0.021717012545025227
-	lateral_error = -0.017782333957715224
+	heading_error = 0.002862778406470312
+	lateral_error = -0.02862221973988177
   Outputs:
-	v = 1.7988783516926516
-	w = 0.05396430558184795
+	v = 0.6999995362399346
+	w = -0.1088124624684399
 
 
 
@@ -881,11 +881,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6400100210 ns
   Inputs:
-	heading_error = -0.06955040736638995
-	lateral_error = -0.023961062895256013
+	heading_error = 0.004290670474547342
+	lateral_error = -0.028770398618700455
   Outputs:
-	v = 1.7995755509117626
-	w = -0.1579973860109618
+	v = 0.6999971315768874
+	w = -0.10303776533364584
 
 
 
@@ -894,11 +894,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6500100210 ns
   Inputs:
-	heading_error = -0.10044459955670693
-	lateral_error = -0.03875019879493369
+	heading_error = 0.005212851022537102
+	lateral_error = -0.02881861954701659
   Outputs:
-	v = 1.7956482213994254
-	w = -0.3740458810465839
+	v = 0.6999935565612928
+	w = -0.09791891257661245
 
 
 
@@ -907,11 +907,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6600100210 ns
   Inputs:
-	heading_error = -0.11001219679532337
-	lateral_error = -0.059066722951742534
+	heading_error = 0.005557616567297252
+	lateral_error = -0.028802285224614366
   Outputs:
-	v = 1.7909274258829462
-	w = -0.5567791934065625
+	v = 0.6999904891860129
+	w = -0.09442307409791795
 
 
 
@@ -920,11 +920,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6700100210 ns
   Inputs:
-	heading_error = -0.09781555028650502
-	lateral_error = -0.08103088802718705
+	heading_error = 0.005390508850742548
+	lateral_error = -0.0287618169020476
   Outputs:
-	v = 1.7891185660907387
-	w = -0.6763156789882636
+	v = 0.699989189542157
+	w = -0.09297867462926845
 
 
 
@@ -933,11 +933,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6800100210 ns
   Inputs:
-	heading_error = -0.06724134098912149
-	lateral_error = -0.10075833961053604
+	heading_error = 0.0048738110517762
+	lateral_error = -0.02873304649982611
   Outputs:
-	v = 1.7913957699478655
-	w = -0.7153857532547683
+	v = 0.6999898298696421
+	w = -0.0934852322052202
 
 
 
@@ -946,11 +946,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 6900100210 ns
   Inputs:
-	heading_error = -0.024701241007617725
-	lateral_error = -0.11501917485758906
+	heading_error = 0.004212675869878835
+	lateral_error = -0.028740444796222953
   Outputs:
-	v = 1.7959322748526756
-	w = -0.6719987223986301
+	v = 0.6999916861044985
+	w = -0.09543694179219964
 
 
 
@@ -959,11 +959,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7000100210 ns
   Inputs:
-	heading_error = 0.02168829470147418
-	lateral_error = -0.12169572043273025
+	heading_error = 0.003602233476120653
+	lateral_error = -0.02879412116217761
   Outputs:
-	v = 1.7994508917441938
-	w = -0.5588816634608271
+	v = 0.6999937886858911
+	w = -0.09811107570537647
 
 
 
@@ -972,11 +972,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7100100210 ns
   Inputs:
-	heading_error = 0.06366788874106658
-	lateral_error = -0.120065237928209
+	heading_error = 0.003187048472068077
+	lateral_error = -0.028890525609957862
   Outputs:
-	v = 1.7995766726798386
-	w = -0.40002970292502427
+	v = 0.6999954583748053
+	w = -0.10076755074422783
 
 
 
@@ -985,11 +985,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7200100210 ns
   Inputs:
-	heading_error = 0.09429905627269264
-	lateral_error = -0.11088420540353461
+	heading_error = 0.003039410673732257
+	lateral_error = -0.0290159886797543
   Outputs:
-	v = 1.7963529921579298
-	w = -0.2255893967485697
+	v = 0.6999964449557219
+	w = -0.10281390855155914
 
 
 
@@ -998,11 +998,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7300100210 ns
   Inputs:
-	heading_error = 0.10905229553249995
-	lateral_error = -0.09620147381694011
+	heading_error = 0.0031575844409000853
+	lateral_error = -0.02915178099552751
   Outputs:
-	v = 1.792002847920863
-	w = -0.06634059652336788
+	v = 0.6999967666964538
+	w = -0.10390631202408818
 
 
 
@@ -1011,11 +1011,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7400100210 ns
   Inputs:
-	heading_error = 0.10638315293987607
-	lateral_error = -0.07890322319951526
+	heading_error = 0.0034805642585660213
+	lateral_error = -0.029279295333556554
   Outputs:
-	v = 1.7893074401452125
-	w = 0.051403286862239383
+	v = 0.6999965103840738
+	w = -0.1039767862185097
 
 
 
@@ -1024,11 +1024,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7500100210 ns
   Inputs:
-	heading_error = 0.08778314354692185
-	lateral_error = -0.06212358380915717
+	heading_error = 0.003912939137129867
+	lateral_error = -0.029384195583325834
   Outputs:
-	v = 1.7898239648939946
-	w = 0.10991971896144326
+	v = 0.699995759989635
+	w = -0.10319492429996213
 
 
 
@@ -1037,11 +1037,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7600100210 ns
   Inputs:
-	heading_error = 0.057352901027710956
-	lateral_error = -0.04869062542167413
+	heading_error = 0.004352486726001525
+	lateral_error = -0.02945882496877683
   Outputs:
-	v = 1.793069160138656
-	w = 0.10263823895105872
+	v = 0.6999946411243957
+	w = -0.10188502578478387
 
 
 
@@ -1050,11 +1050,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7700100210 ns
   Inputs:
-	heading_error = 0.020978889912116258
-	lateral_error = -0.04069894850036615
+	heading_error = 0.004713939019732605
+	lateral_error = -0.029502682577833284
   Outputs:
-	v = 1.7970403916697144
-	w = 0.034649102424147316
+	v = 0.6999933695612223
+	w = -0.10042535297110122
 
 
 
@@ -1063,11 +1063,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7800100210 ns
   Inputs:
-	heading_error = -0.01475463475559291
-	lateral_error = -0.03922063206929138
+	heading_error = 0.004944459980577576
+	lateral_error = -0.029521236290790398
   Outputs:
-	v = 1.79960391208755
-	w = -0.07888023435299957
+	v = 0.6999922225870233
+	w = -0.09915497423240272
 
 
 
@@ -1076,11 +1076,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 7900100210 ns
   Inputs:
-	heading_error = -0.04373058761271409
-	lateral_error = -0.04416409683836253
+	heading_error = 0.005029046258247738
+	lateral_error = -0.029523652314892068
   Outputs:
-	v = 1.7998040742323527
-	w = -0.21590106729953717
+	v = 0.6999914433278577
+	w = -0.09830710524085129
 
 
 
@@ -1089,11 +1089,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8000100210 ns
   Inputs:
-	heading_error = -0.06133158956658313
-	lateral_error = -0.05432280131107525
+	heading_error = 0.004986610213611686
+	lateral_error = -0.029520146743689857
   Outputs:
-	v = 1.7982791464041474
-	w = -0.3515787378043065
+	v = 0.6999911480614628
+	w = -0.09797842422657732
 
 
 
@@ -1102,11 +1102,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8100100210 ns
   Inputs:
-	heading_error = -0.06516176670191776
-	lateral_error = -0.06763776516311903
+	heading_error = 0.004859395481115691
+	lateral_error = -0.029519611412625046
   Outputs:
-	v = 1.7966156535782734
-	w = -0.46261756351063354
+	v = 0.6999912968195368
+	w = -0.09813414612031268
 
 
 
@@ -1115,11 +1115,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8200100210 ns
   Inputs:
-	heading_error = -0.0553463211139249
-	lateral_error = -0.08162130287191083
+	heading_error = 0.004699322467334288
+	lateral_error = -0.029527980767104722
   Outputs:
-	v = 1.7961799017271551
-	w = -0.5311981274601472
+	v = 0.6999917352127089
+	w = -0.09864086372603742
 
 
 
@@ -1128,11 +1128,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8300100210 ns
   Inputs:
-	heading_error = -0.0343749411764831
-	lateral_error = -0.09382833028852122
+	heading_error = 0.004554839636922492
+	lateral_error = -0.029547554603873927
   Outputs:
-	v = 1.7972438099399652
-	w = -0.5478704959433429
+	v = 0.699992270743146
+	w = -0.09931463319908174
 
 
 
@@ -1141,11 +1141,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8400100210 ns
   Inputs:
-	heading_error = -0.006533101049646994
-	lateral_error = -0.10227044123304463
+	heading_error = 0.0044610577276185115
+	lateral_error = -0.029577241235722695
   Outputs:
-	v = 1.7989366317929532
-	w = -0.5128130858600173
+	v = 0.6999927387151126
+	w = -0.09997085986780574
 
 
 
@@ -1154,11 +1154,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8500100210 ns
   Inputs:
-	heading_error = 0.022958866592234617
-	lateral_error = -0.10571773459256661
+	heading_error = 0.004434692289146502
+	lateral_error = -0.029613491248759338
   Outputs:
-	v = 1.7999615868682353
-	w = -0.4352141691307665
+	v = 0.6999930346489343
+	w = -0.10046473403241674
 
 
 
@@ -1167,11 +1167,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8600100210 ns
   Inputs:
-	heading_error = 0.048920792834494464
-	lateral_error = -0.10386486247700599
+	heading_error = 0.004473995656088414
+	lateral_error = -0.029651585255336954
   Outputs:
-	v = 1.7995256222382903
-	w = -0.331035472001328
+	v = 0.699993116737786
+	w = -0.10071519583845134
 
 
 
@@ -1180,11 +1180,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8700100210 ns
   Inputs:
-	heading_error = 0.06710876914231012
-	lateral_error = -0.09734017466234324
+	heading_error = 0.004562734036434701
+	lateral_error = -0.029686926370086297
   Outputs:
-	v = 1.7978465099625858
-	w = -0.2197762785700461
+	v = 0.6999929941886903
+	w = -0.10071035839699416
 
 
 
@@ -1193,11 +1193,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8800100210 ns
   Inputs:
-	heading_error = 0.07487679516598261
-	lateral_error = -0.08754742857521247
+	heading_error = 0.004676562683903707
+	lateral_error = -0.02971605424407109
   Outputs:
-	v = 1.795948292737564
-	w = -0.12092562208013247
+	v = 0.6999927135229806
+	w = -0.10049676933460638
 
 
 
@@ -1206,11 +1206,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 8900100210 ns
   Inputs:
-	heading_error = 0.0715165600095497
-	lateral_error = -0.07636972446706469
+	heading_error = 0.004789944539303037
+	lateral_error = -0.029737212795812873
   Outputs:
-	v = 1.794956476042714
-	w = -0.050682533636919436
+	v = 0.6999923454304628
+	w = -0.10015796624066953
 
 
 
@@ -1219,11 +1219,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9000100210 ns
   Inputs:
-	heading_error = 0.058253926320602056
-	lateral_error = -0.06580779861316977
+	heading_error = 0.004881995553214558
+	lateral_error = -0.02975043361141161
   Outputs:
-	v = 1.7953988050945728
-	w = -0.019412657830059965
+	v = 0.6999919697663121
+	w = -0.09978907302603934
 
 
 
@@ -1232,11 +1232,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9100100210 ns
   Inputs:
-	heading_error = 0.03792975112754515
-	lateral_error = -0.05763255711249293
+	heading_error = 0.004940185526289387
+	lateral_error = -0.02975721016534827
   Outputs:
-	v = 1.7969466956620317
-	w = -0.030215489170270837
+	v = 0.6999916581583646
+	w = -0.0994737522327882
 
 
 
@@ -1245,11 +1245,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9200100210 ns
   Inputs:
-	heading_error = 0.014431148610550393
-	lateral_error = -0.05310650284688734
+	heading_error = 0.004961498196438541
+	lateral_error = -0.029759912993136517
   Outputs:
-	v = 1.7987053558060122
-	w = -0.07881122393979112
+	v = 0.6999914581158103
+	w = -0.09926809855623553
 
 
 
@@ -1258,11 +1258,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9300100210 ns
   Inputs:
-	heading_error = -0.008025883593066219
-	lateral_error = -0.052802460447519906
+	heading_error = 0.004951285985833165
+	lateral_error = -0.02976112368014938
   Outputs:
-	v = 1.7998125710076358
-	w = -0.15470141694534778
+	v = 0.6999913842551504
+	w = -0.0991936591867919
 
 
 
@@ -1271,11 +1271,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9400100210 ns
   Inputs:
-	heading_error = -0.025636610836887286
-	lateral_error = -0.056538731570182854
+	heading_error = 0.004920513476647903
+	lateral_error = -0.029763049044277068
   Outputs:
-	v = 1.79994202698449
-	w = -0.2433133761623445
+	v = 0.6999914196860093
+	w = -0.09923935077726487
 
 
 
@@ -1284,11 +1284,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9500100210 ns
   Inputs:
-	heading_error = -0.03564151672775928
-	lateral_error = -0.06344422178083953
+	heading_error = 0.004882302347128942
+	lateral_error = -0.029767128297947032
   Outputs:
-	v = 1.7994085201625272
-	w = -0.32870136962828056
+	v = 0.6999915260085915
+	w = -0.09937014227051666
 
 
 
@@ -1297,11 +1297,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9600100210 ns
   Inputs:
-	heading_error = -0.036747901644327285
-	lateral_error = -0.07214612075681615
+	heading_error = 0.004848667574567589
+	lateral_error = -0.029773882079319414
   Outputs:
-	v = 1.7988568350797178
-	w = -0.39634295403439523
+	v = 0.6999916571098992
+	w = -0.09953930380327236
 
 
 
@@ -1310,11 +1310,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9700100210 ns
   Inputs:
-	heading_error = -0.029274978186855094
-	lateral_error = -0.08104065953716155
+	heading_error = 0.004828121710778843
+	lateral_error = -0.029782989954879824
   Outputs:
-	v = 1.7987847693162968
-	w = -0.4355760896045737
+	v = 0.6999917716640833
+	w = -0.0997008580190073
 
 
 
@@ -1323,11 +1323,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9800100210 ns
   Inputs:
-	heading_error = -0.01500933461127918
-	lateral_error = -0.08858693011152052
+	heading_error = 0.004824504083561831
+	lateral_error = -0.029793535620365574
   Outputs:
-	v = 1.7992287331721746
-	w = -0.4412625508960666
+	v = 0.6999918412501099
+	w = -0.09981947297640392
 
 
 
@@ -1336,11 +1336,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 9900100210 ns
   Inputs:
-	heading_error = 0.003190441372917241
-	lateral_error = -0.09356721449275618
+	heading_error = 0.004837055370662147
+	lateral_error = -0.029804334049395642
   Outputs:
-	v = 1.7997972516933807
-	w = -0.4143850588911988
+	v = 0.699991853471923
+	w = -0.09987612614721497
 
 
 
@@ -1349,11 +1349,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10000100210 ns
   Inputs:
-	heading_error = 0.02195598087830275
-	lateral_error = -0.09527477917318716
+	heading_error = 0.0048614818183291275
+	lateral_error = -0.02981425341049171
   Outputs:
-	v = 1.7999908389832322
-	w = -0.36150709247935575
+	v = 0.6999918110293359
+	w = -0.09986911471493398
 
 
 
@@ -1362,11 +1362,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10100100210 ns
   Inputs:
-	heading_error = 0.03802577463244616
-	lateral_error = -0.09360596434715607
+	heading_error = 0.0048915862170004765
+	lateral_error = -0.0298224624769583
   Outputs:
-	v = 1.799566158842031
-	w = -0.29327519317953765
+	v = 0.6999917281143769
+	w = -0.09981108636865033
 
 
 
@@ -1375,11 +1375,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10200100210 ns
   Inputs:
-	heading_error = 0.04880095557886499
-	lateral_error = -0.0890452665916337
+	heading_error = 0.004921000180769575
+	lateral_error = -0.029828563858774082
   Outputs:
-	v = 1.798698793219608
-	w = -0.22232075885883962
+	v = 0.6999916253511974
+	w = -0.0997235050398313
 
 
 
@@ -1388,11 +1388,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10300100210 ns
   Inputs:
-	heading_error = 0.05274754195757947
-	lateral_error = -0.08254783415607836
+	heading_error = 0.004944619652175852
+	lateral_error = -0.029832605969240866
   Outputs:
-	v = 1.7978570454049159
-	w = -0.16097724405107483
+	v = 0.6999915243321313
+	w = -0.09963025471201803
 
 
 
@@ -1401,11 +1401,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10400100210 ns
   Inputs:
-	heading_error = 0.04959018265289328
-	lateral_error = -0.07534488314925891
+	heading_error = 0.004959486996148343
+	lateral_error = -0.029834994505216095
   Outputs:
-	v = 1.7974965076726717
-	w = -0.11920116879399556
+	v = 0.6999914427752081
+	w = -0.09955194526826006
 
 
 
@@ -1414,11 +1414,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10500100210 ns
   Inputs:
-	heading_error = 0.04028243670986553
-	lateral_error = -0.06871401631572471
+	heading_error = 0.004965033386532425
+	lateral_error = -0.029836342183698683
   Outputs:
-	v = 1.7977871859385919
-	w = -0.10301880198546254
+	v = 0.6999913912387027
+	w = -0.099502030036271
 
 
 
@@ -1427,11 +1427,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10600100210 ns
   Inputs:
-	heading_error = 0.026773714225780343
-	lateral_error = -0.06375890202389822
+	heading_error = 0.00496275162570603
+	lateral_error = -0.029837301516872472
   Outputs:
-	v = 1.7985397902332534
-	w = -0.11372631842343672
+	v = 0.6999913719729391
+	w = -0.09948523518866503
 
 
 
@@ -1440,11 +1440,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10700100210 ns
   Inputs:
-	heading_error = 0.011622011064957305
-	lateral_error = -0.06123344281272303
+	heading_error = 0.0049554805470721774
+	lateral_error = -0.029838420496058227
   Outputs:
-	v = 1.7993548899415643
-	w = -0.14794075119247152
+	v = 0.6999913799013975
+	w = -0.09949819956466577
 
 
 
@@ -1453,11 +1453,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10800100210 ns
   Inputs:
-	heading_error = -0.002476286540833428
-	lateral_error = -0.06143371808370279
+	heading_error = 0.00494653220457808
+	lateral_error = -0.02984004837302212
   Outputs:
-	v = 1.7998784373412353
-	w = -0.1984457269910629
+	v = 0.6999914051419801
+	w = -0.0995317597959442
 
 
 
@@ -1466,11 +1466,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 10900100210 ns
   Inputs:
-	heading_error = -0.013156452216733783
-	lateral_error = -0.06417126636527293
+	heading_error = 0.004938882938768985
+	lateral_error = -0.02984230254165876
   Outputs:
-	v = 1.799994481207291
-	w = -0.2556400184981449
+	v = 0.6999914361541639
+	w = -0.09957406467377616
 
 
 
@@ -1479,11 +1479,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11000100210 ns
   Inputs:
-	heading_error = -0.018774608147424487
-	lateral_error = -0.06883061581658279
+	heading_error = 0.004934592911880253
+	lateral_error = -0.02984509204649477
   Outputs:
-	v = 1.799844219235618
-	w = -0.30931087432802684
+	v = 0.699991462619715
+	w = -0.0996136784115591
 
 
 
@@ -1492,11 +1492,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11100100210 ns
   Inputs:
-	heading_error = -0.018652285507601007
-	lateral_error = -0.07449930045632147
+	heading_error = 0.004934537097246117
+	lateral_error = -0.02984818172302539
   Outputs:
-	v = 1.799682771998384
-	w = -0.3504208958560291
+	v = 0.6999914774447717
+	w = -0.09964199653845807
 
 
 
@@ -1505,11 +1505,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11200100210 ns
   Inputs:
-	heading_error = -0.013140526749344517
-	lateral_error = -0.0801434934559877
+	heading_error = 0.004938446659025764
+	lateral_error = -0.02985127516660757
   Outputs:
-	v = 1.7996868920986888
-	w = -0.3726063438556899
+	v = 0.6999914776375655
+	w = -0.0996545785031171
 
 
 
@@ -1518,11 +1518,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11300100210 ns
   Inputs:
-	heading_error = -0.0035010237703811953
-	lateral_error = -0.08479405880052493
+	heading_error = 0.004945192008794952
+	lateral_error = -0.029854094801733844
   Outputs:
-	v = 1.7998445961372707
-	w = -0.3731360808213289
+	v = 0.6999914641279564
+	w = -0.09965131403032723
 
 
 
@@ -1531,11 +1531,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11400100210 ns
   Inputs:
-	heading_error = 0.008365379276796814
-	lateral_error = -0.08770932423670263
+	heading_error = 0.004953199209219883
+	lateral_error = -0.02985644213437766
   Outputs:
-	v = 1.799988968560571
-	w = -0.3531803302836245
+	v = 0.6999914407940415
+	w = -0.09963561117175557
 
 
 
@@ -1544,11 +1544,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11500100210 ns
   Inputs:
-	heading_error = 0.020286057020315384
-	lateral_error = -0.08848891278758675
+	heading_error = 0.004960883080054157
+	lateral_error = -0.02985822885371725
   Outputs:
-	v = 1.7999370187538846
-	w = -0.3173757798396233
+	v = 0.6999914130537139
+	w = -0.0996129717006311
 
 
 
@@ -1557,11 +1557,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11600100210 ns
   Inputs:
-	heading_error = 0.030208565197607617
-	lateral_error = -0.08712293112061609
+	heading_error = 0.004966999145123441
+	lateral_error = -0.029859477615144847
   Outputs:
-	v = 1.7996296410027446
-	w = -0.27281142306908546
+	v = 0.6999913863913384
+	w = -0.09958938309465237
 
 
 
@@ -1570,11 +1570,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11700100210 ns
   Inputs:
-	heading_error = 0.03654641787777568
-	lateral_error = -0.08397138179972785
+	heading_error = 0.004970853122357899
+	lateral_error = -0.029860298186838996
   Outputs:
-	v = 1.799178760785009
-	w = -0.22765746369203388
+	v = 0.6999913651395749
+	w = -0.09956991388008563
 
 
 
@@ -1583,11 +1583,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11800100210 ns
   Inputs:
-	heading_error = 0.038422156192174706
-	lateral_error = -0.07968045640588262
+	heading_error = 0.00497234958910564
+	lateral_error = -0.029860848932818485
   Outputs:
-	v = 1.798798057195514
-	w = -0.18969985568780867
+	v = 0.6999913517345403
+	w = -0.09955778025792439
 
 
 
@@ -1596,11 +1596,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 11900100210 ns
   Inputs:
-	heading_error = 0.035774040757015735
-	lateral_error = -0.07505396407680287
+	heading_error = 0.004971900142497376
+	lateral_error = -0.02986129489081879
   Outputs:
-	v = 1.798671527565378
-	w = -0.16503320085483164
+	v = 0.6999913465266765
+	w = -0.09955399737485138
 
 
 
@@ -1609,11 +1609,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12000100210 ns
   Inputs:
-	heading_error = 0.02931813454740162
-	lateral_error = -0.07090577127444497
+	heading_error = 0.00497023817833514
+	lateral_error = -0.029861772280511012
   Outputs:
-	v = 1.79884831904003
-	w = -0.15711969327914854
+	v = 0.6999913480909633
+	w = -0.09955757899328566
 
 
 
@@ -1622,11 +1622,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12100100210 ns
   Inputs:
-	heading_error = 0.02038126221513603
-	lateral_error = -0.06792022492554484
+	heading_error = 0.004968198758651454
+	lateral_error = -0.029862365978545746
   Outputs:
-	v = 1.7992264576987604
-	w = -0.1663505469081734
+	v = 0.6999913538741567
+	w = -0.09956613640870349
 
 
 
@@ -1635,11 +1635,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12200100210 ns
   Inputs:
-	heading_error = 0.010639924591982819
-	lateral_error = -0.06654317884868988
+	heading_error = 0.004966518420785493
+	lateral_error = -0.029863102403767883
   Outputs:
-	v = 1.7996261566768152
-	w = -0.19015585084163522
+	v = 0.6999913609681528
+	w = -0.09957666887957717
 
 
 
@@ -1648,11 +1648,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12300100210 ns
   Inputs:
-	heading_error = 0.0018138281980424331
-	lateral_error = -0.06691936450838298
+	heading_error = 0.004965694868779291
+	lateral_error = -0.029863956416098958
   Outputs:
-	v = 1.7998981137654095
-	w = -0.22361301702682823
+	v = 0.6999913668109173
+	w = -0.09958633593192956
 
 
 
@@ -1661,11 +1661,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12400100210 ns
   Inputs:
-	heading_error = -0.004631715070657627
-	lateral_error = -0.06888408905446042
+	heading_error = 0.00496592571352461
+	lateral_error = -0.02986486803684496
   Outputs:
-	v = 1.799997039025353
-	w = -0.2604221452413622
+	v = 0.6999913696737985
+	w = -0.09959304618927867
 
 
 
@@ -1674,11 +1674,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12500100210 ns
   Inputs:
-	heading_error = -0.007723906036875228
-	lateral_error = -0.07200853137789753
+	heading_error = 0.004967124460160566
+	lateral_error = -0.02986576345658154
   Outputs:
-	v = 1.7999806925284705
-	w = -0.2940632165004722
+	v = 0.6999913688713699
+	w = -0.0995957692932814
 
 
 
@@ -1687,11 +1687,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12600100210 ns
   Inputs:
-	heading_error = -0.0071228554639422015
-	lateral_error = -0.07568857454831068
+	heading_error = 0.004968995400528253
+	lateral_error = -0.02986657492317235
   Outputs:
-	v = 1.799946307414917
-	w = -0.31892974965909104
+	v = 0.6999913647038635
+	w = -0.0995945559856839
 
 
 
@@ -1700,11 +1700,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12700100210 ns
   Inputs:
-	heading_error = -0.0031447453752511123
-	lateral_error = -0.07925924369372517
+	heading_error = 0.004971139719140705
+	lateral_error = -0.029867255386553992
   Outputs:
-	v = 1.7999543386300891
-	w = -0.33124572004901154
+	v = 0.6999913581974295
+	w = -0.09959031809057639
 
 
 
@@ -1713,11 +1713,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12800100210 ns
   Inputs:
-	heading_error = 0.0033302328453568286
-	lateral_error = -0.08211294336934571
+	heading_error = 0.004973163623611054
+	lateral_error = -0.029867785715538275
   Outputs:
-	v = 1.7999910995262074
-	w = -0.3296159562759051
+	v = 0.6999913507372744
+	w = -0.09958446266965315
 
 
 
@@ -1726,11 +1726,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 12900100210 ns
   Inputs:
-	heading_error = 0.011042767080808868
-	lateral_error = -0.08380065355318145
+	heading_error = 0.004974764481826599
+	lateral_error = -0.029868174345183185
   Outputs:
-	v = 1.7999900186035012
-	w = -0.31513084209595554
+	v = 0.6999913436930914
+	w = -0.09957848836770888
 
 
 
@@ -1739,11 +1739,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13000100210 ns
   Inputs:
-	heading_error = 0.018594288239760504
-	lateral_error = -0.084099884713841
+	heading_error = 0.004975780375095218
+	lateral_error = -0.029868450894545262
   Outputs:
-	v = 1.7998902526809264
-	w = -0.2910315458894903
+	v = 0.6999913381192865
+	w = -0.09957363945342634
 
 
 
@@ -1752,11 +1752,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13100100210 ns
   Inputs:
-	heading_error = 0.024696354080905092
-	lateral_error = -0.0830398309268352
+	heading_error = 0.004976199279685123
+	lateral_error = -0.02986865631592117
   Outputs:
-	v = 1.7996888361658707
-	w = -0.262022385896322
+	v = 0.6999913345812591
+	w = -0.09957068207780018
 
 
 
@@ -1765,11 +1765,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13200100210 ns
   Inputs:
-	heading_error = -0.23346408533569019
-	lateral_error = 0.03996933921124324
+	heading_error = 0.004976133642318359
+	lateral_error = -0.029868832401740875
   Outputs:
-	v = 1.7994511089842893
-	w = -0.23337390738372044
+	v = 0.6999913331221396
+	w = -0.0995698281449442
 
 
 
@@ -1778,11 +1778,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13300100210 ns
   Inputs:
-	heading_error = -0.18224875554539643
-	lateral_error = 0.0005235568859092155
+	heading_error = 0.004975772570384396
+	lateral_error = -0.029869013071571082
   Outputs:
-	v = 1.7511674778919104
-	w = -0.7739789844977878
+	v = 0.6999913333507743
+	w = -0.09957079503769006
 
 
 
@@ -1791,11 +1791,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13400100210 ns
   Inputs:
-	heading_error = -0.1335196855584826
-	lateral_error = -0.02984313304359354
+	heading_error = 0.0049753263997351915
+	lateral_error = -0.0298692190061276
   Outputs:
-	v = 1.7701895012078281
-	w = -0.7269007946379489
+	v = 0.6999913346084431
+	w = -0.09957296200474675
 
 
 
@@ -1804,11 +1804,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13500100210 ns
   Inputs:
-	heading_error = -0.03114324981283456
-	lateral_error = -0.05098752896827108
+	heading_error = 0.0049749772289316985
+	lateral_error = -0.029869456161759622
   Outputs:
-	v = 1.7839790665501092
-	w = -0.6534512744083045
+	v = 0.6999913361623976
+	w = -0.09957557042556964
 
 
 
@@ -1817,11 +1817,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13600100210 ns
   Inputs:
-	heading_error = 0.06702314854080615
-	lateral_error = -0.05424565913224644
+	heading_error = 0.004974845090178537
+	lateral_error = -0.02986971774761038
   Outputs:
-	v = 1.7991271587429478
-	w = -0.32852311512442256
+	v = 0.699991337378417
+	w = -0.0995779157313117
 
 
 
@@ -1830,11 +1830,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13700100210 ns
   Inputs:
-	heading_error = 0.15794547727511965
-	lateral_error = -0.0400213582460891
+	heading_error = 0.004974974148474809
+	lateral_error = -0.029869988570751183
   Outputs:
-	v = 1.7959586210009375
-	w = 0.05110995763423887
+	v = 0.6999913378385801
+	w = -0.09957949062972737
 
 
 
@@ -1843,11 +1843,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13800100210 ns
   Inputs:
-	heading_error = 0.21621678510619868
-	lateral_error = -0.00946470124779708
+	heading_error = 0.004975338097244708
+	lateral_error = -0.029870250347215688
   Outputs:
-	v = 1.7775945404054498
-	w = 0.4716964761161222
+	v = 0.6999913373891445
+	w = -0.0995800576891055
 
 
 
@@ -1856,11 +1856,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 13900100210 ns
   Inputs:
-	heading_error = 0.1447440617512794
-	lateral_error = 0.016649685499720235
+	heading_error = 0.004975859882040634
+	lateral_error = -0.029870486635149796
   Outputs:
-	v = 1.7580889315058306
-	w = 0.8270083354336064
+	v = 0.6999913361216584
+	w = -0.09957964899988392
 
 
 
@@ -1869,11 +1869,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14000100210 ns
   Inputs:
-	heading_error = 0.0722984073311117
-	lateral_error = 0.04006641135517519
+	heading_error = 0.004976438687967322
+	lateral_error = -0.029870686387114986
   Outputs:
-	v = 1.7811771382852484
-	w = 0.6455749890039986
+	v = 0.6999913343043316
+	w = -0.09957850701243665
 
 
 
@@ -1882,11 +1882,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14100100210 ns
   Inputs:
-	heading_error = -0.03563727367328973
-	lateral_error = 0.05055346618724599
+	heading_error = 0.004976976897225871
+	lateral_error = -0.02987084561313491
   Outputs:
-	v = 1.7952976950721282
-	w = 0.4494592747451476
+	v = 0.6999913322881827
+	w = -0.09957699079659066
 
 
 
@@ -1895,11 +1895,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14200100210 ns
   Inputs:
-	heading_error = -0.1257800339032933
-	lateral_error = 0.04192990840203947
+	heading_error = 0.004977401132429504
+	lateral_error = -0.029870967156643502
   Outputs:
-	v = 1.7988571072179105
-	w = 0.059664770055825045
+	v = 0.6999913304132332
+	w = -0.09957547486363616
 
 
 
@@ -1908,11 +1908,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14300100210 ns
   Inputs:
-	heading_error = -0.19623567055921232
-	lateral_error = 0.017136232853188993
+	heading_error = 0.004977673925847165
+	lateral_error = -0.02987105899739273
   Outputs:
-	v = 1.785780206761523
-	w = -0.33540050200501526
+	v = 0.6999913289351902
+	w = -0.09957426409685599
 
 
 
@@ -1921,11 +1921,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14400100210 ns
   Inputs:
-	heading_error = -0.2273371807761908
-	lateral_error = -0.02015508267096333
+	heading_error = 0.004977795269198809
+	lateral_error = -0.029871131737589707
   Outputs:
-	v = 1.7654534802649937
-	w = -0.7163977508240933
+	v = 0.6999913279847064
+	w = -0.09957354028618226
 
 
 
@@ -1934,11 +1934,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14500100210 ns
   Inputs:
-	heading_error = -0.21843424947981305
-	lateral_error = -0.06254704591085236
+	heading_error = 0.004977795653910905
+	lateral_error = -0.02987119597962007
   Outputs:
-	v = 1.7536860095035962
-	w = -0.9899690537886165
+	v = 0.6999913275618976
+	w = -0.09957334587356359
 
 
 
@@ -1947,11 +1947,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14600100210 ns
   Inputs:
-	heading_error = -0.17106164449531747
-	lateral_error = -0.10289598941820621
+	heading_error = 0.004977723762051134
+	lateral_error = -0.029871260191062454
   Outputs:
-	v = 1.7572283029698308
-	w = -1.1239251815626616
+	v = 0.6999913275605573
+	w = -0.09957360130283666
 
 
 
@@ -1960,11 +1960,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14700100210 ns
   Inputs:
-	heading_error = -0.09628755037772585
-	lateral_error = -0.13484180237325827
+	heading_error = 0.004977632529458875
+	lateral_error = -0.029871329431418125
   Outputs:
-	v = 1.7737282800231644
-	w = -1.0958305356540947
+	v = 0.6999913278110584
+	w = -0.09957414571604528
 
 
 
@@ -1973,11 +1973,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14800100210 ns
   Inputs:
-	heading_error = -0.008347000240664926
-	lateral_error = -0.1538741300515838
+	heading_error = 0.0049775669424102775
+	lateral_error = -0.02987140505446284
   Outputs:
-	v = 1.7916622816506818
-	w = -0.9245174110039365
+	v = 0.6999913281289457
+	w = -0.099574787607837
 
 
 
@@ -1986,11 +1986,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 14900100210 ns
   Inputs:
-	heading_error = 0.07645316777647326
-	lateral_error = -0.15755258507681358
+	heading_error = 0.004977555903485559
+	lateral_error = -0.02987148526486383
   Outputs:
-	v = 1.7999372951923516
-	w = -0.6488845211689949
+	v = 0.699991328357471
+	w = -0.09957535244821025
 
 
 
@@ -1999,11 +1999,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15000100210 ns
   Inputs:
-	heading_error = 0.14390365786648873
-	lateral_error = -0.1461013634859487
+	heading_error = 0.004977609163377195
+	lateral_error = -0.029871566244151104
   Outputs:
-	v = 1.794741983702089
-	w = -0.32439766920136126
+	v = 0.6999913283959337
+	w = -0.09957571744551308
 
 
 
@@ -2012,11 +2012,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15100100210 ns
   Inputs:
-	heading_error = 0.1837796256309321
-	lateral_error = -0.12251680552790845
+	heading_error = 0.004977719016115545
+	lateral_error = -0.029871643491437005
   Outputs:
-	v = 1.781394703745617
-	w = -0.00879082247783991
+	v = 0.6999913282103606
+	w = -0.09957582832309564
 
 
 
@@ -2025,11 +2025,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15200100210 ns
   Inputs:
-	heading_error = 0.1913361148321422
-	lateral_error = -0.09191392523964215
+	heading_error = 0.00497786547200435
+	lateral_error = -0.029871713045412918
   Outputs:
-	v = 1.7696880040666219
-	w = 0.24505128041209456
+	v = 0.6999913278275952
+	w = -0.09957569790128584
 
 
 
@@ -2038,11 +2038,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15300100210 ns
   Inputs:
-	heading_error = 0.167441619469195
-	lateral_error = -0.06020341932246076
+	heading_error = 0.004978023109547203
+	lateral_error = -0.029871772344189473
   Outputs:
-	v = 1.7671518386700165
-	w = 0.3976887583700002
+	v = 0.6999913273172784
+	w = -0.09957539029363427
 
 
 
@@ -2051,11 +2051,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15400100210 ns
   Inputs:
-	heading_error = 0.11812278518353159
-	lateral_error = -0.032874776239706804
+	heading_error = 0.004978167786529777
+	lateral_error = -0.029871820605481325
   Outputs:
-	v = 1.7748258728180029
-	w = 0.42895280058693697
+	v = 0.6999913267679829
+	w = -0.09957499693856908
 
 
 
@@ -2064,11 +2064,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15500100210 ns
   Inputs:
-	heading_error = 0.053333100525451815
-	lateral_error = -0.01424468274539148
+	heading_error = 0.004978281771191556
+	lateral_error = -0.029871858736989942
   Outputs:
-	v = 1.7874569015187236
-	w = 0.34099203577529913
+	v = 0.699991326263834
+	w = -0.09957461127580619
 
 
 
@@ -2077,11 +2077,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15600100210 ns
   Inputs:
-	heading_error = -0.014858097169529572
-	lateral_error = -0.007025193024047027
+	heading_error = 0.004978356476519438
+	lateral_error = -0.029871888887604392
   Outputs:
-	v = 1.7974406290961968
-	w = 0.15635367112024134
+	v = 0.6999913258666267
+	w = -0.09957430786319355
 
 
 
@@ -2090,11 +2090,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15700100210 ns
   Inputs:
-	heading_error = -0.074448795686477
-	lateral_error = -0.011959035460953338
+	heading_error = 0.004978392661744768
+	lateral_error = -0.029871913807230754
   Outputs:
-	v = 1.7998013169088483
-	w = -0.0875331607743064
+	v = 0.699991325606293
+	w = -0.09957412964433981
 
 
 
@@ -2103,11 +2103,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15800100210 ns
   Inputs:
-	heading_error = -0.11559290428959645
-	lateral_error = -0.02761470228744134
+	heading_error = 0.004978398544861512
+	lateral_error = -0.02987193619252082
   Outputs:
-	v = 1.7950139427634872
-	w = -0.34563132458972134
+	v = 0.6999913254801929
+	w = -0.09957408458194394
 
 
 
@@ -2116,11 +2116,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 15900100210 ns
   Inputs:
-	heading_error = -0.13219873523599546
-	lateral_error = -0.05063979245231298
+	heading_error = 0.004978386641211668
+	lateral_error = -0.029871958164763512
   Outputs:
-	v = 1.7879878366338187
-	w = -0.5728304263081512
+	v = 0.6999913254596911
+	w = -0.09957415059063723
 
 
 
@@ -2129,11 +2129,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16000100210 ns
   Inputs:
-	heading_error = -0.12278263148351432
-	lateral_error = -0.07653797901105452
+	heading_error = 0.004978370264827892
+	lateral_error = -0.02987198096908905
   Outputs:
-	v = 1.7842940387400144
-	w = -0.7313541107532338
+	v = 0.6999913255011737
+	w = -0.09957428609420738
 
 
 
@@ -2142,11 +2142,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16100100210 ns
   Inputs:
-	heading_error = -0.09049323119664798
-	lateral_error = -0.10065395622250417
+	heading_error = 0.004978360522717606
+	lateral_error = -0.029872004918592765
   Outputs:
-	v = 1.7864490197732155
-	w = -0.7972824419782754
+	v = 0.699991325558243
+	w = -0.09957444281704464
 
 
 
@@ -2155,11 +2155,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16200100210 ns
   Inputs:
-	heading_error = -0.042321699991451744
-	lateral_error = -0.1189967284293818
+	heading_error = 0.004978364364779733
+	lateral_error = -0.02987202954885948
   Outputs:
-	v = 1.7926349057337907
-	w = -0.7645887496766086
+	v = 0.6999913255921927
+	w = -0.09957457758350063
 
 
 
@@ -2168,11 +2168,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16300100210 ns
   Inputs:
-	heading_error = 0.012366727224216945
-	lateral_error = -0.12878975944906657
+	heading_error = 0.004978383913010032
+	lateral_error = -0.0298720539089965
   Outputs:
-	v = 1.7983882269344893
-	w = -0.6452737136833342
+	v = 0.6999913255788036
+	w = -0.09957466073631899
 
 
 
@@ -2181,11 +2181,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16400100210 ns
   Inputs:
-	heading_error = 0.0636785926496759
-	lateral_error = -0.1288268300438915
+	heading_error = 0.004978416970938385
+	lateral_error = -0.029872076899600586
   Outputs:
-	v = 1.799862359406182
-	w = -0.4656921288993985
+	v = 0.6999913255106811
+	w = -0.09957467998394587
 
 
 
@@ -2194,11 +2194,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16500100210 ns
   Inputs:
-	heading_error = 0.10299496890423043
-	lateral_error = -0.11964516785013934
+	heading_error = 0.004978458375264125
+	lateral_error = -0.029872097575060153
   Outputs:
-	v = 1.7963517661921349
-	w = -0.2605929495768624
+	v = 0.6999913253954786
+	w = -0.0995746397146488
 
 
 
@@ -2207,11 +2207,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16600100210 ns
   Inputs:
-	heading_error = 0.12435773452226817
-	lateral_error = -0.10339675350063882
+	heading_error = 0.004978501732554217
+	lateral_error = -0.029872115351230022
   Outputs:
-	v = 1.7904612694255957
-	w = -0.06660079578363565
+	v = 0.699991325251189
+	w = -0.09957455679918412
 
 
 
@@ -2220,11 +2220,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16700100210 ns
   Inputs:
-	heading_error = 0.12525004523507288
-	lateral_error = -0.08335836372802774
+	heading_error = 0.004978541087582203
+	lateral_error = -0.029872130091527005
   Outputs:
-	v = 1.7860995663440546
-	w = 0.08384392408651742
+	v = 0.6999913251000922
+	w = -0.09957445447470323
 
 
 
@@ -2233,11 +2233,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16800100210 ns
   Inputs:
-	heading_error = 0.10675698605791561
-	lateral_error = -0.06322568034751175
+	heading_error = 0.004978572172043828
+	lateral_error = -0.029872142076237118
   Outputs:
-	v = 1.7858996314006292
-	w = 0.16756672602818057
+	v = 0.6999913249629419
+	w = -0.09957435601577921
 
 
 
@@ -2246,11 +2246,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 16900100210 ns
   Inputs:
-	heading_error = 0.07316665857825821
-	lateral_error = -0.04643233733579777
+	heading_error = 0.004978593041640854
+	lateral_error = -0.02987215188441983
   Outputs:
-	v = 1.7897523895979253
-	w = 0.17412522284161547
+	v = 0.6999913248546134
+	w = -0.09957427961677316
 
 
 
@@ -2259,11 +2259,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17000100210 ns
   Inputs:
-	heading_error = 0.031091552958582014
-	lateral_error = -0.03563204263220765
+	heading_error = 0.0049786040801545195
+	lateral_error = -0.02987216023121153
   Outputs:
-	v = 1.7951841250664209
-	w = 0.10693728496984178
+	v = 0.699991324781883
+	w = -0.0995742353711159
 
 
 
@@ -2272,11 +2272,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17100100210 ns
   Inputs:
-	heading_error = -0.011761709821630717
-	lateral_error = -0.03234397474898376
+	heading_error = 0.004978607491583777
+	lateral_error = -0.029872167804859018
   Outputs:
-	v = 1.799130053884846
-	w = -0.018161958694502545
+	v = 0.6999913247434136
+	w = -0.09957422460422805
 
 
 
@@ -2285,11 +2285,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17200100210 ns
   Inputs:
-	heading_error = -0.04796801010149032
-	lateral_error = -0.036745323551948594
+	heading_error = 0.004978606490040033
+	lateral_error = -0.029872175139300516
   Outputs:
-	v = 1.7998754973991595
-	w = -0.1764227382824579
+	v = 0.6999913247315248
+	w = -0.09957424125310096
 
 
 
@@ -2298,11 +2298,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17300100210 ns
   Inputs:
-	heading_error = -0.07165325006402767
-	lateral_error = -0.04766358874555987
+	heading_error = 0.004978604422793381
+	lateral_error = -0.029872182543466685
   Outputs:
-	v = 1.7979295600466723
-	w = -0.33885333461375566
+	v = 0.6999913247350151
+	w = -0.09957427459704193
 
 
 
@@ -2311,11 +2311,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17400100210 ns
   Inputs:
-	heading_error = -0.07943209045866872
-	lateral_error = -0.06283124339972268
+	heading_error = 0.004978604031192754
+	lateral_error = -0.029872190091962736
   Outputs:
-	v = 1.795381207233095
-	w = -0.4772673552383502
+	v = 0.6999913247422196
+	w = -0.09957431248269322
 
 
 
@@ -2324,11 +2324,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17500100210 ns
   Inputs:
-	heading_error = -0.07086614169493011
-	lateral_error = -0.07936662852861343
+	heading_error = 0.004978606984647915
+	lateral_error = -0.02987219766749849
   Outputs:
-	v = 1.7943244737705308
-	w = -0.5690533354335656
+	v = 0.6999913247435843
+	w = -0.09957434424307993
 
 
 
@@ -2337,11 +2337,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17600100210 ns
   Inputs:
-	heading_error = -0.048385802006610135
-	lateral_error = -0.09433993267848084
+	heading_error = 0.004978613737149376
+	lateral_error = -0.02987220503592436
   Outputs:
-	v = 1.7954820821923922
-	w = -0.6009310808941741
+	v = 0.6999913247332915
+	w = -0.0995743627314023
 
 
 
@@ -2350,11 +2350,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17700100210 ns
   Inputs:
-	heading_error = -0.01670698673582116
-	lateral_error = -0.10527922730197847
+	heading_error = 0.0049786236757723284
+	lateral_error = -0.02987221193132239
   Outputs:
-	v = 1.7978933438020137
-	w = -0.5709029387403639
+	v = 0.6999913247097589
+	w = -0.09957436519509993
 
 
 
@@ -2363,11 +2363,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17800100210 ns
   Inputs:
-	heading_error = 0.018135986767039203
-	lateral_error = -0.11054540957594217
+	heading_error = 0.004978635472647763
+	lateral_error = -0.029872218130687855
   Outputs:
-	v = 1.7997487947779747
-	w = -0.48794485615119854
+	v = 0.6999913246751226
+	w = -0.09957435302220025
 
 
 
@@ -2376,11 +2376,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 17900100210 ns
   Inputs:
-	heading_error = 0.049939345737390006
-	lateral_error = -0.1095578392151797
+	heading_error = 0.004978647524424132
+	lateral_error = -0.02987222350397367
   Outputs:
-	v = 1.7997039854993304
-	w = -0.36963769123561185
+	v = 0.6999913246340101
+	w = -0.09957433063216037
 
 
 
@@ -2389,11 +2389,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18000100210 ns
   Inputs:
-	heading_error = 0.07342431035785868
-	lateral_error = -0.10284856786516094
+	heading_error = 0.004978658366416311
+	lateral_error = -0.02987222803337186
   Outputs:
-	v = 1.7977559220134125
-	w = -0.23847397391115877
+	v = 0.6999913245920093
+	w = -0.09957430391819816
 
 
 
@@ -2402,11 +2402,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18100100210 ns
   Inputs:
-	heading_error = 0.08507692041977055
-	lateral_error = -0.09191784974208161
+	heading_error = 0.004978666975867324
+	lateral_error = -0.029872231803604876
   Outputs:
-	v = 1.7951501630126165
-	w = -0.11769703002920906
+	v = 0.6999913245542245
+	w = -0.0995742786678222
 
 
 
@@ -2415,11 +2415,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18200100210 ns
   Inputs:
-	heading_error = 0.08361752117630727
-	lateral_error = -0.07890820571413837
+	heading_error = 0.004978672919433047
+	lateral_error = -0.029872234970983236
   Outputs:
-	v = 1.7934896541405663
-	w = -0.02736371728924425
+	v = 0.6999913245242202
+	w = -0.09957425931095021
 
 
 
@@ -2428,11 +2428,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18300100210 ns
   Inputs:
-	heading_error = 0.07006846275559431
-	lateral_error = -0.0661798208407296
+	heading_error = 0.004978676342690502
+	lateral_error = -0.02987223772214609
   Outputs:
-	v = 1.7937109647719538
-	w = 0.018837261848675624
+	v = 0.6999913245035065
+	w = -0.09957424820620076
 
 
 
@@ -2441,11 +2441,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18400100210 ns
   Inputs:
-	heading_error = 0.04744616148703207
-	lateral_error = -0.05589196237866201
+	heading_error = 0.004978677834414552
+	lateral_error = -0.029872240233535408
   Outputs:
-	v = 1.7955831769836939
-	w = 0.01555456765945884
+	v = 0.6999913244915763
+	w = -0.09957424551782235
 
 
 
@@ -2454,11 +2454,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18500100210 ns
   Inputs:
-	heading_error = 0.020144402875378553
-	lateral_error = -0.04966187242819142
+	heading_error = 0.004978678219441729
+	lateral_error = -0.029872242640371915
   Outputs:
-	v = 1.7979743556273664
-	w = -0.03378320356651976
+	v = 0.6999913244863775
+	w = -0.09957424959648342
 
 
 
@@ -2467,11 +2467,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18600100210 ns
   Inputs:
-	heading_error = -0.006883933489788774
-	lateral_error = -0.048331615313149
+	heading_error = 0.00497867833919044
+	lateral_error = -0.029872245020132304
   Outputs:
-	v = 1.7996347950796863
-	w = -0.11806987821125148
+	v = 0.6999913244850356
+	w = -0.09957425768372075
 
 
 
@@ -2480,11 +2480,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18700100210 ns
   Inputs:
-	heading_error = -0.029004221582329848
-	lateral_error = -0.051861681221622824
+	heading_error = 0.0049786788702443074
+	lateral_error = -0.02987224739139016
   Outputs:
-	v = 1.7999573504821627
-	w = -0.2208621952117511
+	v = 0.6999913244846183
+	w = -0.09957426672376746
 
 
 
@@ -2493,11 +2493,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18800100210 ns
   Inputs:
-	heading_error = -0.04268211212964257
-	lateral_error = -0.059372983317917516
+	heading_error = 0.004978680213373221
+	lateral_error = -0.02987224972535607
   Outputs:
-	v = 1.7992429326928443
-	w = -0.3234636112158107
+	v = 0.6999913244827676
+	w = -0.09957427408458341
 
 
 
@@ -2506,11 +2506,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 18900100210 ns
   Inputs:
-	heading_error = -0.04603690723562437
-	lateral_error = -0.06934092421635274
+	heading_error = 0.004978682463752215
+	lateral_error = -0.029872251965190166
   Outputs:
-	v = 1.7983606624700716
-	w = -0.40822038179024034
+	v = 0.6999913244780868
+	w = -0.0995742780479314
 
 
 
@@ -2519,11 +2519,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19000100210 ns
   Inputs:
-	heading_error = -0.03907973216946026
-	lateral_error = -0.0799029248998151
+	heading_error = 0.00497868545329988
+	lateral_error = -0.02987225404738858
   Outputs:
-	v = 1.79809287971938
-	w = -0.46151132580790843
+	v = 0.6999913244702439
+	w = -0.0995742780057518
 
 
 
@@ -2532,11 +2532,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19100100210 ns
   Inputs:
-	heading_error = -0.02360862656568763
-	lateral_error = -0.08920696901574132
+	heading_error = 0.00497868884205005
+	lateral_error = -0.02987225592021936
   Outputs:
-	v = 1.7986256720026237
-	w = -0.4759306282771014
+	v = 0.6999913244598253
+	w = -0.0995742743763548
 
 
 
@@ -2545,11 +2545,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19200100210 ns
   Inputs:
-	heading_error = -0.0027936384411981763
-	lateral_error = -0.09572894912142171
+	heading_error = 0.004978692229178405
+	lateral_error = -0.02987225755574663
   Outputs:
-	v = 1.7994983927754495
-	w = -0.4512623823257158
+	v = 0.6999913244480153
+	w = -0.09957426831267724
 
 
 
@@ -2558,11 +2558,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19300100210 ns
   Inputs:
-	heading_error = 0.019458739505859857
-	lateral_error = -0.09851045283364979
+	heading_error = 0.004978695255664134
+	lateral_error = -0.029872258954093844
   Outputs:
-	v = 1.799992976030402
-	w = -0.39409035025047956
+	v = 0.6999913244362108
+	w = -0.0995742613062729
 
 
 
@@ -2571,11 +2571,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19400100210 ns
   Inputs:
-	heading_error = 0.03923233603188114
-	lateral_error = -0.0972898689786037
+	heading_error = 0.004978697677780697
+	lateral_error = -0.02987226014051725
   Outputs:
-	v = 1.7996592324637861
-	w = -0.3162068533111597
+	v = 0.6999913244256634
+	w = -0.09957425479371884
 
 
 
@@ -2584,11 +2584,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19500100210 ns
   Inputs:
-	heading_error = 0.053279397281909
-	lateral_error = -0.0925108220526818
+	heading_error = 0.00497869940098522
+	lateral_error = -0.029872261157332325
   Outputs:
-	v = 1.7986149190991685
-	w = -0.23223013178689023
+	v = 0.6999913244172221
+	w = -0.0995742498509462
 
 
 
@@ -2597,11 +2597,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19600100210 ns
   Inputs:
-	heading_error = 0.059533168036394635
-	lateral_error = -0.08520635525934939
+	heading_error = 0.004978700474439157
+	lateral_error = -0.029872262053471488
   Outputs:
-	v = 1.7974457795494112
-	w = -0.15692569908309117
+	v = 0.6999913244112166
+	w = -0.09957424702538842
 
 
 
@@ -2610,11 +2610,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19700100210 ns
   Inputs:
-	heading_error = 0.05738277026156613
-	lateral_error = -0.07678288428578828
+	heading_error = 0.004978701054951629
+	lateral_error = -0.02987226287442013
   Outputs:
-	v = 1.7968111637024138
-	w = -0.10269274889181901
+	v = 0.6999913244074755
+	w = -0.09957424631612932
 
 
 
@@ -2623,11 +2623,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19800100210 ns
   Inputs:
-	heading_error = 0.04768641741346258
-	lateral_error = -0.06875242929414949
+	heading_error = 0.0049787013541282565
+	lateral_error = -0.029872263654691977
   Outputs:
-	v = 1.7970373090013054
-	w = -0.07760045609688859
+	v = 0.6999913244054524
+	w = -0.099574247277874
 
 
 
@@ -2636,11 +2636,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 19900100210 ns
   Inputs:
-	heading_error = 0.032540189294372635
-	lateral_error = -0.06246819769698053
+	heading_error = 0.00497870158352226
+	lateral_error = -0.02987226441397972
   Outputs:
-	v = 1.797953792834238
-	w = -0.08426404752274763
+	v = 0.6999913244044098
+	w = -0.09957424920225488
 
 
 
@@ -2649,11 +2649,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20000100210 ns
   Inputs:
-	heading_error = 0.014853238099374
-	lateral_error = -0.05890700923001724
+	heading_error = 0.004978701910183625
+	lateral_error = -0.029872265157172784
   Outputs:
-	v = 1.7990471065591098
-	w = -0.11971203361043159
+	v = 0.6999913244036103
+	w = -0.09957425132182984
 
 
 
@@ -2662,11 +2662,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20100100210 ns
   Inputs:
-	heading_error = -0.0021923863692121515
-	lateral_error = -0.058526311638881445
+	heading_error = 0.004978702430334714
+	lateral_error = -0.02987226587746239
   Outputs:
-	v = 1.7998014468365855
-	w = -0.17621508452257295
+	v = 0.6999913244024718
+	w = -0.09957425298795664
 
 
 
@@ -2675,11 +2675,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20200100210 ns
   Inputs:
-	heading_error = -0.015701755546214002
-	lateral_error = -0.06121288798317437
+	heading_error = 0.004978703163448728
+	lateral_error = -0.029872266561306482
   Outputs:
-	v = 1.79999567409954
-	w = -0.2428747920323744
+	v = 0.699991324400659
+	w = -0.0995742537885107
 
 
 
@@ -2688,11 +2688,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20300100210 ns
   Inputs:
-	heading_error = -0.023549960562133876
-	lateral_error = -0.06633063881347745
+	heading_error = 0.004978704064124206
+	lateral_error = -0.02987226719379965
   Outputs:
-	v = 1.7997781139442903
-	w = -0.3076585741175535
+	v = 0.6999913243981041
+	w = -0.09957425359143102
 
 
 
@@ -2701,11 +2701,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20400100210 ns
   Inputs:
-	heading_error = -0.024707507376122706
-	lateral_error = -0.0728587650820165
+	heading_error = 0.004978705045731946
+	lateral_error = -0.029872267763215277
   Outputs:
-	v = 1.7995008824899839
-	w = -0.3595223975024453
+	v = 0.6999913243949653
+	w = -0.09957425251870178
 
 
 
@@ -2714,11 +2714,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20500100210 ns
   Inputs:
-	heading_error = -0.01935868793654727
-	lateral_error = -0.0795917922006879
+	heading_error = 0.0049787060084257595
+	lateral_error = -0.029872268263889445
   Outputs:
-	v = 1.7994506131204544
-	w = -0.3902650898325568
+	v = 0.6999913243915442
+	w = -0.09957425086993332
 
 
 
@@ -2727,11 +2727,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20600100210 ns
   Inputs:
-	heading_error = -0.008801871311607812
-	lateral_error = -0.0853598211861879
+	heading_error = 0.004978706864552929
+	lateral_error = -0.029872268697150872
   Outputs:
-	v = 1.7996627276144181
-	w = -0.3958019205489407
+	v = 0.6999913243881891
+	w = -0.09957424902185474
 
 
 
@@ -2740,11 +2740,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20700100210 ns
   Inputs:
-	heading_error = 0.004840008051949951
-	lateral_error = -0.08922760755008863
+	heading_error = 0.004978707556423212
+	lateral_error = -0.029872269070461144
   Outputs:
-	v = 1.7999302748054256
-	w = -0.37664676999118285
+	v = 0.6999913243852055
+	w = -0.09957424733039177
 
 
 
@@ -2753,11 +2753,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20800100210 ns
   Inputs:
-	heading_error = 0.01903695217304957
-	lateral_error = -0.0906407328928518
+	heading_error = 0.0049787080640278925
+	lateral_error = -0.02987226939532217
   Outputs:
-	v = 1.7999789169310085
-	w = -0.3375503979925547
+	v = 0.6999913243827942
+	w = -0.09957424605615173
 
 
 
@@ -2766,11 +2766,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 20900100210 ns
   Inputs:
-	heading_error = 0.03131482132648644
-	lateral_error = -0.08949885410611369
+	heading_error = 0.004978708402963439
+	lateral_error = -0.029872269684633856
   Outputs:
-	v = 1.7996738448569796
-	w = -0.2864151228792089
+	v = 0.6999913243810252
+	w = -0.09957424532517711
 
 
 
@@ -2779,11 +2779,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21000100210 ns
   Inputs:
-	heading_error = 0.03967821062199883
-	lateral_error = -0.08614739760245005
+	heading_error = 0.004978708614902405
+	lateral_error = -0.02987226995020542
   Outputs:
-	v = 1.7991175158872836
-	w = -0.232736131118509
+	v = 0.699991324379844
+	w = -0.09957424512668167
 
 
 
@@ -2792,11 +2792,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21100100210 ns
   Inputs:
-	heading_error = 0.04292251208070086
-	lateral_error = -0.08129214618303404
+	heading_error = 0.0049787087541346975
+	lateral_error = -0.029872270200926643
   Outputs:
-	v = 1.7985832615276973
-	w = -0.18587674792180486
+	v = 0.6999913243791053
+	w = -0.09957424534121206
 
 
 
@@ -2805,11 +2805,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21200100210 ns
   Inputs:
-	heading_error = 0.040790662741899464
-	lateral_error = -0.07585564135638023
+	heading_error = 0.00497870887388252
+	lateral_error = -0.029872270441889448
   Outputs:
-	v = 1.7983421467121965
-	w = -0.15347853640933273
+	v = 0.6999913243786201
+	w = -0.09957424578716778
 
 
 
@@ -2818,11 +2818,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21300100210 ns
   Inputs:
-	heading_error = 0.0339600063360721
-	lateral_error = -0.07080520618758612
+	heading_error = 0.0049787090154290725
+	lateral_error = -0.02987227067445808
   Outputs:
-	v = 1.7985027172750447
-	w = -0.14025991445792307
+	v = 0.6999913243782028
+	w = -0.09957424627202771
 
 
 
@@ -2831,11 +2831,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21400100210 ns
   Inputs:
-	heading_error = 0.023872698601688835
-	lateral_error = -0.06698506962115225
+	heading_error = 0.004978709201900744
+	lateral_error = -0.029872270897106645
   Outputs:
-	v = 1.7989621459233118
-	w = -0.14738079940605608
+	v = 0.6999913243777095
+	w = -0.09957424663611603
 
 
 
@@ -2844,11 +2844,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21500100210 ns
   Inputs:
-	heading_error = 0.012446610388243684
-	lateral_error = -0.06498021918315633
+	heading_error = 0.004978709437170159
+	lateral_error = -0.029872271106690995
   Outputs:
-	v = 1.7994871091943043
-	w = -0.17244948407785365
+	v = 0.6999913243770596
+	w = -0.0995742467808236
 
 
 
@@ -2857,11 +2857,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21600100210 ns
   Inputs:
-	heading_error = 0.0017210076820783904
-	lateral_error = -0.06503153530708783
+	heading_error = 0.004978709709140827
+	lateral_error = -0.02987227129979697
   Outputs:
-	v = 1.7998605755008212
-	w = -0.21013443517965058
+	v = 0.6999913243762397
+	w = -0.09957424667808334
 
 
 
@@ -2870,11 +2870,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21700100210 ns
   Inputs:
-	heading_error = -0.006499950022598178
-	lateral_error = -0.06701324127624808
+	heading_error = 0.0049787099958515935
+	lateral_error = -0.029872271473855072
   Outputs:
-	v = 1.7999973343199602
-	w = -0.25324211050003775
+	v = 0.6999913243752918
+	w = -0.09957424636262457
 
 
 
@@ -2883,11 +2883,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21800100210 ns
   Inputs:
-	heading_error = -0.010944727791688535
-	lateral_error = -0.07047427120613747
+	heading_error = 0.004978710272532383
+	lateral_error = -0.029872271627835012
   Outputs:
-	v = 1.7999619757186087
-	w = -0.29405276519538504
+	v = 0.6999913243742927
+	w = -0.09957424591201391
 
 
 
@@ -2896,11 +2896,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 21900100210 ns
   Inputs:
-	heading_error = -0.01106435241962167
-	lateral_error = -0.0747342081695539
+	heading_error = 0.004978710517884899
+	lateral_error = -0.02987227176243934
   Outputs:
-	v = 1.7998921927163756
-	w = -0.32567599599130403
+	v = 0.6999913243733284
+	w = -0.09957424542121052
 
 
 
@@ -2909,11 +2909,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22000100210 ns
   Inputs:
-	heading_error = -0.0070869919046998575
-	lateral_error = -0.07901415622752683
+	heading_error = 0.004978710718369306
+	lateral_error = -0.029872271879862744
   Outputs:
-	v = 1.7998898232189737
-	w = -0.34319424235670226
+	v = 0.6999913243724734
+	w = -0.09957424497821776
 
 
 
@@ -2922,11 +2922,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22100100210 ns
   Inputs:
-	heading_error = 6.555374626016075e-05
-	lateral_error = -0.08257701122970484
+	heading_error = 0.00497871086994317
+	lateral_error = -0.029872271983245824
   Outputs:
-	v = 1.799954797280363
-	w = -0.34440459252890676
+	v = 0.6999913243717746
+	w = -0.09957424464597375
 
 
 
@@ -2935,11 +2935,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22200100210 ns
   Inputs:
-	heading_error = 0.008977481574445889
-	lateral_error = -0.0848518699958305
+	heading_error = 0.004978710977369016
+	lateral_error = -0.029872272076013395
   Outputs:
-	v = 1.7999999961324358
-	w = -0.33004582993377873
+	v = 0.6999913243712463
+	w = -0.09957424445321061
 
 
 
@@ -2948,11 +2948,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22300100210 ns
   Inputs:
-	heading_error = 0.018012956039228367
-	lateral_error = -0.08552240765073194
+	heading_error = 0.0049787110517065525
+	lateral_error = -0.029872272161257207
   Outputs:
-	v = 1.7999274648292898
-	w = -0.30349755368553843
+	v = 0.699991324370872
+	w = -0.09957424439457752
 
 
 
@@ -2961,11 +2961,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22400100210 ns
   Inputs:
-	heading_error = 0.02561158658409468
-	lateral_error = -0.08456653865651997
+	heading_error = 0.004978711106892186
+	lateral_error = -0.02987227224129274
   Outputs:
-	v = 1.799707987969063
-	w = -0.2700378064460143
+	v = 0.6999913243706128
+	w = -0.09957424443820262
 
 
 
@@ -2974,11 +2974,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22500100210 ns
   Inputs:
-	heading_error = 0.030552291013101307
-	lateral_error = -0.08224323828728775
+	heading_error = 0.00497871115633064
+	lateral_error = -0.029872272317460258
   Outputs:
-	v = 1.7994096742392867
-	w = -0.23581980828970117
+	v = 0.6999913243704206
+	w = -0.09957424453760222
 
 
 
@@ -2987,11 +2987,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22600100210 ns
   Inputs:
-	heading_error = 0.03214211861538363
-	lateral_error = -0.079031513950377
+	heading_error = 0.004978711210240627
+	lateral_error = -0.02987227239016388
   Outputs:
-	v = 1.7991599671090481
-	w = -0.20676378909674575
+	v = 0.6999913243702482
+	w = -0.09957424464451847
 
 
 
@@ -3000,11 +3000,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22700100210 ns
   Inputs:
-	heading_error = 0.030303067714496645
-	lateral_error = -0.07553491014326497
+	heading_error = 0.004978711274193692
+	lateral_error = -0.029872272459090965
   Outputs:
-	v = 1.799070275836684
-	w = -0.18755758133997347
+	v = 0.6999913243700604
+	w = -0.099574244719693
 
 
 
@@ -3013,11 +3013,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22800100210 ns
   Inputs:
-	heading_error = 0.02554910724661763
-	lateral_error = -0.07237047327477786
+	heading_error = 0.004978711348935239
+	lateral_error = -0.029872272523536303
   Outputs:
-	v = 1.7991736149187447
-	w = -0.18092736971507328
+	v = 0.6999913243698375
+	w = -0.09957424473958909
 
 
 
@@ -3026,11 +3026,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 22900100210 ns
   Inputs:
-	heading_error = 0.018864111732010524
-	lateral_error = -0.07006237109058411
+	heading_error = 0.004978711431284366
+	lateral_error = -0.029872272582747605
   Outputs:
-	v = 1.7994125507631815
-	w = -0.1872854641126409
+	v = 0.699991324369577
+	w = -0.09957424469840426
 
 
 
@@ -3039,11 +3039,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23000100210 ns
   Inputs:
-	heading_error = 0.011506877629503087
-	lateral_error = -0.06895775321025521
+	heading_error = 0.004978711515706058
+	lateral_error = -0.029872272636191965
   Outputs:
-	v = 1.7996797402570366
-	w = -0.20479303743429433
+	v = 0.69999132436929
+	w = -0.09957424460585296
 
 
 
@@ -3052,11 +3052,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23100100210 ns
   Inputs:
-	heading_error = 0.0047800189593956155
-	lateral_error = -0.0691774477168341
+	heading_error = 0.00497871159608454
+	lateral_error = -0.029872272683723722
   Outputs:
-	v = 1.7998808339053873
-	w = -0.2298035023230085
+	v = 0.6999913243689958
+	w = -0.09957424448194363
 
 
 
@@ -3065,11 +3065,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23200100210 ns
   Inputs:
-	heading_error = -0.0001961060599384723
-	lateral_error = -0.0706078791617406
+	heading_error = 0.004978711667275371
+	lateral_error = -0.02987227272562709
   Outputs:
-	v = 1.7999794363160273
-	w = -0.2575897150297539
+	v = 0.6999913243687157
+	w = -0.09957424435055673
 
 
 
@@ -3078,11 +3078,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23300100210 ns
   Inputs:
-	heading_error = -0.0026659466540159826
-	lateral_error = -0.07293366503854148
+	heading_error = 0.0049787117261352876
+	lateral_error = -0.029872272762544227
   Outputs:
-	v = 1.799999965388172
-	w = -0.2832159408867163
+	v = 0.6999913243684676
+	w = -0.09957424423340688
 
 
 
@@ -3091,11 +3091,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23400100210 ns
   Inputs:
-	heading_error = -0.002348505729495187
-	lateral_error = -0.07570335635533265
+	heading_error = 0.004978711771909783
+	lateral_error = -0.029872272795339327
   Outputs:
-	v = 1.7999936034593826
-	w = -0.30239844677022987
+	v = 0.6999913243682624
+	w = -0.09957424414563576
 
 
 
@@ -3104,11 +3104,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23500100210 ns
   Inputs:
-	heading_error = 0.0005409961537701236
-	lateral_error = -0.07841509230929855
+	heading_error = 0.004978711806017055
+	lateral_error = -0.02987227282492899
   Outputs:
-	v = 1.7999950360710362
-	w = -0.31220744833931136
+	v = 0.6999913243681029
+	w = -0.09957424409371818
 
 
 
@@ -3117,11 +3117,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23600100210 ns
   Inputs:
-	heading_error = 0.005356643108221704
-	lateral_error = -0.0806060059433431
+	heading_error = 0.0049787118313904255
+	lateral_error = -0.029872272852128567
   Outputs:
-	v = 1.799999736590852
-	w = -0.3114963846221137
+	v = 0.6999913243679841
+	w = -0.09957424407564774
 
 
 
@@ -3130,11 +3130,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23700100210 ns
   Inputs:
-	heading_error = 0.01115828384392703
-	lateral_error = -0.08192962087884315
+	heading_error = 0.004978711851611584
+	lateral_error = -0.029872272877552675
   Outputs:
-	v = 1.7999741757988994
-	w = -0.3009974513404856
+	v = 0.6999913243678956
+	w = -0.09957424408295257
 
 
 
@@ -3143,11 +3143,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23800100210 ns
   Inputs:
-	heading_error = 0.016890971577339542
-	lateral_error = -0.08220867773422036
+	heading_error = 0.00497871187006238
+	lateral_error = -0.02987227290155836
   Outputs:
-	v = 1.7998879445941427
-	w = -0.28308534813966446
+	v = 0.6999913243678252
+	w = -0.09957424410376436
 
 
 
@@ -3156,11 +3156,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 23900100210 ns
   Inputs:
-	heading_error = 0.021573468404738172
-	lateral_error = -0.08145580739627789
+	heading_error = 0.004978711889277898
+	lateral_error = -0.029872272924271748
   Outputs:
-	v = 1.7997432316761155
-	w = -0.26127082462752327
+	v = 0.6999913243677609
+	w = -0.09957424412598392
 
 
 
@@ -3169,11 +3169,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24000100210 ns
   Inputs:
-	heading_error = 0.024462534005247782
-	lateral_error = -0.07986032666263299
+	heading_error = 0.004978711910606948
+	lateral_error = -0.029872272945638656
   Outputs:
-	v = 1.7995811431604407
-	w = -0.23952935596615887
+	v = 0.6999913243676938
+	w = -0.0995742441399754
 
 
 
@@ -3182,11 +3182,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24100100210 ns
   Inputs:
-	heading_error = 0.02516628594281123
-	lateral_error = -0.07774534981110737
+	heading_error = 0.004978711934187863
+	lateral_error = -0.029872272965511648
   Outputs:
-	v = 1.7994614528440918
-	w = -0.2215911706295408
+	v = 0.6999913243676196
+	w = -0.09957424414012683
 
 
 
@@ -3195,11 +3195,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24200100210 ns
   Inputs:
-	heading_error = 0.023690572349375216
-	lateral_error = -0.07550439510703377
+	heading_error = 0.0049787119591960804
+	lateral_error = -0.02987227298373263
   Outputs:
-	v = 1.799430022330177
-	w = -0.21031625547318455
+	v = 0.6999913243675373
+	w = -0.09957424412529514
 
 
 
@@ -3208,11 +3208,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24300100210 ns
   Inputs:
-	heading_error = 0.020414714713894888
-	lateral_error = -0.07352971069976189
+	heading_error = 0.004978711984245043
+	lateral_error = -0.02987227300020301
   Outputs:
-	v = 1.7994949047276876
-	w = -0.20725529103063423
+	v = 0.6999913243674503
+	w = -0.09957424409814619
 
 
 
@@ -3221,11 +3221,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24400100210 ns
   Inputs:
-	heading_error = 0.01600499071963757
-	lateral_error = -0.07214512369058745
+	heading_error = 0.004978712007833952
+	lateral_error = -0.029872273014919237
   Outputs:
-	v = 1.7996249285073578
-	w = -0.212459983943468
+	v = 0.6999913243673629
+	w = -0.09957424406383186
 
 
 
@@ -3234,11 +3234,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24500100210 ns
   Inputs:
-	heading_error = 0.011284083453008797
-	lateral_error = -0.07155452365254433
+	heading_error = 0.004978712028729015
+	lateral_error = -0.029872273027983454
   Outputs:
-	v = 1.7997694611661514
-	w = -0.22456053188379954
+	v = 0.6999913243672807
+	w = -0.09957424402834114
 
 
 
@@ -3247,11 +3247,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24600100210 ns
   Inputs:
-	heading_error = 0.007081099828934789
-	lateral_error = -0.07181376388429861
+	heading_error = 0.004978712046211364
+	lateral_error = -0.029872273039583952
   Outputs:
-	v = 1.7998854037305378
-	w = -0.24108176079814214
+	v = 0.6999913243672079
+	w = -0.09957424399701775
 
 
 
@@ -3260,11 +3260,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24700100210 ns
   Inputs:
-	heading_error = 0.004088800007582272
-	lateral_error = -0.07282946442305605
+	heading_error = 0.004978712060161206
+	lateral_error = -0.029872273049959652
   Outputs:
-	v = 1.7999548724112573
-	w = -0.2589306562214553
+	v = 0.699991324367147
+	w = -0.09957424397349035
 
 
 
@@ -3273,11 +3273,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24800100210 ns
   Inputs:
-	heading_error = 0.002752149905535184
-	lateral_error = -0.07438352230312617
+	heading_error = 0.004978712070993874
+	lateral_error = -0.029872273059359244
   Outputs:
-	v = 1.799984953564011
-	w = -0.2749626576618951
+	v = 0.6999913243670983
+	w = -0.09957424395919379
 
 
 
@@ -3286,11 +3286,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 24900100210 ns
   Inputs:
-	heading_error = 0.0032057441595041425
-	lateral_error = -0.07617775819788886
+	heading_error = 0.004978712079487413
+	lateral_error = -0.029872273067999444
   Outputs:
-	v = 1.7999931831081104
-	w = -0.28652548959036395
+	v = 0.6999913243670606
+	w = -0.09957424395346148
 
 
 
@@ -3299,11 +3299,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 25000100210 ns
   Inputs:
-	heading_error = 0.00526830277328294
-	lateral_error = -0.07788985620778544
+	heading_error = 0.0049787120865639745
+	lateral_error = -0.029872273076044564
   Outputs:
-	v = 1.7999907508918664
-	w = -0.29188805615353886
+	v = 0.6999913243670309
+	w = -0.09957424395404813
 
 
 
@@ -3312,11 +3312,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 25100100210 ns
   Inputs:
-	heading_error = 0.008492067245309265
-	lateral_error = -0.07923024319048899
+	heading_error = 0.004978712093078763
+	lateral_error = -0.02987227308359497
   Outputs:
-	v = 1.7999750205450757
-	w = -0.29048621373801
+	v = 0.6999913243670063
+	w = -0.09957424395792236
 
 
 
@@ -3325,11 +3325,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 25200100210 ns
   Inputs:
-	heading_error = 0.012255416238653005
-	lateral_error = -0.0799900174170336
+	heading_error = 0.004978712099662941
+	lateral_error = -0.02987227309068885
   Outputs:
-	v = 1.7999350967045553
-	w = -0.2829527037807189
+	v = 0.6999913243669836
+	w = -0.09957424396206482
 
 
 
@@ -3338,11 +3338,11 @@ Received packet from simulator
 +=controller+=
   VSI time: 25300100210 ns
   Inputs:
-	heading_error = 0.015880091256534
-	lateral_error = -0.08007220316308228
+	heading_error = 0.0049787121066448
+	lateral_error = -0.02987227309731999
   Outputs:
-	v = 1.7998648259874226
-	w = -0.2709384047135224
+	v = 0.6999913243669607
+	w = -0.09957424396410364
 
 
 
@@ -3351,14 +3351,4502 @@ Received packet from simulator
 +=controller+=
   VSI time: 25400100210 ns
   Inputs:
-	heading_error = 0.018751227762370704
-	lateral_error = -0.07950193422460483
+	heading_error = 0.004978712114050099
+	lateral_error = -0.02987227310346352
   Outputs:
-	v = 1.79977304520098
-	w = -0.2567684476261931
+	v = 0.6999913243669363
+	w = -0.09957424396270076
 
 
 
-Killed
-make[1]: *** [Makefile.client1:31: sim] Error 137
+Received packet from simulator
+
++=controller+=
+  VSI time: 25500100210 ns
+  Inputs:
+	heading_error = 0.004978712121667894
+	lateral_error = -0.029872273109087466
+  Outputs:
+	v = 0.6999913243669105
+	w = -0.09957424395765369
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 25600100210 ns
+  Inputs:
+	heading_error = 0.004978712129153462
+	lateral_error = -0.029872273114177617
+  Outputs:
+	v = 0.699991324366884
+	w = -0.09957424394967829
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 25700100210 ns
+  Inputs:
+	heading_error = 0.004978712136141539
+	lateral_error = -0.029872273118743742
+  Outputs:
+	v = 0.6999913243668578
+	w = -0.09957424394009662
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 25800100210 ns
+  Inputs:
+	heading_error = 0.004978712142338471
+	lateral_error = -0.02987227312282137
+  Outputs:
+	v = 0.6999913243668335
+	w = -0.09957424393040881
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 25900100210 ns
+  Inputs:
+	heading_error = 0.004978712147583164
+	lateral_error = -0.029872273126464677
+  Outputs:
+	v = 0.699991324366812
+	w = -0.0995742439219316
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26000100210 ns
+  Inputs:
+	heading_error = 0.004978712151864295
+	lateral_error = -0.02987227312974028
+  Outputs:
+	v = 0.6999913243667937
+	w = -0.09957424391552605
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26100100210 ns
+  Inputs:
+	heading_error = 0.004978712155302434
+	lateral_error = -0.029872273132715677
+  Outputs:
+	v = 0.6999913243667788
+	w = -0.09957424391150393
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26200100210 ns
+  Inputs:
+	heading_error = 0.004978712158104193
+	lateral_error = -0.029872273135452154
+  Outputs:
+	v = 0.6999913243667668
+	w = -0.09957424390965297
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26300100210 ns
+  Inputs:
+	heading_error = 0.0049787121605079365
+	lateral_error = -0.02987227313798968
+  Outputs:
+	v = 0.699991324366757
+	w = -0.09957424390939185
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26400100210 ns
+  Inputs:
+	heading_error = 0.004978712162730048
+	lateral_error = -0.029872273140360228
+  Outputs:
+	v = 0.6999913243667486
+	w = -0.09957424390992697
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26500100210 ns
+  Inputs:
+	heading_error = 0.004978712164929511
+	lateral_error = -0.029872273142574457
+  Outputs:
+	v = 0.6999913243667408
+	w = -0.09957424391052072
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26600100210 ns
+  Inputs:
+	heading_error = 0.004978712167185484
+	lateral_error = -0.02987227314463592
+  Outputs:
+	v = 0.6999913243667333
+	w = -0.09957424391057978
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26700100210 ns
+  Inputs:
+	heading_error = 0.004978712169503963
+	lateral_error = -0.029872273146539285
+  Outputs:
+	v = 0.6999913243667254
+	w = -0.09957424390980174
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26800100210 ns
+  Inputs:
+	heading_error = 0.00497871217183099
+	lateral_error = -0.029872273148279227
+  Outputs:
+	v = 0.6999913243667173
+	w = -0.09957424390814129
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 26900100210 ns
+  Inputs:
+	heading_error = 0.004978712174082522
+	lateral_error = -0.029872273149856632
+  Outputs:
+	v = 0.6999913243667092
+	w = -0.09957424390579295
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27000100210 ns
+  Inputs:
+	heading_error = 0.004978712176170408
+	lateral_error = -0.029872273151275053
+  Outputs:
+	v = 0.6999913243667013
+	w = -0.09957424390309644
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27100100210 ns
+  Inputs:
+	heading_error = 0.0049787121780253685
+	lateral_error = -0.02987227315254959
+  Outputs:
+	v = 0.6999913243666941
+	w = -0.09957424390041858
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27200100210 ns
+  Inputs:
+	heading_error = 0.004978712179612543
+	lateral_error = -0.029872273153693563
+  Outputs:
+	v = 0.6999913243666877
+	w = -0.09957424389809688
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27300100210 ns
+  Inputs:
+	heading_error = 0.004978712180933487
+	lateral_error = -0.029872273154725626
+  Outputs:
+	v = 0.699991324366682
+	w = -0.09957424389632408
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27400100210 ns
+  Inputs:
+	heading_error = 0.004978712182023948
+	lateral_error = -0.029872273155666207
+  Outputs:
+	v = 0.6999913243666774
+	w = -0.09957424389516856
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27500100210 ns
+  Inputs:
+	heading_error = 0.004978712182938327
+	lateral_error = -0.029872273156528628
+  Outputs:
+	v = 0.6999913243666737
+	w = -0.09957424389456904
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27600100210 ns
+  Inputs:
+	heading_error = 0.004978712183738354
+	lateral_error = -0.02987227315732799
+  Outputs:
+	v = 0.6999913243666704
+	w = -0.0995742438943612
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27700100210 ns
+  Inputs:
+	heading_error = 0.004978712184479761
+	lateral_error = -0.029872273158071394
+  Outputs:
+	v = 0.6999913243666677
+	w = -0.09957424389435854
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27800100210 ns
+  Inputs:
+	heading_error = 0.004978712185201184
+	lateral_error = -0.029872273158763285
+  Outputs:
+	v = 0.6999913243666651
+	w = -0.09957424389436653
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 27900100210 ns
+  Inputs:
+	heading_error = 0.004978712185923495
+	lateral_error = -0.02987227315940455
+  Outputs:
+	v = 0.6999913243666626
+	w = -0.0995742438942484
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28000100210 ns
+  Inputs:
+	heading_error = 0.0049787121866475825
+	lateral_error = -0.0298722731599943
+  Outputs:
+	v = 0.69999132436666
+	w = -0.09957424389392422
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28100100210 ns
+  Inputs:
+	heading_error = 0.00497871218736079
+	lateral_error = -0.029872273160533425
+  Outputs:
+	v = 0.6999913243666576
+	w = -0.09957424389338687
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28200100210 ns
+  Inputs:
+	heading_error = 0.004978712188042245
+	lateral_error = -0.0298722731610237
+  Outputs:
+	v = 0.699991324366655
+	w = -0.09957424389269054
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28300100210 ns
+  Inputs:
+	heading_error = 0.004978712188670631
+	lateral_error = -0.029872273161466012
+  Outputs:
+	v = 0.6999913243666527
+	w = -0.09957424389192582
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28400100210 ns
+  Inputs:
+	heading_error = 0.004978712189229961
+	lateral_error = -0.029872273161863028
+  Outputs:
+	v = 0.6999913243666505
+	w = -0.09957424389118152
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28500100210 ns
+  Inputs:
+	heading_error = 0.004978712189713574
+	lateral_error = -0.029872273162221852
+  Outputs:
+	v = 0.6999913243666486
+	w = -0.09957424389053227
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28600100210 ns
+  Inputs:
+	heading_error = 0.004978712190123025
+	lateral_error = -0.029872273162546037
+  Outputs:
+	v = 0.6999913243666468
+	w = -0.09957424389003311
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28700100210 ns
+  Inputs:
+	heading_error = 0.004978712190468082
+	lateral_error = -0.02987227316284269
+  Outputs:
+	v = 0.6999913243666455
+	w = -0.09957424388969205
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28800100210 ns
+  Inputs:
+	heading_error = 0.004978712190763623
+	lateral_error = -0.02987227316311536
+  Outputs:
+	v = 0.6999913243666442
+	w = -0.09957424388949843
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 28900100210 ns
+  Inputs:
+	heading_error = 0.004978712191025636
+	lateral_error = -0.029872273163365826
+  Outputs:
+	v = 0.6999913243666431
+	w = -0.09957424388940694
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29000100210 ns
+  Inputs:
+	heading_error = 0.004978712191268553
+	lateral_error = -0.02987227316359853
+  Outputs:
+	v = 0.6999913243666424
+	w = -0.09957424388936076
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29100100210 ns
+  Inputs:
+	heading_error = 0.004978712191502588
+	lateral_error = -0.029872273163815244
+  Outputs:
+	v = 0.6999913243666415
+	w = -0.0995742438893199
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29200100210 ns
+  Inputs:
+	heading_error = 0.004978712191732182
+	lateral_error = -0.029872273164015084
+  Outputs:
+	v = 0.6999913243666406
+	w = -0.09957424388925062
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29300100210 ns
+  Inputs:
+	heading_error = 0.004978712191958001
+	lateral_error = -0.02987227316419805
+  Outputs:
+	v = 0.6999913243666398
+	w = -0.09957424388913161
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29400100210 ns
+  Inputs:
+	heading_error = 0.004978712192177381
+	lateral_error = -0.029872273164365915
+  Outputs:
+	v = 0.699991324366639
+	w = -0.09957424388896019
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29500100210 ns
+  Inputs:
+	heading_error = 0.004978712192384993
+	lateral_error = -0.029872273164517793
+  Outputs:
+	v = 0.6999913243666382
+	w = -0.09957424388875413
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29600100210 ns
+  Inputs:
+	heading_error = 0.004978712192575729
+	lateral_error = -0.02987227316465635
+  Outputs:
+	v = 0.6999913243666376
+	w = -0.0995742438885312
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29700100210 ns
+  Inputs:
+	heading_error = 0.004978712192746038
+	lateral_error = -0.029872273164779806
+  Outputs:
+	v = 0.6999913243666369
+	w = -0.09957424388832248
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29800100210 ns
+  Inputs:
+	heading_error = 0.004978712192894141
+	lateral_error = -0.029872273164893492
+  Outputs:
+	v = 0.6999913243666362
+	w = -0.09957424388813507
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 29900100210 ns
+  Inputs:
+	heading_error = 0.004978712193021817
+	lateral_error = -0.029872273164994745
+  Outputs:
+	v = 0.6999913243666358
+	w = -0.0995742438879974
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30000100210 ns
+  Inputs:
+	heading_error = 0.004978712193130397
+	lateral_error = -0.029872273165088004
+  Outputs:
+	v = 0.6999913243666354
+	w = -0.09957424388789171
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30100100210 ns
+  Inputs:
+	heading_error = 0.004978712193225654
+	lateral_error = -0.02987227316517327
+  Outputs:
+	v = 0.6999913243666349
+	w = -0.09957424388783043
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30200100210 ns
+  Inputs:
+	heading_error = 0.004978712193310475
+	lateral_error = -0.029872273165252317
+  Outputs:
+	v = 0.6999913243666346
+	w = -0.09957424388779046
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30300100210 ns
+  Inputs:
+	heading_error = 0.004978712193389079
+	lateral_error = -0.029872273165326035
+  Outputs:
+	v = 0.6999913243666342
+	w = -0.09957424388776737
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30400100210 ns
+  Inputs:
+	heading_error = 0.00497871219346413
+	lateral_error = -0.02987227316539265
+  Outputs:
+	v = 0.699991324366634
+	w = -0.09957424388774783
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30500100210 ns
+  Inputs:
+	heading_error = 0.0049787121935367384
+	lateral_error = -0.02987227316545482
+  Outputs:
+	v = 0.6999913243666338
+	w = -0.09957424388771408
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30600100210 ns
+  Inputs:
+	heading_error = 0.004978712193607571
+	lateral_error = -0.029872273165511665
+  Outputs:
+	v = 0.6999913243666335
+	w = -0.09957424388767233
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30700100210 ns
+  Inputs:
+	heading_error = 0.004978712193675072
+	lateral_error = -0.029872273165564067
+  Outputs:
+	v = 0.6999913243666332
+	w = -0.09957424388761638
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30800100210 ns
+  Inputs:
+	heading_error = 0.004978712193738577
+	lateral_error = -0.02987227316561203
+  Outputs:
+	v = 0.699991324366633
+	w = -0.09957424388755598
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 30900100210 ns
+  Inputs:
+	heading_error = 0.004978712193796309
+	lateral_error = -0.02987227316565555
+  Outputs:
+	v = 0.6999913243666328
+	w = -0.09957424388749381
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31000100210 ns
+  Inputs:
+	heading_error = 0.004978712193848489
+	lateral_error = -0.029872273165692853
+  Outputs:
+	v = 0.6999913243666326
+	w = -0.09957424388743696
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31100100210 ns
+  Inputs:
+	heading_error = 0.00497871219389423
+	lateral_error = -0.02987227316572838
+  Outputs:
+	v = 0.6999913243666325
+	w = -0.09957424388737746
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31200100210 ns
+  Inputs:
+	heading_error = 0.00497871219393442
+	lateral_error = -0.029872273165761243
+  Outputs:
+	v = 0.6999913243666323
+	w = -0.0995742438873366
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31300100210 ns
+  Inputs:
+	heading_error = 0.004978712193968393
+	lateral_error = -0.029872273165789665
+  Outputs:
+	v = 0.6999913243666321
+	w = -0.09957424388730729
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31400100210 ns
+  Inputs:
+	heading_error = 0.004978712193998591
+	lateral_error = -0.029872273165817198
+  Outputs:
+	v = 0.699991324366632
+	w = -0.09957424388728509
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31500100210 ns
+  Inputs:
+	heading_error = 0.004978712194026125
+	lateral_error = -0.029872273165842067
+  Outputs:
+	v = 0.6999913243666319
+	w = -0.09957424388727443
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31600100210 ns
+  Inputs:
+	heading_error = -0.1690909917436274
+	lateral_error = 0.023321053612304077
+  Outputs:
+	v = 0.6999913243666318
+	w = -0.09957424388726377
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31700100210 ns
+  Inputs:
+	heading_error = -0.14929285098514988
+	lateral_error = 0.011880664854698075
+  Outputs:
+	v = 0.6900167034937147
+	w = -0.5830797525252933
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31800100210 ns
+  Inputs:
+	heading_error = -0.1294491810657652
+	lateral_error = 0.0018112400317740196
+  Outputs:
+	v = 0.6922135540131743
+	w = -0.5496487445218072
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 31900100210 ns
+  Inputs:
+	heading_error = -0.0613566927629412
+	lateral_error = -0.00676129216028265
+  Outputs:
+	v = 0.694143203761544
+	w = -0.5105517641359647
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32000100210 ns
+  Inputs:
+	heading_error = 0.0034935596243634848
+	lateral_error = -0.010664322640411505
+  Outputs:
+	v = 0.698682788002573
+	w = -0.2724719396928954
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32100100210 ns
+  Inputs:
+	heading_error = 0.06447946620835499
+	lateral_error = -0.010077151894611447
+  Outputs:
+	v = 0.6999957282687476
+	w = -0.028683052064192083
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32200100210 ns
+  Inputs:
+	heading_error = 0.10169471039209466
+	lateral_error = -0.005227699144696452
+  Outputs:
+	v = 0.6985453435480682
+	w = 0.21760925725497415
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32300100210 ns
+  Inputs:
+	heading_error = 0.15018318999017022
+	lateral_error = -2.606460453691284e-06
+  Outputs:
+	v = 0.6963834834482082
+	w = 0.3858680449895928
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32400100210 ns
+  Inputs:
+	heading_error = 0.118540945482152
+	lateral_error = 0.01010773210732463
+  Outputs:
+	v = 0.6921205800427125
+	w = 0.6007223341188661
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32500100210 ns
+  Inputs:
+	heading_error = 0.07393038448440659
+	lateral_error = 0.018027321567397614
+  Outputs:
+	v = 0.6950875719644894
+	w = 0.5145947103579065
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32600100210 ns
+  Inputs:
+	heading_error = 0.023685775229894235
+	lateral_error = 0.023478704453001598
+  Outputs:
+	v = 0.6980878755507206
+	w = 0.3678308242072168
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32700100210 ns
+  Inputs:
+	heading_error = -0.017882484625245887
+	lateral_error = 0.025468588593307473
+  Outputs:
+	v = 0.6998036535978284
+	w = 0.18865791873158333
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32800100210 ns
+  Inputs:
+	heading_error = -0.04472918607674892
+	lateral_error = 0.024567071310406696
+  Outputs:
+	v = 0.6998880788428601
+	w = 0.030344415872246344
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 32900100210 ns
+  Inputs:
+	heading_error = -0.053638603971744026
+	lateral_error = 0.021785979955733836
+  Outputs:
+	v = 0.6992998717100911
+	w = -0.08064845906536888
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33000100210 ns
+  Inputs:
+	heading_error = -0.04671500848973231
+	lateral_error = 0.018381655170455424
+  Outputs:
+	v = 0.6989932564672515
+	w = -0.12741049606404076
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33100100210 ns
+  Inputs:
+	heading_error = -0.028692894880753883
+	lateral_error = 0.015463842129458172
+  Outputs:
+	v = 0.6992363366868158
+	w = -0.11333341327710755
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33200100210 ns
+  Inputs:
+	heading_error = -0.005989821149762875
+	lateral_error = 0.01380653226429196
+  Outputs:
+	v = 0.6997118709926144
+	w = -0.052916211005182845
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33300100210 ns
+  Inputs:
+	heading_error = 0.015313033583748359
+	lateral_error = 0.013736253644794694
+  Outputs:
+	v = 0.699987442752452
+	w = 0.03126684445811634
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33400100210 ns
+  Inputs:
+	heading_error = 0.030577937918106146
+	lateral_error = 0.015156566125662074
+  Outputs:
+	v = 0.6999179304545813
+	w = 0.11619714891417221
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33500100210 ns
+  Inputs:
+	heading_error = 0.03742143247654206
+	lateral_error = 0.01764543961733711
+  Outputs:
+	v = 0.6996727718974323
+	w = 0.18293801617507288
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33600100210 ns
+  Inputs:
+	heading_error = 0.035764373905239344
+	lateral_error = 0.020612432393795288
+  Outputs:
+	v = 0.6995099299306866
+	w = 0.22026748837551668
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33700100210 ns
+  Inputs:
+	heading_error = 0.02742630164199844
+	lateral_error = 0.02346230262881388
+  Outputs:
+	v = 0.6995523660624506
+	w = 0.22550722519613853
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33800100210 ns
+  Inputs:
+	heading_error = 0.015352376927771694
+	lateral_error = 0.02572853607897052
+  Outputs:
+	v = 0.6997367457947008
+	w = 0.20355441708324928
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 33900100210 ns
+  Inputs:
+	heading_error = 0.0027556388550786792
+	lateral_error = 0.027150601564414067
+  Outputs:
+	v = 0.699917508203198
+	w = 0.16432365202696886
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34000100210 ns
+  Inputs:
+	heading_error = -0.00764282590575327
+	lateral_error = 0.027691788184706745
+  Outputs:
+	v = 0.6999973422607569
+	w = 0.11962496167797099
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34100100210 ns
+  Inputs:
+	heading_error = -0.014115630811582847
+	lateral_error = 0.027505394858841292
+  Outputs:
+	v = 0.699979555623779
+	w = 0.0801958491158139
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34200100210 ns
+  Inputs:
+	heading_error = -0.016117225678794256
+	lateral_error = 0.02686593563855233
+  Outputs:
+	v = 0.6999302632963142
+	w = 0.05355905618903378
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34300100210 ns
+  Inputs:
+	heading_error = -0.014175358697134044
+	lateral_error = 0.026086409869147786
+  Outputs:
+	v = 0.699909084230833
+	w = 0.042994839839032295
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34400100210 ns
+  Inputs:
+	heading_error = -0.009569308448004854
+	lateral_error = 0.025442868418264375
+  Outputs:
+	v = 0.6999296718996931
+	w = 0.04764420468805497
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34500100210 ns
+  Inputs:
+	heading_error = -0.0039061378133471436
+	lateral_error = 0.025121748593034177
+  Outputs:
+	v = 0.6999679501621119
+	w = 0.06349423988103808
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34600100210 ns
+  Inputs:
+	heading_error = 0.0012926628142526653
+	lateral_error = 0.02519702504041188
+  Outputs:
+	v = 0.6999946597373742
+	w = 0.08486244311874813
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34700100210 ns
+  Inputs:
+	heading_error = 0.004906449635428967
+	lateral_error = 0.025636206274764817
+  Outputs:
+	v = 0.6999994151580784
+	w = 0.10595875141865818
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34800100210 ns
+  Inputs:
+	heading_error = 0.006382703228861253
+	lateral_error = 0.026328337204621022
+  Outputs:
+	v = 0.6999915743800939
+	w = 0.12217062364077513
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 34900100210 ns
+  Inputs:
+	heading_error = 0.005748182924007805
+	lateral_error = 0.027123765932974386
+  Outputs:
+	v = 0.6999857414332289
+	w = 0.1308441617339291
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35000100210 ns
+  Inputs:
+	heading_error = 0.0034913377022343095
+	lateral_error = 0.02787473220532366
+  Outputs:
+	v = 0.6999884354694178
+	w = 0.13148779542792877
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35100100210 ns
+  Inputs:
+	heading_error = 0.0003663191920248998
+	lateral_error = 0.028467692944504464
+  Outputs:
+	v = 0.6999957337007008
+	w = 0.12546427963023188
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35200100210 ns
+  Inputs:
+	heading_error = -0.00282349456461084
+	lateral_error = 0.028841895765221892
+  Outputs:
+	v = 0.6999999530335879
+	w = 0.11533604854611745
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35300100210 ns
+  Inputs:
+	heading_error = -0.005411105764978608
+	lateral_error = 0.02899281056663483
+  Outputs:
+	v = 0.6999972097593089
+	w = 0.10407360480244421
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35400100210 ns
+  Inputs:
+	heading_error = -0.006985897115122874
+	lateral_error = 0.02896259126407319
+  Outputs:
+	v = 0.6999897520020453
+	w = 0.09432681920662489
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35500100210 ns
+  Inputs:
+	heading_error = -0.007434381329936457
+	lateral_error = 0.028822138048143486
+  Outputs:
+	v = 0.6999829191039904
+	w = 0.08790677659580126
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35600100210 ns
+  Inputs:
+	heading_error = -0.006908081808099986
+	lateral_error = 0.028650296263472264
+  Outputs:
+	v = 0.6999806555800818
+	w = 0.08555102687282812
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35700100210 ns
+  Inputs:
+	heading_error = -0.005739646368290607
+	lateral_error = 0.02851530119949164
+  Outputs:
+	v = 0.699983297508429
+	w = 0.08696885782148911
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35800100210 ns
+  Inputs:
+	heading_error = -0.00433551918274766
+	lateral_error = 0.02846209981501424
+  Outputs:
+	v = 0.6999884697925023
+	w = 0.09110261932480412
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 35900100210 ns
+  Inputs:
+	heading_error = -0.0030731309437506127
+	lateral_error = 0.028507187543022283
+  Outputs:
+	v = 0.6999934211560006
+	w = 0.09650632252906632
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36000100210 ns
+  Inputs:
+	heading_error = -0.0022241877920023967
+	lateral_error = 0.028640639930434197
+  Outputs:
+	v = 0.6999966945557723
+	w = 0.10173622639708668
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36100100210 ns
+  Inputs:
+	heading_error = -0.0019157954119304321
+	lateral_error = 0.028833512981615073
+  Outputs:
+	v = 0.6999982685467468
+	w = 0.1056658085537272
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36200100210 ns
+  Inputs:
+	heading_error = -0.0021306443441355682
+	lateral_error = 0.029047965693028033
+  Outputs:
+	v = 0.6999987154051717
+	w = 0.10767087027873856
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36300100210 ns
+  Inputs:
+	heading_error = -0.0027387159459344446
+	lateral_error = 0.02924737012182188
+  Outputs:
+	v = 0.6999984111247386
+	w = 0.10766928539556986
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36400100210 ns
+  Inputs:
+	heading_error = -0.0035475242952944797
+	lateral_error = 0.02940420128441179
+  Outputs:
+	v = 0.6999973748038795
+	w = 0.10603461670354974
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36500100210 ns
+  Inputs:
+	heading_error = -0.004356345764840341
+	lateral_error = 0.029504409311639
+  Outputs:
+	v = 0.6999955952796004
+	w = 0.10342670795646924
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36600100210 ns
+  Inputs:
+	heading_error = -0.005001808685747733
+	lateral_error = 0.02954799543831399
+  Outputs:
+	v = 0.6999933577985565
+	w = 0.10059225418719464
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36700100210 ns
+  Inputs:
+	heading_error = -0.005386533859315534
+	lateral_error = 0.029546396917329076
+  Outputs:
+	v = 0.6999912436867104
+	w = 0.09818474701026503
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36800100210 ns
+  Inputs:
+	heading_error = -0.005487824970709099
+	lateral_error = 0.029517867165810507
+  Outputs:
+	v = 0.6999898448630979
+	w = 0.09663945223205417
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 36900100210 ns
+  Inputs:
+	heading_error = -0.005348350464725371
+	lateral_error = 0.02948224764570284
+  Outputs:
+	v = 0.6999894593484355
+	w = 0.09612016878040563
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37000100210 ns
+  Inputs:
+	heading_error = -0.005054322227595165
+	lateral_error = 0.029456392239483264
+  Outputs:
+	v = 0.6999899883254225
+	w = 0.09653558872390988
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37100100210 ns
+  Inputs:
+	heading_error = -0.004708348430158438
+	lateral_error = 0.029451119371240786
+  Outputs:
+	v = 0.6999910588584212
+	w = 0.0976082800475524
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37200100210 ns
+  Inputs:
+	heading_error = -0.004403919122514033
+	lateral_error = 0.02947006453106571
+  Outputs:
+	v = 0.6999922410236048
+	w = 0.09897108376432939
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37300100210 ns
+  Inputs:
+	heading_error = -0.00420678693104648
+	lateral_error = 0.029510318781923672
+  Outputs:
+	v = 0.6999932119346977
+	w = 0.1002645816342067
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37400100210 ns
+  Inputs:
+	heading_error = -0.004145986413067959
+	lateral_error = 0.029564370573531562
+  Outputs:
+	v = 0.6999938060394354
+	w = 0.10121412740350877
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37500100210 ns
+  Inputs:
+	heading_error = -0.0042146019374698085
+	lateral_error = 0.029622676167524453
+  Outputs:
+	v = 0.6999939837874497
+	w = 0.10167353664185441
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37600100210 ns
+  Inputs:
+	heading_error = -0.004378242231110718
+	lateral_error = 0.029676176252046993
+  Outputs:
+	v = 0.6999937830048806
+	w = 0.10163229692021858
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37700100210 ns
+  Inputs:
+	heading_error = -0.0045878874781086765
+	lateral_error = 0.02971821924770257
+  Outputs:
+	v = 0.6999932908589553
+	w = 0.1011917360837451
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37800100210 ns
+  Inputs:
+	heading_error = -0.004793459733838823
+	lateral_error = 0.029745585229944638
+  Outputs:
+	v = 0.6999926329638931
+	w = 0.10052132707837558
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 37900100210 ns
+  Inputs:
+	heading_error = -0.004955010888535227
+	lateral_error = 0.0297585598708352
+  Outputs:
+	v = 0.6999919579757217
+	w = 0.09980850198442326
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38000100210 ns
+  Inputs:
+	heading_error = -0.0050495407021138305
+	lateral_error = 0.029760225213051328
+  Outputs:
+	v = 0.6999914067710649
+	w = 0.09921419592919989
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38100100210 ns
+  Inputs:
+	heading_error = -0.005072795302597299
+	lateral_error = 0.02975527320535143
+  Outputs:
+	v = 0.6999910757675066
+	w = 0.09884273804374999
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38200100210 ns
+  Inputs:
+	heading_error = -0.005036618990311936
+	lateral_error = 0.02974869339008368
+  Outputs:
+	v = 0.6999909933810504
+	w = 0.09872991161101652
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38300100210 ns
+  Inputs:
+	heading_error = -0.0049632940440709206
+	lateral_error = 0.02974464601847071
+  Outputs:
+	v = 0.6999911213829703
+	w = 0.09884829759908698
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38400100210 ns
+  Inputs:
+	heading_error = -0.004878685513269865
+	lateral_error = 0.029745731424090316
+  Outputs:
+	v = 0.699991378016981
+	w = 0.09912540789759916
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38500100210 ns
+  Inputs:
+	heading_error = -0.004805919541177595
+	lateral_error = 0.02975273928674138
+  Outputs:
+	v = 0.6999916694662052
+	w = 0.0994681836432818
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38600100210 ns
+  Inputs:
+	heading_error = -0.004760874581085872
+	lateral_error = 0.029764840420975602
+  Outputs:
+	v = 0.6999919161136366
+	w = 0.09978727898225515
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38700100210 ns
+  Inputs:
+	heading_error = -0.004750122511298471
+	lateral_error = 0.029780094172898508
+  Outputs:
+	v = 0.6999920669406122
+	w = 0.10001586335955892
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38800100210 ns
+  Inputs:
+	heading_error = -0.0047712986300947335
+	lateral_error = 0.02979609992278398
+  Outputs:
+	v = 0.699992102732494
+	w = 0.10011988664640015
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 38900100210 ns
+  Inputs:
+	heading_error = -0.0048153526166831995
+	lateral_error = 0.029810622666211373
+  Outputs:
+	v = 0.6999920321633997
+	w = 0.10009920517075699
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39000100210 ns
+  Inputs:
+	heading_error = -0.004869826728159055
+	lateral_error = 0.029822061005075007
+  Outputs:
+	v = 0.6999918843483939
+	w = 0.09998108019811269
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39100100210 ns
+  Inputs:
+	heading_error = -0.004922247123215762
+	lateral_error = 0.029829685646070025
+  Outputs:
+	v = 0.6999916996920769
+	w = 0.09980893710766381
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39200100210 ns
+  Inputs:
+	heading_error = -0.004962865281568973
+	lateral_error = 0.02983364049575865
+  Outputs:
+	v = 0.6999915200362617
+	w = 0.09962975409141706
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39300100210 ns
+  Inputs:
+	heading_error = -0.004986275331099854
+	lateral_error = 0.029834751854788344
+  Outputs:
+	v = 0.6999913795065625
+	w = 0.09948310085675871
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39400100210 ns
+  Inputs:
+	heading_error = -0.004991770047230837
+	lateral_error = 0.029834224405719034
+  Outputs:
+	v = 0.6999912979884426
+	w = 0.09939390609475396
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39500100210 ns
+  Inputs:
+	heading_error = -0.004982600419980443
+	lateral_error = 0.029833312292293357
+  Outputs:
+	v = 0.6999912787992378
+	w = 0.09936981743395279
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39600100210 ns
+  Inputs:
+	heading_error = -0.004964511637982838
+	lateral_error = 0.02983304204160664
+  Outputs:
+	v = 0.6999913108105459
+	w = 0.09940284748925166
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39700100210 ns
+  Inputs:
+	heading_error = -0.004944014777765737
+	lateral_error = 0.02983403797800932
+  Outputs:
+	v = 0.6999913737861858
+	w = 0.0994741216144952
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39800100210 ns
+  Inputs:
+	heading_error = -0.0049268228995345
+	lateral_error = 0.029836468625469514
+  Outputs:
+	v = 0.6999914448686833
+	w = 0.09956009280097433
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 39900100210 ns
+  Inputs:
+	heading_error = -0.004916761840567219
+	lateral_error = 0.02984010258547176
+  Outputs:
+	v = 0.699991504262826
+	w = 0.09963858290374006
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40000100210 ns
+  Inputs:
+	heading_error = -0.0049153025408541495
+	lateral_error = 0.029844440657670113
+  Outputs:
+	v = 0.6999915389255963
+	w = 0.09969336297961817
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40100100210 ns
+  Inputs:
+	heading_error = -0.004921697624385324
+	lateral_error = 0.029848880693188917
+  Outputs:
+	v = 0.6999915439473512
+	w = 0.09971655246726385
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40200100210 ns
+  Inputs:
+	heading_error = -0.004933576190560451
+	lateral_error = 0.02985287288131655
+  Outputs:
+	v = 0.6999915219294867
+	w = 0.09970873227521437
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40300100210 ns
+  Inputs:
+	heading_error = -0.004947778693794369
+	lateral_error = 0.029856033394989545
+  Outputs:
+	v = 0.6999914809563698
+	w = 0.0996771867630244
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40400100210 ns
+  Inputs:
+	heading_error = -0.004961203258194047
+	lateral_error = 0.029858199590243828
+  Outputs:
+	v = 0.6999914318375785
+	w = 0.0996330188047807
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40500100210 ns
+  Inputs:
+	heading_error = -0.004971476253707863
+	lateral_error = 0.029859425961272557
+  Outputs:
+	v = 0.6999913852794507
+	w = 0.09958798532819912
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40600100210 ns
+  Inputs:
+	heading_error = -0.004977334378621023
+	lateral_error = 0.0298599331550351
+  Outputs:
+	v = 0.6999913495661673
+	w = 0.09955179883025878
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40700100210 ns
+  Inputs:
+	heading_error = -0.004978690245892814
+	lateral_error = 0.029860030241834146
+  Outputs:
+	v = 0.6999913291677701
+	w = 0.09953039510565631
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40800100210 ns
+  Inputs:
+	heading_error = -0.004976428041676861
+	lateral_error = 0.029860032397675873
+  Outputs:
+	v = 0.6999913244431227
+	w = 0.09952535998376533
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 40900100210 ns
+  Inputs:
+	heading_error = -0.0049720258703933595
+	lateral_error = 0.02986019289362396
+  Outputs:
+	v = 0.6999913323252689
+	w = 0.09953441742399605
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41000100210 ns
+  Inputs:
+	heading_error = -0.004967120699892469
+	lateral_error = 0.02986066152360678
+  Outputs:
+	v = 0.699991347653385
+	w = 0.0995526680929224
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41100100210 ns
+  Inputs:
+	heading_error = -0.004963122068692094
+	lateral_error = 0.029861473487699186
+  Outputs:
+	v = 0.6999913647169378
+	w = 0.09957416329485724
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41200100210 ns
+  Inputs:
+	heading_error = -0.00496094963520477
+	lateral_error = 0.029862565316424394
+  Outputs:
+	v = 0.6999913786144631
+	w = 0.09959340567602837
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41300100210 ns
+  Inputs:
+	heading_error = -0.00496092813373572
+	lateral_error = 0.029863809166116084
+  Outputs:
+	v = 0.6999913861602172
+	w = 0.0996064627248785
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41400100210 ns
+  Inputs:
+	heading_error = -0.004962832435583486
+	lateral_error = 0.02986505446615162
+  Outputs:
+	v = 0.6999913862348841
+	w = 0.09961152412952146
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41500100210 ns
+  Inputs:
+	heading_error = -0.004966044004127035
+	lateral_error = 0.029866166410396744
+  Outputs:
+	v = 0.6999913796206688
+	w = 0.09960888812227253
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41600100210 ns
+  Inputs:
+	heading_error = -0.004969763127387061
+	lateral_error = 0.029867053495324924
+  Outputs:
+	v = 0.6999913684601712
+	w = 0.09960048962507884
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41700100210 ns
+  Inputs:
+	heading_error = -0.004973219815720853
+	lateral_error = 0.029867680200793778
+  Outputs:
+	v = 0.6999913555268523
+	w = 0.09958916147175145
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41800100210 ns
+  Inputs:
+	heading_error = -0.004975837529157978
+	lateral_error = 0.029868064907435432
+  Outputs:
+	v = 0.6999913434974743
+	w = 0.0995778415402917
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 41900100210 ns
+  Inputs:
+	heading_error = -0.004977323026262859
+	lateral_error = 0.029868266353155093
+  Outputs:
+	v = 0.6999913343821884
+	w = 0.09956890951310982
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42000100210 ns
+  Inputs:
+	heading_error = -0.00497767691299611
+	lateral_error = 0.029868363800676256
+  Outputs:
+	v = 0.6999913292073229
+	w = 0.09956377330756894
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42100100210 ns
+  Inputs:
+	heading_error = -0.0049771378471517025
+	lateral_error = 0.0298684364673667
+  Outputs:
+	v = 0.6999913279742982
+	w = 0.09956274755072059
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42200100210 ns
+  Inputs:
+	heading_error = -0.004976085364024385
+	lateral_error = 0.029868546861552936
+  Outputs:
+	v = 0.6999913298524957
+	w = 0.09956519448085999
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42300100210 ns
+  Inputs:
+	heading_error = -0.004974930531314037
+	lateral_error = 0.029868730921645437
+  Outputs:
+	v = 0.6999913335189403
+	w = 0.0995698459901142
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42400100210 ns
+  Inputs:
+	heading_error = -0.004974020682895208
+	lateral_error = 0.029868995809832377
+  Outputs:
+	v = 0.6999913375410393
+	w = 0.0995752015613256
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42500100210 ns
+  Inputs:
+	heading_error = -0.004973576353584974
+	lateral_error = 0.02986932437452605
+  Outputs:
+	v = 0.6999913407092394
+	w = 0.09957990050774868
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42600100210 ns
+  Inputs:
+	heading_error = -0.0049736680116181375
+	lateral_error = 0.029869684027215015
+  Outputs:
+	v = 0.699991342256236
+	w = 0.09958299208376431
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42700100210 ns
+  Inputs:
+	heading_error = -0.004974230024097359
+	lateral_error = 0.02987003724775139
+  Outputs:
+	v = 0.6999913419371266
+	w = 0.09958406406238751
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42800100210 ns
+  Inputs:
+	heading_error = -0.004975101644593138
+	lateral_error = 0.02987035111164804
+  Outputs:
+	v = 0.6999913399803398
+	w = 0.09958322889461613
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 42900100210 ns
+  Inputs:
+	heading_error = -0.004976080868809518
+	lateral_error = 0.029870603947903085
+  Outputs:
+	v = 0.6999913369451378
+	w = 0.09958099786821961
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43000100210 ns
+  Inputs:
+	heading_error = -0.0049769769136309705
+	lateral_error = 0.029870788226652678
+  Outputs:
+	v = 0.6999913335345983
+	w = 0.09957809231637427
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43100100210 ns
+  Inputs:
+	heading_error = -0.004977650115563392
+	lateral_error = 0.029870909773171306
+  Outputs:
+	v = 0.6999913304131761
+	w = 0.09957524525208683
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43200100210 ns
+  Inputs:
+	heading_error = -0.004978032949603417
+	lateral_error = 0.029870984188999472
+  Outputs:
+	v = 0.6999913280676698
+	w = 0.09957303863043165
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43300100210 ns
+  Inputs:
+	heading_error = -0.004978131208039471
+	lateral_error = 0.029871031801865122
+  Outputs:
+	v = 0.6999913267336944
+	w = 0.09957180495758422
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43400100210 ns
+  Inputs:
+	heading_error = -0.004978008900241804
+	lateral_error = 0.029871072533282472
+  Outputs:
+	v = 0.6999913263912988
+	w = 0.0995716023753026
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43500100210 ns
+  Inputs:
+	heading_error = -0.00497776330789268
+	lateral_error = 0.02987112182334961
+  Outputs:
+	v = 0.6999913268174967
+	w = 0.09957225453216267
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43600100210 ns
+  Inputs:
+	heading_error = -0.004977497544177645
+	lateral_error = 0.02987118830183988
+  Outputs:
+	v = 0.6999913276732647
+	w = 0.09957343406182773
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43700100210 ns
+  Inputs:
+	heading_error = -0.004977297097426003
+	lateral_error = 0.02987127338024731
+  Outputs:
+	v = 0.6999913285992724
+	w = 0.09957476303064894
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43800100210 ns
+  Inputs:
+	heading_error = -0.004977214721914258
+	lateral_error = 0.029871372485787084
+  Outputs:
+	v = 0.6999913292976616
+	w = 0.09957590513128523
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 43900100210 ns
+  Inputs:
+	heading_error = -0.004977265374573214
+	lateral_error = 0.02987147735301754
+  Outputs:
+	v = 0.6999913295846633
+	w = 0.0995766310554913
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44000100210 ns
+  Inputs:
+	heading_error = -0.004977430373385161
+	lateral_error = 0.02987157866979917
+  Outputs:
+	v = 0.6999913294081866
+	w = 0.0995768479137773
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44100100210 ns
+  Inputs:
+	heading_error = -0.004977668095859755
+	lateral_error = 0.029871668432069676
+  Outputs:
+	v = 0.6999913288333095
+	w = 0.09957659318565604
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44200100210 ns
+  Inputs:
+	heading_error = -0.004977927622027423
+	lateral_error = 0.029871741549642117
+  Outputs:
+	v = 0.6999913280050202
+	w = 0.09957600134483968
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44300100210 ns
+  Inputs:
+	heading_error = -0.004978161774257472
+	lateral_error = 0.02987179649692262
+  Outputs:
+	v = 0.6999913271007159
+	w = 0.09957525571045878
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44400100210 ns
+  Inputs:
+	heading_error = -0.004978336820407492
+	lateral_error = 0.02987183505081603
+  Outputs:
+	v = 0.699991326284785
+	w = 0.09957453889066059
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44500100210 ns
+  Inputs:
+	heading_error = -0.004978437361911503
+	lateral_error = 0.02987186134942199
+  Outputs:
+	v = 0.6999913256747912
+	w = 0.09957399292163416
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44600100210 ns
+  Inputs:
+	heading_error = -0.004978466265308512
+	lateral_error = 0.029871880608586032
+  Outputs:
+	v = 0.6999913253244184
+	w = 0.09957369595004195
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44700100210 ns
+  Inputs:
+	heading_error = -0.004978440606326018
+	lateral_error = 0.029871897843303685
+  Outputs:
+	v = 0.6999913252236929
+	w = 0.09957365737311008
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44800100210 ns
+  Inputs:
+	heading_error = -0.004978385280852038
+	lateral_error = 0.029871916873077886
+  Outputs:
+	v = 0.699991325313112
+	w = 0.09957382894791067
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 44900100210 ns
+  Inputs:
+	heading_error = -0.004978326128814992
+	lateral_error = 0.029871939774545275
+  Outputs:
+	v = 0.6999913255059144
+	w = 0.09957412636890339
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45000100210 ns
+  Inputs:
+	heading_error = -0.004978284168355884
+	lateral_error = 0.029871966815462336
+  Outputs:
+	v = 0.6999913257120494
+	w = 0.09957445458292113
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45100100210 ns
+  Inputs:
+	heading_error = -0.00497827198763634
+	lateral_error = 0.029871996792293132
+  Outputs:
+	v = 0.6999913258582732
+	w = 0.09957473058842581
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45200100210 ns
+  Inputs:
+	heading_error = -0.004978292668448958
+	lateral_error = 0.029872027620371
+  Outputs:
+	v = 0.6999913259007202
+	w = 0.09957489921862717
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45300100210 ns
+  Inputs:
+	heading_error = -0.004978340990373198
+	lateral_error = 0.029872056999371566
+  Outputs:
+	v = 0.6999913258286522
+	w = 0.09957493980768817
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45400100210 ns
+  Inputs:
+	heading_error = -0.00497840621393042
+	lateral_error = 0.02987208299448607
+  Outputs:
+	v = 0.6999913256602596
+	w = 0.09957486403599347
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45500100210 ns
+  Inputs:
+	heading_error = -0.0049784755310051665
+	lateral_error = 0.02987210442273991
+  Outputs:
+	v = 0.6999913254329654
+	w = 0.0995747071222226
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45600100210 ns
+  Inputs:
+	heading_error = -0.004978537300221575
+	lateral_error = 0.02987212099777281
+  Outputs:
+	v = 0.6999913251914027
+	w = 0.09957451556693897
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45700100210 ns
+  Inputs:
+	heading_error = -0.004978583401708647
+	lateral_error = 0.029872133248134425
+  Outputs:
+	v = 0.6999913249761407
+	w = 0.09957433479020494
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45800100210 ns
+  Inputs:
+	heading_error = -0.004978610366168645
+	lateral_error = 0.029872142270741975
+  Outputs:
+	v = 0.6999913248154781
+	w = 0.09957419938570311
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 45900100210 ns
+  Inputs:
+	heading_error = -0.004978619267461681
+	lateral_error = 0.029872149405330894
+  Outputs:
+	v = 0.6999913247215068
+	w = 0.09957412761829332
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46000100210 ns
+  Inputs:
+	heading_error = -0.004978614640253731
+	lateral_error = 0.02987215591641057
+  Outputs:
+	v = 0.6999913246904856
+	w = 0.09957412055147685
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46100100210 ns
+  Inputs:
+	heading_error = -0.004978602847092617
+	lateral_error = 0.02987216275101634
+  Outputs:
+	v = 0.6999913247066116
+	w = 0.09957416510462735
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46200100210 ns
+  Inputs:
+	heading_error = -0.0049785903579575574
+	lateral_error = 0.02987217041077006
+  Outputs:
+	v = 0.6999913247477109
+	w = 0.09957423961569489
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46300100210 ns
+  Inputs:
+	heading_error = -0.004978582335375847
+	lateral_error = 0.029872178944369665
+  Outputs:
+	v = 0.6999913247912356
+	w = 0.09957432021125001
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46400100210 ns
+  Inputs:
+	heading_error = -0.004978581775802127
+	lateral_error = 0.029872188039133718
+  Outputs:
+	v = 0.6999913248191942
+	w = 0.09957438643597527
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46500100210 ns
+  Inputs:
+	heading_error = -0.00497858928807382
+	lateral_error = 0.02987219717263745
+  Outputs:
+	v = 0.6999913248211443
+	w = 0.09957442505332637
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46600100210 ns
+  Inputs:
+	heading_error = -0.004978603434985018
+	lateral_error = 0.029872205779856387
+  Outputs:
+	v = 0.6999913247949642
+	w = 0.09957443153825452
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46700100210 ns
+  Inputs:
+	heading_error = -0.004978621455093979
+	lateral_error = 0.02987221339638957
+  Outputs:
+	v = 0.6999913247456622
+	w = 0.09957440937948547
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46800100210 ns
+  Inputs:
+	heading_error = -0.004978640133962209
+	lateral_error = 0.029872219751156948
+  Outputs:
+	v = 0.6999913246828617
+	w = 0.09957436776518236
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 46900100210 ns
+  Inputs:
+	heading_error = -0.004978656605731047
+	lateral_error = 0.029872224798095814
+  Outputs:
+	v = 0.6999913246177654
+	w = 0.09957431846877896
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47000100210 ns
+  Inputs:
+	heading_error = -0.004978668923294016
+	lateral_error = 0.029872228691758096
+  Outputs:
+	v = 0.6999913245603606
+	w = 0.09957427276945907
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47100100210 ns
+  Inputs:
+	heading_error = -0.0049786763170471815
+	lateral_error = 0.029872231722986697
+  Outputs:
+	v = 0.6999913245174333
+	w = 0.09957423907385632
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47200100210 ns
+  Inputs:
+	heading_error = -0.004978679145611231
+	lateral_error = 0.029872234236486328
+  Outputs:
+	v = 0.6999913244916657
+	w = 0.09957422162375806
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47300100210 ns
+  Inputs:
+	heading_error = -0.00497867860864698
+	lateral_error = 0.029872236551845788
+  Outputs:
+	v = 0.6999913244818079
+	w = 0.09957422036350039
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47400100210 ns
+  Inputs:
+	heading_error = -0.004978676330344989
+	lateral_error = 0.02987223890466506
+  Outputs:
+	v = 0.6999913244836793
+	w = 0.09957423177279523
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47500100210 ns
+  Inputs:
+	heading_error = -0.004978673929602273
+	lateral_error = 0.02987224141683864
+  Outputs:
+	v = 0.6999913244916194
+	w = 0.09957425029728029
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47600100210 ns
+  Inputs:
+	heading_error = -0.004978672673440876
+	lateral_error = 0.029872244096936562
+  Outputs:
+	v = 0.699991324499986
+	w = 0.09957426994894547
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47700100210 ns
+  Inputs:
+	heading_error = -0.0049786732734729
+	lateral_error = 0.02987224686483536
+  Outputs:
+	v = 0.6999913245043639
+	w = 0.09957428569398274
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47800100210 ns
+  Inputs:
+	heading_error = -0.004978675842443714
+	lateral_error = 0.029872249590599864
+  Outputs:
+	v = 0.6999913245022726
+	w = 0.09957429436544984
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 47900100210 ns
+  Inputs:
+	heading_error = -0.004978679989588564
+	lateral_error = 0.029872252136407873
+  Outputs:
+	v = 0.6999913244933197
+	w = 0.0995742949926246
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48000100210 ns
+  Inputs:
+	heading_error = -0.004978685007310801
+	lateral_error = 0.02987225439179486
+  Outputs:
+	v = 0.6999913244788666
+	w = 0.09957428858727724
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48100100210 ns
+  Inputs:
+	heading_error = -0.004978690090823079
+	lateral_error = 0.029872256295834454
+  Outputs:
+	v = 0.6999913244613796
+	w = 0.09957427753793624
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48200100210 ns
+  Inputs:
+	heading_error = -0.004978694536451833
+	lateral_error = 0.029872257843935657
+  Outputs:
+	v = 0.6999913244436632
+	w = 0.0995742648200455
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48300100210 ns
+  Inputs:
+	heading_error = -0.004978697879367111
+	lateral_error = 0.029872259080764074
+  Outputs:
+	v = 0.6999913244281698
+	w = 0.0995742532299353
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48400100210 ns
+  Inputs:
+	heading_error = -0.004978699952332022
+	lateral_error = 0.029872260083525504
+  Outputs:
+	v = 0.6999913244165196
+	w = 0.09957424480558785
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48500100210 ns
+  Inputs:
+	heading_error = -0.004978700867823704
+	lateral_error = 0.02987226094112483
+  Outputs:
+	v = 0.6999913244092951
+	w = 0.09957424052477393
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48600100210 ns
+  Inputs:
+	heading_error = -0.0049787009422157524
+	lateral_error = 0.02987226173459323
+  Outputs:
+	v = 0.6999913244061045
+	w = 0.0995742402932045
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48700100210 ns
+  Inputs:
+	heading_error = -0.004978700589749252
+	lateral_error = 0.02987226252281161
+  Outputs:
+	v = 0.6999913244058452
+	w = 0.09957424316950991
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48800100210 ns
+  Inputs:
+	heading_error = -0.004978700215304777
+	lateral_error = 0.029872263335660953
+  Outputs:
+	v = 0.6999913244070736
+	w = 0.09957424773224943
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 48900100210 ns
+  Inputs:
+	heading_error = -0.004978700129664837
+	lateral_error = 0.029872264174679586
+  Outputs:
+	v = 0.6999913244083786
+	w = 0.09957425248142471
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49000100210 ns
+  Inputs:
+	heading_error = -0.004978700501474087
+	lateral_error = 0.029872265019652566
+  Outputs:
+	v = 0.6999913244086771
+	w = 0.099574256180059
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49100100210 ns
+  Inputs:
+	heading_error = -0.004978701349360293
+	lateral_error = 0.029872265838559287
+  Outputs:
+	v = 0.6999913244073813
+	w = 0.09957425807271392
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49200100210 ns
+  Inputs:
+	heading_error = -0.004978702568223525
+	lateral_error = 0.029872266598073516
+  Outputs:
+	v = 0.6999913244044264
+	w = 0.09957425795679598
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49300100210 ns
+  Inputs:
+	heading_error = -0.00497870397738609
+	lateral_error = 0.029872267272231134
+  Outputs:
+	v = 0.6999913244001785
+	w = 0.09957425611939996
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49400100210 ns
+  Inputs:
+	heading_error = -0.004978705375884296
+	lateral_error = 0.02987226784771657
+  Outputs:
+	v = 0.6999913243952675
+	w = 0.09957425317938018
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49500100210 ns
+  Inputs:
+	heading_error = -0.004978706591448834
+	lateral_error = 0.029872268325277673
+  Outputs:
+	v = 0.6999913243903936
+	w = 0.0995742498873291
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49600100210 ns
+  Inputs:
+	heading_error = -0.004978707513697778
+	lateral_error = 0.029872268717724637
+  Outputs:
+	v = 0.6999913243861572
+	w = 0.09957424693531536
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49700100210 ns
+  Inputs:
+	heading_error = -0.004978708107320706
+	lateral_error = 0.029872269045594813
+  Outputs:
+	v = 0.6999913243829432
+	w = 0.09957424481610744
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49800100210 ns
+  Inputs:
+	heading_error = -0.0049787084062380416
+	lateral_error = 0.029872269331893797
+  Outputs:
+	v = 0.6999913243808743
+	w = 0.09957424375309643
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 49900100210 ns
+  Inputs:
+	heading_error = -0.004978708493670325
+	lateral_error = 0.029872269597253087
+  Outputs:
+	v = 0.6999913243798326
+	w = 0.09957424370262302
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50000100210 ns
+  Inputs:
+	heading_error = -0.0049787084752033195
+	lateral_error = 0.02987226985647773
+  Outputs:
+	v = 0.6999913243795278
+	w = 0.09957424441433105
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50100100210 ns
+  Inputs:
+	heading_error = -0.0049787084520707126
+	lateral_error = 0.029872270116982236
+  Outputs:
+	v = 0.6999913243795922
+	w = 0.09957424552509764
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50200100210 ns
+  Inputs:
+	heading_error = -0.00497870850048443
+	lateral_error = 0.029872270379093457
+  Outputs:
+	v = 0.6999913243796728
+	w = 0.09957424665964609
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50300100210 ns
+  Inputs:
+	heading_error = -0.004978708660342335
+	lateral_error = 0.029872270637802956
+  Outputs:
+	v = 0.6999913243795041
+	w = 0.09957424751443611
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50400100210 ns
+  Inputs:
+	heading_error = -0.00497870893401231
+	lateral_error = 0.029872270885308083
+  Outputs:
+	v = 0.6999913243789471
+	w = 0.09957424790984248
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50500100210 ns
+  Inputs:
+	heading_error = -0.004978709293500749
+	lateral_error = 0.02987227111364632
+  Outputs:
+	v = 0.6999913243779932
+	w = 0.09957424780518309
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50600100210 ns
+  Inputs:
+	heading_error = -0.00497870969284353
+	lateral_error = 0.029872271316808252
+  Outputs:
+	v = 0.6999913243767404
+	w = 0.09957424728058228
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50700100210 ns
+  Inputs:
+	heading_error = -0.0049787100820015695
+	lateral_error = 0.029872271492006774
+  Outputs:
+	v = 0.6999913243753486
+	w = 0.09957424649585889
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50800100210 ns
+  Inputs:
+	heading_error = -0.004978710418946264
+	lateral_error = 0.029872271639955983
+  Outputs:
+	v = 0.6999913243739924
+	w = 0.09957424564002082
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 50900100210 ns
+  Inputs:
+	heading_error = -0.004978710677631781
+	lateral_error = 0.02987227176431073
+  Outputs:
+	v = 0.6999913243728181
+	w = 0.09957424488403888
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51000100210 ns
+  Inputs:
+	heading_error = -0.004978710850915391
+	lateral_error = 0.02987227187055108
+  Outputs:
+	v = 0.6999913243719166
+	w = 0.0995742443467158
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51100100210 ns
+  Inputs:
+	heading_error = -0.00497871094875979
+	lateral_error = 0.02987227196465625
+  Outputs:
+	v = 0.6999913243713127
+	w = 0.09957424407854276
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51200100210 ns
+  Inputs:
+	heading_error = -0.00497871099301328
+	lateral_error = 0.029872272051908233
+  Outputs:
+	v = 0.6999913243709717
+	w = 0.09957424406358584
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51300100210 ns
+  Inputs:
+	heading_error = -0.004978711010579673
+	lateral_error = 0.02987227213605781
+  Outputs:
+	v = 0.6999913243708175
+	w = 0.09957424423557981
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51400100210 ns
+  Inputs:
+	heading_error = -0.004978711026772942
+	lateral_error = 0.029872272218973706
+  Outputs:
+	v = 0.6999913243707563
+	w = 0.09957424450191255
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51500100210 ns
+  Inputs:
+	heading_error = -0.0049787110602839135
+	lateral_error = 0.02987227230075007
+  Outputs:
+	v = 0.6999913243706998
+	w = 0.09957424476880306
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51600100210 ns
+  Inputs:
+	heading_error = -0.004978711120544155
+	lateral_error = 0.02987227238017809
+  Outputs:
+	v = 0.699991324370583
+	w = 0.09957424496186462
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51700100210 ns
+  Inputs:
+	heading_error = -0.004978711207604292
+	lateral_error = 0.029872272455383708
+  Outputs:
+	v = 0.6999913243703729
+	w = 0.09957424503853574
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51800100210 ns
+  Inputs:
+	heading_error = -0.004978711314072903
+	lateral_error = 0.029872272524491983
+  Outputs:
+	v = 0.6999913243700696
+	w = 0.09957424499111767
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 51900100210 ns
+  Inputs:
+	heading_error = -0.004978711428305083
+	lateral_error = 0.029872272586144
+  Outputs:
+	v = 0.6999913243696986
+	w = 0.09957424484167632
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52000100210 ns
+  Inputs:
+	heading_error = -0.004978711537881431
+	lateral_error = 0.029872272639796194
+  Outputs:
+	v = 0.6999913243693004
+	w = 0.09957424463135567
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52100100210 ns
+  Inputs:
+	heading_error = -0.004978711632589672
+	lateral_error = 0.029872272685776302
+  Outputs:
+	v = 0.6999913243689185
+	w = 0.09957424440765905
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52200100210 ns
+  Inputs:
+	heading_error = -0.004978711706331573
+	lateral_error = 0.029872272725123494
+  Outputs:
+	v = 0.6999913243685885
+	w = 0.09957424421274652
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52300100210 ns
+  Inputs:
+	heading_error = -0.004978711757761545
+	lateral_error = 0.029872272759307705
+  Outputs:
+	v = 0.6999913243683314
+	w = 0.09957424407516768
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52400100210 ns
+  Inputs:
+	heading_error = -0.004978711789751067
+	lateral_error = 0.029872272789888576
+  Outputs:
+	v = 0.6999913243681523
+	w = 0.09957424400618464
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52500100210 ns
+  Inputs:
+	heading_error = -0.004978711808028002
+	lateral_error = 0.02987227281823035
+  Outputs:
+	v = 0.6999913243680407
+	w = 0.09957424400055004
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52600100210 ns
+  Inputs:
+	heading_error = -0.004978711819447312
+	lateral_error = 0.029872272845290482
+  Outputs:
+	v = 0.6999913243679771
+	w = 0.09957424404080939
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52700100210 ns
+  Inputs:
+	heading_error = -0.004978711830344373
+	lateral_error = 0.029872272871549477
+  Outputs:
+	v = 0.6999913243679373
+	w = 0.09957424410337268
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52800100210 ns
+  Inputs:
+	heading_error = -0.0049787118453039625
+	lateral_error = 0.02987227289704375
+  Outputs:
+	v = 0.6999913243678992
+	w = 0.09957424416482041
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 52900100210 ns
+  Inputs:
+	heading_error = -0.0049787118665554075
+	lateral_error = 0.02987227292149175
+  Outputs:
+	v = 0.6999913243678472
+	w = 0.09957424420695915
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53000100210 ns
+  Inputs:
+	heading_error = -0.00497871189398591
+	lateral_error = 0.029872272944449385
+  Outputs:
+	v = 0.6999913243677731
+	w = 0.09957424421974537
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53100100210 ns
+  Inputs:
+	heading_error = -0.004978711925662793
+	lateral_error = 0.02987227296548589
+  Outputs:
+	v = 0.6999913243676775
+	w = 0.0995742442018539
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53200100210 ns
+  Inputs:
+	heading_error = -0.004978711958647075
+	lateral_error = 0.029872272984304615
+  Outputs:
+	v = 0.6999913243675672
+	w = 0.09957424415929239
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53300100210 ns
+  Inputs:
+	heading_error = -0.004978711989868323
+	lateral_error = 0.0298722730008123
+  Outputs:
+	v = 0.6999913243674522
+	w = 0.09957424410263016
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53400100210 ns
+  Inputs:
+	heading_error = -0.004978712016857401
+	lateral_error = 0.029872273015134176
+  Outputs:
+	v = 0.6999913243673433
+	w = 0.0995742440437759
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53500100210 ns
+  Inputs:
+	heading_error = -0.004978712038201216
+	lateral_error = 0.02987227302756601
+  Outputs:
+	v = 0.6999913243672493
+	w = 0.0995742439931071
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53600100210 ns
+  Inputs:
+	heading_error = -0.004978712053676837
+	lateral_error = 0.029872273038503927
+  Outputs:
+	v = 0.6999913243671749
+	w = 0.09957424395745917
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53700100210 ns
+  Inputs:
+	heading_error = -0.004978712064101387
+	lateral_error = 0.029872273048358267
+  Outputs:
+	v = 0.699991324367121
+	w = 0.09957424393930836
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53800100210 ns
+  Inputs:
+	heading_error = -0.004978712070976776
+	lateral_error = 0.029872273057481635
+  Outputs:
+	v = 0.6999913243670846
+	w = 0.09957424393702752
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 53900100210 ns
+  Inputs:
+	heading_error = -0.004978712076050051
+	lateral_error = 0.029872273066122723
+  Outputs:
+	v = 0.6999913243670607
+	w = 0.09957424394601944
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54000100210 ns
+  Inputs:
+	heading_error = -0.004978712080907499
+	lateral_error = 0.029872273074409428
+  Outputs:
+	v = 0.699991324367043
+	w = 0.09957424396029069
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54100100210 ns
+  Inputs:
+	heading_error = -0.00497871208667533
+	lateral_error = 0.029872273082354184
+  Outputs:
+	v = 0.699991324367026
+	w = 0.09957424397400771
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54200100210 ns
+  Inputs:
+	heading_error = -0.0049787120938820095
+	lateral_error = 0.029872273089896595
+  Outputs:
+	v = 0.699991324367006
+	w = 0.09957424398271542
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54300100210 ns
+  Inputs:
+	heading_error = -0.004978712102471583
+	lateral_error = 0.029872273096932744
+  Outputs:
+	v = 0.6999913243669809
+	w = 0.09957424398405834
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54400100210 ns
+  Inputs:
+	heading_error = -0.004978712111941341
+	lateral_error = 0.029872273103367597
+  Outputs:
+	v = 0.6999913243669509
+	w = 0.09957424397784465
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54500100210 ns
+  Inputs:
+	heading_error = -0.004978712121554096
+	lateral_error = 0.02987227310913987
+  Outputs:
+	v = 0.6999913243669179
+	w = 0.09957424396570502
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54600100210 ns
+  Inputs:
+	heading_error = -0.004978712130554008
+	lateral_error = 0.029872273114237125
+  Outputs:
+	v = 0.6999913243668844
+	w = 0.09957424395034309
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54700100210 ns
+  Inputs:
+	heading_error = -0.004978712138346886
+	lateral_error = 0.029872273118707326
+  Outputs:
+	v = 0.699991324366853
+	w = 0.09957424393473246
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54800100210 ns
+  Inputs:
+	heading_error = -0.00497871214461032
+	lateral_error = 0.029872273122629522
+  Outputs:
+	v = 0.6999913243668259
+	w = 0.09957424392144176
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 54900100210 ns
+  Inputs:
+	heading_error = -0.004978712149318554
+	lateral_error = 0.029872273126113846
+  Outputs:
+	v = 0.699991324366804
+	w = 0.09957424391207681
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55000100210 ns
+  Inputs:
+	heading_error = -0.0049787121527025135
+	lateral_error = 0.029872273129268656
+  Outputs:
+	v = 0.6999913243667877
+	w = 0.09957424390718117
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55100100210 ns
+  Inputs:
+	heading_error = -0.004978712155154774
+	lateral_error = 0.029872273132185434
+  Outputs:
+	v = 0.6999913243667758
+	w = 0.09957424390626457
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55200100210 ns
+  Inputs:
+	heading_error = -0.004978712157121201
+	lateral_error = 0.029872273134930794
+  Outputs:
+	v = 0.6999913243667673
+	w = 0.09957424390812264
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55300100210 ns
+  Inputs:
+	heading_error = -0.004978712159000587
+	lateral_error = 0.029872273137538485
+  Outputs:
+	v = 0.6999913243667605
+	w = 0.09957424391123837
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55400100210 ns
+  Inputs:
+	heading_error = -0.004978712161069154
+	lateral_error = 0.02987227314001384
+  Outputs:
+	v = 0.6999913243667539
+	w = 0.0995742439141516
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55500100210 ns
+  Inputs:
+	heading_error = -0.004978712163452137
+	lateral_error = 0.029872273142345307
+  Outputs:
+	v = 0.6999913243667467
+	w = 0.09957424391577874
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55600100210 ns
+  Inputs:
+	heading_error = -0.004978712166130883
+	lateral_error = 0.029872273144509798
+  Outputs:
+	v = 0.6999913243667384
+	w = 0.09957424391557268
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55700100210 ns
+  Inputs:
+	heading_error = -0.00497871216897483
+	lateral_error = 0.029872273146486883
+  Outputs:
+	v = 0.6999913243667291
+	w = 0.09957424391351566
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55800100210 ns
+  Inputs:
+	heading_error = -0.004978712171800126
+	lateral_error = 0.029872273148264128
+  Outputs:
+	v = 0.6999913243667191
+	w = 0.09957424391004821
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 55900100210 ns
+  Inputs:
+	heading_error = -0.004978712174423805
+	lateral_error = 0.029872273149844197
+  Outputs:
+	v = 0.6999913243667093
+	w = 0.09957424390585601
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56000100210 ns
+  Inputs:
+	heading_error = -0.004978712176701983
+	lateral_error = 0.029872273151239526
+  Outputs:
+	v = 0.6999913243667001
+	w = 0.09957424390168157
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56100100210 ns
+  Inputs:
+	heading_error = -0.004978712178562716
+	lateral_error = 0.029872273152474982
+  Outputs:
+	v = 0.6999913243666922
+	w = 0.09957424389815017
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56200100210 ns
+  Inputs:
+	heading_error = -0.004978712180008671
+	lateral_error = 0.029872273153581652
+  Outputs:
+	v = 0.6999913243666857
+	w = 0.09957424389564906
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56300100210 ns
+  Inputs:
+	heading_error = -0.004978712181102907
+	lateral_error = 0.029872273154586182
+  Outputs:
+	v = 0.6999913243666807
+	w = 0.09957424389429193
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56400100210 ns
+  Inputs:
+	heading_error = -0.0049787121819484526
+	lateral_error = 0.02987227315551344
+  Outputs:
+	v = 0.6999913243666769
+	w = 0.0995742438939331
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56500100210 ns
+  Inputs:
+	heading_error = -0.004978712182658995
+	lateral_error = 0.029872273156382967
+  Outputs:
+	v = 0.6999913243666739
+	w = 0.09957424389425995
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56600100210 ns
+  Inputs:
+	heading_error = -0.004978712183335787
+	lateral_error = 0.02987227315720098
+  Outputs:
+	v = 0.6999913243666714
+	w = 0.09957424389489589
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56700100210 ns
+  Inputs:
+	heading_error = -0.00497871218404633
+	lateral_error = 0.029872273157972806
+  Outputs:
+	v = 0.699991324366669
+	w = 0.09957424389546077
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56800100210 ns
+  Inputs:
+	heading_error = -0.0049787121848208216
+	lateral_error = 0.029872273158694007
+  Outputs:
+	v = 0.6999913243666667
+	w = 0.0995742438957059
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 56900100210 ns
+  Inputs:
+	heading_error = -0.004978712185653045
+	lateral_error = 0.029872273159361917
+  Outputs:
+	v = 0.6999913243666639
+	w = 0.09957424389549274
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57000100210 ns
+  Inputs:
+	heading_error = -0.004978712186511025
+	lateral_error = 0.029872273159971208
+  Outputs:
+	v = 0.699991324366661
+	w = 0.09957424389483549
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57100100210 ns
+  Inputs:
+	heading_error = -0.004978712187348577
+	lateral_error = 0.029872273160520102
+  Outputs:
+	v = 0.699991324366658
+	w = 0.09957424389384073
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57200100210 ns
+  Inputs:
+	heading_error = -0.004978712188121293
+	lateral_error = 0.029872273161011265
+  Outputs:
+	v = 0.699991324366655
+	w = 0.0995742438926861
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57300100210 ns
+  Inputs:
+	heading_error = -0.004978712188794532
+	lateral_error = 0.02987227316144736
+  Outputs:
+	v = 0.6999913243666525
+	w = 0.09957424389155989
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57400100210 ns
+  Inputs:
+	heading_error = -0.004978712189354084
+	lateral_error = 0.029872273161836382
+  Outputs:
+	v = 0.6999913243666501
+	w = 0.09957424389061131
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57500100210 ns
+  Inputs:
+	heading_error = -0.004978712189800838
+	lateral_error = 0.029872273162186325
+  Outputs:
+	v = 0.6999913243666481
+	w = 0.09957424388992919
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57600100210 ns
+  Inputs:
+	heading_error = -0.004978712190153445
+	lateral_error = 0.02987227316250607
+  Outputs:
+	v = 0.6999913243666465
+	w = 0.09957424388954195
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57700100210 ns
+  Inputs:
+	heading_error = -0.004978712190437662
+	lateral_error = 0.029872273162799168
+  Outputs:
+	v = 0.6999913243666454
+	w = 0.0995742438894105
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57800100210 ns
+  Inputs:
+	heading_error = -0.0049787121906845755
+	lateral_error = 0.029872273163072727
+  Outputs:
+	v = 0.6999913243666444
+	w = 0.09957424388944602
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 57900100210 ns
+  Inputs:
+	heading_error = -0.004978712190918166
+	lateral_error = 0.02987227316332941
+  Outputs:
+	v = 0.6999913243666435
+	w = 0.0995742438895526
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58000100210 ns
+  Inputs:
+	heading_error = -0.00497871219115531
+	lateral_error = 0.02987227316356922
+  Outputs:
+	v = 0.6999913243666426
+	w = 0.09957424388964498
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58100100210 ns
+  Inputs:
+	heading_error = -0.004978712191404
+	lateral_error = 0.02987227316379304
+  Outputs:
+	v = 0.6999913243666418
+	w = 0.09957424388965563
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58200100210 ns
+  Inputs:
+	heading_error = -0.00497871219166246
+	lateral_error = 0.029872273163999097
+  Outputs:
+	v = 0.699991324366641
+	w = 0.09957424388955616
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58300100210 ns
+  Inputs:
+	heading_error = -0.004978712191922696
+	lateral_error = 0.029872273164186502
+  Outputs:
+	v = 0.69999132436664
+	w = 0.09957424388934655
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58400100210 ns
+  Inputs:
+	heading_error = -0.004978712192172274
+	lateral_error = 0.029872273164356145
+  Outputs:
+	v = 0.6999913243666391
+	w = 0.09957424388905523
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58500100210 ns
+  Inputs:
+	heading_error = -0.004978712192401424
+	lateral_error = 0.02987227316450891
+  Outputs:
+	v = 0.6999913243666382
+	w = 0.09957424388873548
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58600100210 ns
+  Inputs:
+	heading_error = -0.0049787121926012645
+	lateral_error = 0.029872273164644803
+  Outputs:
+	v = 0.6999913243666375
+	w = 0.09957424388842995
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58700100210 ns
+  Inputs:
+	heading_error = -0.004978712192770018
+	lateral_error = 0.02987227316476737
+  Outputs:
+	v = 0.6999913243666368
+	w = 0.09957424388817415
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58800100210 ns
+  Inputs:
+	heading_error = -0.004978712192907686
+	lateral_error = 0.029872273164876617
+  Outputs:
+	v = 0.6999913243666361
+	w = 0.09957424388798941
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 58900100210 ns
+  Inputs:
+	heading_error = -0.004978712193020485
+	lateral_error = 0.029872273164978758
+  Outputs:
+	v = 0.6999913243666357
+	w = 0.09957424388787572
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59000100210 ns
+  Inputs:
+	heading_error = -0.004978712193114632
+	lateral_error = 0.029872273165071128
+  Outputs:
+	v = 0.6999913243666354
+	w = 0.09957424388783309
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59100100210 ns
+  Inputs:
+	heading_error = -0.00497871219319812
+	lateral_error = 0.02987227316515728
+  Outputs:
+	v = 0.699991324366635
+	w = 0.09957424388782599
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59200100210 ns
+  Inputs:
+	heading_error = -0.004978712193277168
+	lateral_error = 0.029872273165238106
+  Outputs:
+	v = 0.6999913243666347
+	w = 0.09957424388783664
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59300100210 ns
+  Inputs:
+	heading_error = -0.004978712193355328
+	lateral_error = 0.0298722731653136
+  Outputs:
+	v = 0.6999913243666345
+	w = 0.09957424388784375
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59400100210 ns
+  Inputs:
+	heading_error = -0.004978712193434376
+	lateral_error = 0.02987227316538199
+  Outputs:
+	v = 0.6999913243666341
+	w = 0.09957424388783309
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59500100210 ns
+  Inputs:
+	heading_error = -0.004978712193514312
+	lateral_error = 0.029872273165446828
+  Outputs:
+	v = 0.6999913243666339
+	w = 0.09957424388779046
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59600100210 ns
+  Inputs:
+	heading_error = -0.004978712193594248
+	lateral_error = 0.029872273165506336
+  Outputs:
+	v = 0.6999913243666336
+	w = 0.09957424388773006
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59700100210 ns
+  Inputs:
+	heading_error = -0.004978712193668855
+	lateral_error = 0.029872273165560514
+  Outputs:
+	v = 0.6999913243666332
+	w = 0.09957424388764835
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59800100210 ns
+  Inputs:
+	heading_error = -0.004978712193738133
+	lateral_error = 0.029872273165607588
+  Outputs:
+	v = 0.699991324366633
+	w = 0.09957424388756664
+
+
+
+Received packet from simulator
+
++=controller+=
+  VSI time: 59900100210 ns
+  Inputs:
+	heading_error = -0.004978712193799417
+	lateral_error = 0.02987227316565022
+  Outputs:
+	v = 0.6999913243666328
+	w = 0.09957424388747782
+
+
+
++=+ XLVIP-INFO: XlTlmMessageLayer::disconnectFromServer():
++=+    Disconnecting this remote client from TLM fabric server:
++=+        clientId=:remoteSession1
 make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/Vsi-Controller/LineFollower'
+
+Script done on 2026-03-22 02:28:42+00:00 [COMMAND_EXIT_CODE="0"]

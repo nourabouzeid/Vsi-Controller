@@ -65,7 +65,7 @@ class Controller:
 		self.mySignals = MySignals()
 
 		# Start of user custom code region. Please apply edits only within these regions:  Constructor
-		self.controller = PIDController(kp_theta = 4, kp_y = 4, ki = 0, kd = 0 , vmax = 1.8)
+		self.controller = PIDController(kp_theta = 4, kp_y = 4, ki = 0, kd = 0 , vmax = 0.7)
 		# End of user custom code region. Please don't edit beyond this point.
 
 
